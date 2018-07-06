@@ -1,1 +1,1 @@
-# Welcome to intellicode!
+# Welcome to IntelliCode!
