@@ -1,0 +1,4 @@
+- name: IntelliCode docs
+  href: index.md
+- name: FAQ
+  href: intellicode-faq.md
