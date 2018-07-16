@@ -33,7 +33,7 @@ Developers can [download an experimental extension](https://go.microsoft.com/fwl
 
 - AI-Enhanced IntelliSense that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
-- Inference of code style and formatting conventions that helps you keep your code consistent by dynamically creating an [.editorconfig file](../create-portable-custom-editor-options.md) from your codebase to define coding styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document.
+- Inference of code style and formatting conventions that helps you keep your code consistent by dynamically creating an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase to define coding styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document.
 
 We'll update the extension with more capabilities in the coming months.
 
