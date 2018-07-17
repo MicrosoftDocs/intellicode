@@ -1,8 +1,8 @@
 ---
 title: IntelliCode questions and answers
 ms.date: 07/12/2018
-ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
+ms.prod: visual-studio-family
+ms.technology: code-smarts
 ms.topic: conceptual
 manager: douge
 author: markw-t
