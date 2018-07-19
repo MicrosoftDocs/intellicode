@@ -37,7 +37,12 @@
     "globalMetadata": {
       "breadcrumb_path": "/intellicode/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "ms.topic": "conceptual",
+      "audience": "developer",
+      "defaultDevLang": "csharp",
+      "ms.prod": "visual-studio-family",
+      "ms.technology": "code-smarts"
     },
     "fileMetadata": {},
     "template": [],
