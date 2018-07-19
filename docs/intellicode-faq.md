@@ -29,14 +29,14 @@ Developers can find more information and sign up for news and future private pre
 
 Visual Studio IntelliCode is a range of capabilities that offers new productivity enhancements through artificial intelligence (AI).
 
-# For Visual Studio users working in C#
+### For Visual Studio users working in C#
 Developers using Visual Studio can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=872707) for Visual Studio 2017 version 15.7 and later. The extension currently provides:
 
 - AI-Enhanced IntelliSense for C# that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
 - Inference of code style and formatting conventions for C# that helps you keep your code consistent by dynamically creating an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase to define coding styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. More details on this feature can be found in [this blog article](https://aka.ms/vsicec).
 
-# For Visual Studio Code users working in Python
+### For Visual Studio Code users working in Python
 Developers using Visual Studio Code can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher. This extension currently provides
 
 - AI-Enhanced IntelliSense for Python that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
