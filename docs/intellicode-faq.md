@@ -140,7 +140,7 @@ Style Conventions:
 
 ## Q: What makes “AI-assisted IntelliSense” powered by IntelliCode better than regular IntelliSense?
 
-With IntelliCode, the completion list suggests the most likely correct API for a developer to use, rather than presenting a simple alphabetical list of members. It uses the developer's current code context, and patterns based on thousands of high quality, open-source projects on GitHub each with over 100 stars, to provide this dynamic list. The results form a model that predicts the most likely and most relevant API calls.
+With IntelliCode, the completion list suggests the most likely correct API for a developer to use, rather than presenting a simple alphabetical list of members. It uses the developer's current code context, and patterns based on thousands of high quality, open-source projects on GitHub each with high star ratings, to provide this dynamic list. The results form a model that predicts the most likely and most relevant API calls.
 
 ## Q: How good are the IntelliCode completion suggestions?
 
