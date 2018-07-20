@@ -37,7 +37,9 @@
     "globalMetadata": {
       "breadcrumb_path": "/intellicode/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/intellicode-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "ms.topic": "conceptual",
       "audience": "developer",
       "defaultDevLang": "csharp",
