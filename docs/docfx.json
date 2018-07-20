@@ -44,6 +44,7 @@
       "audience": "developer",
       "defaultDevLang": "csharp",
       "ms.prod": "visual-studio-family",
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "ms.technology": "code-smarts"
     },
     "fileMetadata": {},
