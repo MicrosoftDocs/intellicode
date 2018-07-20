@@ -59,8 +59,8 @@ A known issue in Visual Studio extensibility causes a **1.** to be prepended to 
 
 There are a couple of common reasons this problem can occur:
 
-- In Visual Studio 2017 versions prior to 15.8 preview 3, you will need to close and reopen all open documents to see the conventions in the EditorConfig file you create take effect. This issue is fixed in the version 15.8 preview 3 release.
-- Formatting conventions never show up in the **Error List** or as “squiggles” in your code. They can, however, be fixed using the new Format Document (Ctrl+K, Ctrl+D) extension in Visual Studio 2017 version 15.8 preview 3 or later.
+- In Visual Studio 2017 versions prior to 15.8 preview 3, you need to close and reopen all open documents to see the conventions in the EditorConfig file you create take effect. This issue is fixed in the version 15.8 preview 3 release.
+- Formatting conventions never show up in the **Error List** or as “squiggles” in your code. They can, however, be fixed using the new **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) extension in Visual Studio 2017 version 15.8 preview 3 or later.
 
 ## Q. Format Document is not fixing my style conventions - why?
 
