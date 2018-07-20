@@ -1,3 +1,7 @@
-- name: IntelliCode
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: IntelliCode
   tocHref: /visualstudio/intellicode/
   topicHref: /visualstudio/intellicode/index
