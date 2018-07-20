@@ -30,16 +30,20 @@ Developers can find more information and sign up for news and future private pre
 Visual Studio IntelliCode is a range of capabilities that offers new productivity enhancements through artificial intelligence (AI).
 
 ### For Visual Studio users working in C#
+
 Developers using Visual Studio can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=872707) for Visual Studio 2017 version 15.7 and later. The extension currently provides:
 
-- AI-Enhanced IntelliSense for C# that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+- AI-enhanced IntelliSense for C# that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
 - Inference of code style and formatting conventions for C# that helps you keep your code consistent by dynamically creating an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase to define coding styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. More details on this feature can be found in [this blog article](https://aka.ms/vsicec).
 
 ### For Visual Studio Code users working in Python
-Developers using Visual Studio Code can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher. 
 
-This extension currently provides AI-Enhanced IntelliSense for Python that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+Developers using Visual Studio Code can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher.
+
+This extension currently provides AI-enhanced IntelliSense for Python that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+
+![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
 We'll update the extension with more capabilities in the coming months.
 
@@ -144,7 +148,7 @@ With IntelliCode, the completion list suggests the most likely correct API for a
 
 ## Q: How good are the IntelliCode completion suggestions?
 
-We’ve been using IntelliCode’s recommendations internally at Microsoft for some time, and believe the suggestions are useful. Ultimately, though, the proof will be in how useful these recommendations are to you as you code. 
+We’ve been using IntelliCode’s recommendations internally at Microsoft for some time, and believe the suggestions are useful. Ultimately, though, the proof will be in how useful these recommendations are to you as you code.
 
 If you're a C#/Visual Studio user, try the [Visual Studio IntelliCode extension](https://go.microsoft.com/fwlink/?linkid=872707). If you use Python in Visual Studio Code, try the [Visual Studio Code IntelliCode extension](https://go.microsoft.com/fwlink/?linkid=2006060) a try. Let us know how the recommendations work out for you and send us your feedback. We’ll also train our model based on what you pick in our recommendations, and we'll update the extension as the model improves.
 
@@ -165,7 +169,7 @@ IntelliCode's AI-assisted IntelliSense is currently in its first experimental pr
 
 ## Q. Which languages and tools are supported by this extension?
 
-The extension was shown at Build 2018 in Visual Studio 2017 on a C# codebase. 
+The extension was shown at Build 2018 in Visual Studio 2017 on a C# codebase.
 
 At EuroPython 2018 we released an experience for Visual Studio Code on Python codebases.
 
@@ -183,21 +187,21 @@ Refer to the [Python language server troubleshooting page](https://github.com/Mi
 
 ## Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
 
-The Visual Studio IntelliCode extension is supported on Visual Studio 2017 version 15.7 preview 5 and later (all SKUs). Installation of the extension halts with "This extension is not installable on any currently installed products." if you don't have the minimum required version installed.
+The Visual Studio IntelliCode extension is supported on Visual Studio 2017 version 15.7 preview 5 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
 
 ## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 
-The Visual Studio Code IntelliCode extension is supported on Version 1.25.1 and higher of Visual Studio Code.
+The Visual Studio Code IntelliCode extension is supported on version 1.25.1 and later of Visual Studio Code.
 
 ## Q. Is this experience only available in English?
 
-IntelliCode is a preview extension today, and we are eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll certainly consider which locale or language to support first, and how it is packaged, based on your feedback.
+IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll certainly consider which locale or language to support first, and how it is packaged, based on your feedback.
 
 ## <a name="privacy"/> Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
 Developers are invited to experience Visual Studio IntelliCode today as an experimental preview extension. The purpose of the extension is to enable developers to test IntelliCode's capabilities and to provide feedback to the product team.
 
-We capture some anonymized usage and error-reporting data from the extension to help improve the product. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results. The data only includes open-source and .NET types and members that you selected from IntelliCode's suggested list. 
+We capture some anonymized usage and error-reporting data from the extension to help improve the product. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results. The data only includes open-source and .NET types and members that you selected from IntelliCode's suggested list.
 
 In Visual Studio, developers can opt out of the [Visual Studio Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program), which turns off data collection for the IntelliCode extension too. From the menu bar, select **Help** > **Send Feedback** > **Settings**. In the **Visual Studio Experience Improvement Program** dialog, select **No, I would not like to participate** and then select **OK**.
 
@@ -210,4 +214,3 @@ Future features may require access to a service, which will require sign-up. We'
 ## Q. Are you planning on releasing Visual Studio IntelliCode as Open Source Software?
 
 At this point Visual Studio IntelliCode is experimental and we’re still learning from it. We may open source parts of the IntelliCode extension in the future, but have no specific plans to share at this time.
-
