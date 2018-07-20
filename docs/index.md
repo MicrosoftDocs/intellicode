@@ -17,7 +17,7 @@ Visual Studio IntelliCode is a new tool that enhances software development using
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="intellicode-faq.md">
+        <a href="faq.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

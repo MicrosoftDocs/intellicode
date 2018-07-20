@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path": "docs/intellicode-faq.md",
+            "redirect_url": "/visualstudio/intellicode/faq",
+            "redirect_document_id": false
+        }
+    ]
+}
