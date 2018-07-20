@@ -36,13 +36,16 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/intellicode/breadcrumb/toc.json",
+      "breadcrumb_path": "/visualstudio/intellicode/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/intellicode-docs",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/",
       "ms.topic": "conceptual",
       "audience": "developer",
       "defaultDevLang": "csharp",
       "ms.prod": "visual-studio-family",
+      "uhfHeaderId": "MSDocsHeader-VisualStudio",
       "ms.technology": "code-smarts"
     },
     "fileMetadata": {},
