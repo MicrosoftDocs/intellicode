@@ -3,5 +3,5 @@
   topicHref: /
   items:
   - name: IntelliCode
-  tocHref: /visualstudio/intellicode/
-  topicHref: /visualstudio/intellicode/index
+    tocHref: /visualstudio/intellicode/
+    topicHref: /visualstudio/intellicode/index
