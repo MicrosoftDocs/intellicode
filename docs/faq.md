@@ -213,4 +213,4 @@ Future features may require access to a service, which will require sign-up. We'
 
 ## Q. Are you planning on releasing Visual Studio IntelliCode as Open Source Software?
 
-At this point Visual Studio IntelliCode is experimental and we’re still learning from it. We may open source parts of the IntelliCode extension in the future, but have no specific plans to share at this time.
+Since launching IntelliCode at Build 2018 this May, we are gathering feedback from the community and continuing to make updates, including the possibility of making portions of the experimental IntelliCode extension open source in the future. We have no announcements to make at this time.
