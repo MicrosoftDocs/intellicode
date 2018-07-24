@@ -49,7 +49,7 @@ Check out the tips in "[Writing Good Problem Reports and Feature Requests](#tip-
 
 ### Step 2B - File a VS Code problems (if using VS Code when you see the issue)
 
-1. **Capture logs:** Go to the OUTPUT window and copy the contents of the VS-IntelliCode and Python log streams after reproducing your issue.
+1. **Capture logs:** Go to the OUTPUT window and copy the contents of the VS IntelliCode and Python log streams after reproducing your issue.
 
 2. **Raise a new issue:** [Click here to draft a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) and please add following information into the description:
 
