@@ -193,6 +193,15 @@ The Visual Studio IntelliCode extension is supported on Visual Studio 2017 versi
 
 The Visual Studio Code IntelliCode extension is supported on version 1.25.1 and later of Visual Studio Code.
 
+## Q. Where should I raise bugs/issues or feature requests?
+
+We are keen to hear from you as you try out IntelliCode; tell us about any problems you hit, or features you wish were included that would make it more helpful for you.
+
+- **VS Code bugs:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new). Include any OUTPUT window log entries from VS IntelliCode and Python with the bug.
+- **Known issues:** See [bugs](https://github.com/MicrosoftDocs/intellicode/issues) and up-vote using a 👍 reaction.
+- **VS bugs:** [Help > Send Feedback > Report a Problem...](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) Repro the problem before sending and logs will be auto-attached.
+- **Feature requests:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) and mention that its a feature request.
+
 ## Q. Is this experience only available in English?
 
 IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll certainly consider which locale or language to support first, and how it is packaged, based on your feedback.
