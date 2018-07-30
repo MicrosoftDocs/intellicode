@@ -1,13 +1,12 @@
-<!-- 
-For Visual Studio problems/feedback, please use the "Report a Problem..." feature built into the tool. 
+<!--
+To provide feedback or report a problem with IntelliCode for Visual Studio, please use the "Report a Problem" feature in Visual Studio instead.
 
-For VS Code issues, please copy any details visible in the OUTPUT window logs for VS-IntelliCode and Python into the bug:
-
+To report a problem with IntelliCode for Visual Studio Code, you're in the right place. Please copy and paste any details that are visible in the Output window logs for VS-IntelliCode and Python.
 -->
 
-**VS Code Version** :
+**VS Code Version**:
 **OS Version** [macOS/Windows]:
-**Visual Studio IntelliCode Extension Version**: 
+**Visual Studio IntelliCode Extension Version**:
 **Python Extension Version**:
 **Target Platform or Language** [e.g. Python]:
 
@@ -15,4 +14,3 @@ For VS Code issues, please copy any details visible in the OUTPUT window logs fo
 
 1.
 2.
-

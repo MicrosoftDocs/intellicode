@@ -2,6 +2,10 @@
   tocHref: /
   topicHref: /
   items:
-  - name: IntelliCode
-    tocHref: /visualstudio/intellicode/
-    topicHref: /visualstudio/intellicode/index
+  - name: Visual Studio
+    tocHref: /visualstudio/products/
+    topicHref: /visualstudio/products
+    items:
+    - name: IntelliCode
+      tocHref: /visualstudio/intellicode/
+      topicHref: /visualstudio/intellicode/index
