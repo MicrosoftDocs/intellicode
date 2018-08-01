@@ -24,7 +24,7 @@ The extension currently provides:
 
 A known issue in Visual Studio extensibility causes a **1.** to be prepended to the .editorconfig filename when you create it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. You can work around this issue by removing the **1** in the **Add New Item** dialog. This problem is fixed in Visual Studio 2017 version 15.8 preview 4.
 
-## Q. I don't see my EditorConfig Conventions taking effect - why?
+## Q. I don't see my EditorConfig conventions taking effect - why?
 
 There are a couple of common reasons this problem can occur:
 
@@ -40,7 +40,7 @@ There are a couple of common reasons this problem can occur:
 
 - You may not be opted in to style fixes. The extended capability of fixing convention-based issues capability in **Format Document** only covers a fixed set of issues. You can change which issues are fixed in **Tools** > **Options** under **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**. The default settings don't fix some style conventions. You can opt in to these via **Tools** > **options**. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`.
 
-## Q. Which EditorConfig Conventions can Visual Studio IntelliCode infer?
+## Q. Which EditorConfig conventions can Visual Studio IntelliCode infer?
 
 At present this feature is experimental, so we don't support the full set of conventions documented in the [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference) yet. IntelliCode can currently infer the following [formatting](#formatting-conventions) and [style](#style-conventions) conventions.
 
@@ -71,7 +71,7 @@ At present this feature is experimental, so we don't support the full set of con
 - csharp_new_line_before_members_in_anonymous_types
 - csharp_new_line_between_query_expression_clauses
 
-### Style Conventions
+### Style conventions
 
 - csharp__new_line_before_catch
 - csharp_new_line_before_else
