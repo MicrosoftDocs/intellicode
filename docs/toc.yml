@@ -5,5 +5,5 @@
   items:
   - name: IntelliCode for Visual Studio
     href: intellicode-visual-studio.md
-    name: IntelliCode for Visual Studio Code
+  - name: IntelliCode for Visual Studio Code
     href: intellicode-visual-studio-code.md
