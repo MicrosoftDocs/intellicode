@@ -10,7 +10,7 @@ ms.author: mwthomas
 ---
 # IntelliCode for Visual Studio Code FAQ
 
-You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher.
+You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher. Here are answers to some frequently asked questions about this extension.
 
 ## Q. What functionality does the extension provide?
 
