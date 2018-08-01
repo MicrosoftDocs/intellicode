@@ -29,9 +29,9 @@ Developers can find more information and sign up for news and future private pre
 
 Visual Studio IntelliCode is a range of capabilities that offers new productivity enhancements through artificial intelligence (AI).
 
-For Visual Studio users working in C#, see [IntelliCode extension for Visual Studio](intellicode-visual-studio.md).
+For Visual Studio users developing in C#, see [IntelliCode extension for Visual Studio](intellicode-visual-studio.md).
 
-For Visual Studio Code users working in Python, see [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md).
+For Visual Studio Code users developing in Python, see [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md).
 
 ## Q. Are there other features coming to the Visual Studio or Visual Studio Code IntelliCode extensions?
 

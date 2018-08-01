@@ -18,11 +18,13 @@ This extension currently provides AI-enhanced IntelliSense for Python that predi
 
 We'll update the extension with more capabilities in the coming months.
 
-## Q. <a name="whynopyintellisense"/> I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
+## FAQ
+
+### Q. <a name="whynopyintellisense"/> I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
 
 Refer to the [Python language server troubleshooting page](https://github.com/Microsoft/vscode-python/issues/2177) for more information and tips.
 
-## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
+### Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 
 The Visual Studio Code IntelliCode extension is supported on version 1.25.1 and later of Visual Studio Code.
 

@@ -20,29 +20,29 @@ You can [download an experimental extension](https://go.microsoft.com/fwlink/?li
 
 ### Q. Why does EditorConfig inference prepend a 1 to the filename?
 
-A known issue in Visual Studio extensibility causes a **1.** to be prepended to the .editorconfig filename when you create it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. This problem is fixed in Visual Studio 2017 version 15.8 preview 4, but until then you can work around by removing the **1** in the **Add New Item** dialog.
+A known issue in Visual Studio extensibility causes a **1.** to be prepended to the .editorconfig filename when you create it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. You can work around this issue by removing the **1** in the **Add New Item** dialog. This problem is fixed in Visual Studio 2017 version 15.8 preview 4.
 
 ### Q. I don't see my EditorConfig Conventions taking effect - why?
 
 There are a couple of common reasons this problem can occur:
 
-- In Visual Studio 2017 versions prior to 15.8 preview 3, you need to close and reopen all open documents to see the conventions in the EditorConfig file you create take effect. This issue is fixed in the version 15.8 preview 3 release.
-- Formatting conventions never show up in the **Error List** or as “squiggles” in your code. They can, however, be fixed using the new **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) extension in Visual Studio 2017 version 15.8 preview 3 or later.
+- In Visual Studio 2017 versions prior to 15.8 preview 3, you need to close and reopen all open documents to see the conventions in the EditorConfig file you create take effect. This issue is fixed in version 15.8 preview 3.
+
+- Formatting conventions never show up in the **Error List** or as "squiggles" in your code. They can, however, be fixed using the new **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) command that's available in Visual Studio 2017 version 15.8 preview 3 and later.
 
 ### Q. Format Document is not fixing my style conventions - why?
 
 There are a couple of common reasons this problem can occur:
 
 - You may not be using Visual Studio 2017 version 15.8 preview 3 or later. You need this version to be able to use the extended **Format Document** command to perform additional code cleanup for the current document.
+
 - You may not be opted in to style fixes. The extended capability of fixing convention-based issues capability in **Format Document** only covers a fixed set of issues. You can change which issues are fixed in **Tools** > **Options** under **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**. The default settings don't fix some style conventions. You can opt in to these via **Tools** > **options**. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`.
 
 ### Q. Which EditorConfig Conventions can Visual Studio IntelliCode infer?
 
-At present this feature is experimental, so we don't support the full set of conventions documented in the [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference) yet.
+At present this feature is experimental, so we don't support the full set of conventions documented in the [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference) yet. IntelliCode can currently infer the following [formatting](#formatting-conventions) and [style](#style-conventions) conventions.
 
-IntelliCode can currently infer the following conventions:
-
-Formatting conventions:
+#### Formatting conventions
 
 - csharp_space_between_method_declaration_parameter_list_parentheses
 - csharp_space_between_method_declaration_empty_parameter_list_parentheses
@@ -69,7 +69,7 @@ Formatting conventions:
 - csharp_new_line_before_members_in_anonymous_types
 - csharp_new_line_between_query_expression_clauses
 
-Style Conventions:
+#### Style Conventions
 
 - csharp__new_line_before_catch
 - csharp_new_line_before_else
@@ -109,13 +109,13 @@ Style Conventions:
 - dotnet_style_qualification_for_property
 - dotnet_style_require_accessibility_modifiers
 
-## Q. <a name="whynointellisense"/> I can't see the IntelliCode suggestions in my C# editing experience. Can you help?
+### Q. <a name="whynointellisense"/> I can't see the IntelliCode suggestions in my C# editing experience. Can you help?
 
 IntelliCode suggestions appear in the standard Visual Studio IntelliSense UI for C#. Extensions that override that UI prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if extensions are causing this behavior by turning them off and then trying IntelliSense again.
 
 If this doesn't solve the problem for you, please report your issue via the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) feature, and mention IntelliCode in your report.
 
-## Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
+### Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
 
 The Visual Studio IntelliCode extension is supported on Visual Studio 2017 version 15.7 preview 5 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
 
