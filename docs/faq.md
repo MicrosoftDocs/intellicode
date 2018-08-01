@@ -10,7 +10,9 @@ ms.author: mwthomas
 ---
 # Visual Studio IntelliCode FAQ
 
-Thanks for your interest in Visual Studio IntelliCode! This short FAQ will hopefully answer some of the questions you may have.
+Thanks for your interest in Visual Studio IntelliCode! IntelliCode extensions are available for [C# in Visual Studio](intellicode-visual-studio.md), and [Python in Visual Studio Code](intellicode-visual-studio-code.md).
+
+This FAQ will hopefully answer some of the questions you may have.
 
 ## Q. What is Visual Studio IntelliCode?
 
