@@ -73,7 +73,7 @@ At present this feature is experimental, so we don't support the full set of con
 
 ### Style conventions
 
-- csharp__new_line_before_catch
+- csharp_new_line_before_catch
 - csharp_new_line_before_else
 - csharp_new_line_before_members_in_anonymous_types
 - csharp_new_line_before_members_in_object_initializers
