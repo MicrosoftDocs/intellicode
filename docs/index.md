@@ -2,6 +2,7 @@
 layout: LandingPage
 title: IntelliCode
 description: Learn how to use the IntelliCode extension for Visual Studio.
+ms.date: 10/31/2018
 ms.prod: visual-studio-family
 ms.technology: code-smarts
 ms.topic: landing-page
