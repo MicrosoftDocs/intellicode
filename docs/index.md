@@ -4,7 +4,7 @@ title: IntelliCode
 description: Learn how to use the IntelliCode extension for Visual Studio.
 ms.date: 10/31/2018
 ms.prod: visual-studio-family
-ms.technology: code-smarts
+ms.technology: intellicode
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren

@@ -1,8 +1,8 @@
 ---
 title: IntelliCode extension for VSCode
-ms.date: 08/01/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-family
-ms.technology: code-smarts
+ms.technology: intellicode
 ms.topic: conceptual
 manager: douge
 author: markw-t
@@ -10,11 +10,11 @@ ms.author: mwthomas
 ---
 # IntelliCode for Visual Studio Code FAQ
 
-You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code version 1.25.1 and higher. Here are answers to some frequently asked questions about this extension.
+You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code. This article has answers to some frequently asked questions about the extension.
 
 ## Q. What functionality does the extension provide?
 
-The IntelliCode extension for Visual Studio Code provides artificial intelligence-enhanced IntelliSense for the Python language. AI-enhanced IntelliSense predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+The IntelliCode extension for Visual Studio Code provides artificial intelligence-enhanced IntelliSense for Python, Java, TypeScript, and JavaScript. AI-enhanced IntelliSense predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
