@@ -62,7 +62,7 @@ We're exploring a wide range of ways to improve developer productivity using AI 
 
 ## Q. How much does it cost?
 
-We have no announcements regarding pricing at present.
+IntelliCode will always have a substantive free tier. During the free preview, we are evaluating capabilities that may be charged for once we exit preview.
 
 ## Q. When will IntelliCode be released?
 
