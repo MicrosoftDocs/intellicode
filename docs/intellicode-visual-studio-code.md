@@ -24,7 +24,7 @@ We'll update the Visual Studio Code extension with more capabilities in the comi
 
 ## Q. I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
 
-Refer to the [Python language server troubleshooting page](https://github.com/Microsoft/vscode-python/issues/2177) for more information and tips.
+For more information and tips, see the [Python language server troubleshooting](https://github.com/Microsoft/vscode-python/issues/2177) page.
 
 ## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 

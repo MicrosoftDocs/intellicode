@@ -33,7 +33,7 @@ Visual Studio IntelliCode is a range of capabilities that offers new productivit
 
 For Visual Studio users developing in C#, C++, or XAML, see [IntelliCode extension for Visual Studio](intellicode-visual-studio.md).
 
-For C# users, IntelliCode can also make IntelliSense recommendations based on your own code. For more infromation, see [AI-assisted IntelliSense recommendations based on your code]().
+For C# users, IntelliCode can also make IntelliSense recommendations based on your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
 
 For Visual Studio Code users developing in Python, Java, or TypeScript/JavaScript, see [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md).
 
@@ -45,7 +45,7 @@ We're actively working on a number of capabilities that we're excited to share p
 
 With IntelliCode, the completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context and patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
-For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
+For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
 
 > [!NOTE]
 > For models trained on open-source projects, IntelliCode doesn't collect any user-defined code. For models that learn patterns from your code, IntelliCode only collects the minimum data required to create the model. We keep the trained models secured, and only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model]() and the question about [privacy](#privacy).
@@ -62,7 +62,7 @@ We're exploring a wide range of ways to improve developer productivity using AI 
 
 ## Q. How much does it cost?
 
-IntelliCode will always have a substantive free tier. During the free preview, we are evaluating capabilities that may be charged for once we exit preview.
+IntelliCode will always have a substantive free tier. During the preview, IntelliCode is free while we evaluate capabilities. Some of the features may no longer be free after the preview period is complete.
 
 ## Q. When will IntelliCode be released?
 

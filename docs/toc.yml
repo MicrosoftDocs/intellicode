@@ -7,6 +7,6 @@
   - name: IntelliCode for Visual Studio
     href: intellicode-visual-studio.md
   - name: FAQ for models based on your code
-    href: private-model-faq.md
+    href: custom-model-faq.md
   - name: IntelliCode for Visual Studio Code
     href: intellicode-visual-studio-code.md

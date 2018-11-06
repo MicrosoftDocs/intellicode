@@ -24,7 +24,7 @@ The extension currently provides:
 
 ## Q. Why does EditorConfig inference prepend a 1 to the filename?
 
-Prior to Visual Studio 2017 version 15.8, a **1.** was prepended to the *.editorconfig* filename when you created it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. You can work around this issue by removing the **1** in the **Add New Item** dialog or by updating updating Visual Studio to version 15.8.
+Prior to Visual Studio 2017 version 15.8, a **1.** was prepended to the *.editorconfig* filename when you created it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. You can work around this issue by removing the **1** in the **Add New Item** dialog or by updating Visual Studio to version 15.8.
 
 ## Q. I don't see my EditorConfig conventions taking effect - why?
 
@@ -44,7 +44,7 @@ There are a couple of common reasons this problem can occur:
 
 ## Q. Which EditorConfig conventions can Visual Studio IntelliCode infer?
 
-The conventions inferrance feature is experimental, so IntelliCode doesn't yet support the full set of conventions documented in [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference). IntelliCode can currently infer the following [formatting](#formatting-conventions) and [style](#style-conventions) conventions:
+The conventions inference feature is experimental, so IntelliCode doesn't yet support the full set of conventions documented in [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference). IntelliCode can currently infer the following [formatting](#formatting-conventions) and [style](#style-conventions) conventions:
 
 ### Formatting conventions
 
