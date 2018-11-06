@@ -47,7 +47,7 @@ In our current experimental preview release we are not limiting training by defa
 
 ## Q. How much does this service cost? Is there a free tier?
 
-The preview release of this service is free. We have nothing to announce regarding future pricing.
+IntelliCode will always have a substantive free tier. During the free preview, we are evaluating capabilities that may be charged for once we exit preview
 
 ## Q. What else is coming? What's the roadmap? What can I expect?
 
