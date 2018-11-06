@@ -82,7 +82,7 @@ IntelliCode will likely be expanded to more languages and tools in the Visual St
 
 For all languages, we are continuously working to improve its base model's coverage of common libraries and types. We’d love to hear from you if there’s a common library we're missing&mdash;see [where should I raise bugs](#where-should-i-raise-bugs-isues-or-feature-requests).
 
-For C# users, IntelliCode can now learn patterns from your code. This  means IntelliCode can make recommendations on code that isn’t in the open source domain, for example, methods in your own utility classes, or domain specific library calls. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
+For C# users, IntelliCode can now learn patterns from your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
 
 ## Q. Where should I raise bugs, issues, or feature requests?
 
@@ -94,7 +94,7 @@ We are keen to hear from you as you try out IntelliCode. Tell us about any probl
 
 ## Q. Is this experience only available in English?
 
-IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll certainly consider which locale or language to support first and how it's packaged, based on your feedback.
+IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll be looking at support for other languages.
 
 ## <a name="privacy"/> Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
