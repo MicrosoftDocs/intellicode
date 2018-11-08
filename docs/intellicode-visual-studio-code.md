@@ -31,7 +31,10 @@ For more information and tips, see the [Python language server troubleshooting](
 The Visual Studio Code IntelliCode extension is supported on version 1.25.1 and later of Visual Studio Code.
 
 ## Q. Which version of Java do I need to get AI-assisted IntelliSense for Java?
-You will need Java 8 Update 151 or higher
+You will need Java 8 Update 151 or higher.
+
+If you try previous Java 8 versions you will see an error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
+
 
 ## See also
 
