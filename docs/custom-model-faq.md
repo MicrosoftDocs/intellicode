@@ -8,7 +8,7 @@ manager: douge
 author: markw-t
 ms.author: mwthomas
 ---
-# FAQ for IntelliCode models based on your code
+# IntelliCode models based on your code
 
 IntelliCode’s recommendations have previously been based on learning patterns from thousands of open-source GitHub repos. But what if you’re using code that isn’t in that set of repos? Perhaps you use numerous internal utility and base class libraries, or domain-specific libraries that aren’t commonly used in open-source code, and you'd like to see IntelliCode recommendations for them too. For C# users, IntelliCode can learn patterns from your code so it can make recommendations for things that aren’t in the open-source domain.
 
