@@ -30,7 +30,7 @@ If you wish to inspect the detailed contents of the extracted data file, you can
 
 Your models are private to you and those you explicitly share them with via the "share" function.
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must also be [signed in to Visual Studio] (https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio?view=vs-2017) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized by giving them a sharing link. This means your model and what is learnt about your code stays private to you and your intended collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio?view=vs-2017) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized by giving them a sharing link. This means your model and what is learnt about your code stays private to you and your intended collaborators.
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
