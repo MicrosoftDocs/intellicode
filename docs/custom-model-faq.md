@@ -30,7 +30,7 @@ If you wish to inspect the detailed contents of the extracted data file, you can
 
 Your models are private to you and those you explicitly share them with via the "share" function.
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must also be authenticated via your Visual Studio account in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized. This means your model and what is learnt about your code stays private to you and your collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must also be [signed in to Visual Studio] (https://docs.microsoft.com/en-us/visualstudio/ide/signing-in-to-visual-studio?view=vs-2017) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized by giving them a sharing link. This means your model and what is learnt about your code stays private to you and your intended collaborators.
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
@@ -53,11 +53,11 @@ IntelliCode will always have a substantive free tier. During the free preview, w
 
 We're actively working to expand IntelliCode’s AI-assisted development capabilities. We're excited to share them publicly as they become available. You can sign up for news and updates at [https://aka.ms/intellicode](https://aka.ms/intellicode) to be the first to know when new capabilities are available.
 
-## Q. What languages AND TOOLS are supported?
+## Q. What languages and tools are supported?
 
 Currently, only C# users in Visual Studio 2017 version 15.7 and higher can take advantage of training models on their own code in the experimental preview. We'll track feedback on the experience of C# and refine the training service as we proceed.
 
-Other languages and tools (Visual Studio: C++, Java, XAML; Visual Studio Code: JavaScript, TypeScript, Python, and XAML) are supported with models pre-trained on a large number of open-source codebases.
+Other languages and tools (Visual Studio: C++, Java, XAML; Visual Studio Code: JavaScript, TypeScript, Python, and XAML) are currently supported with models pre-trained on a large number of open-source codebases.
 
 ## Q. Can I opt out and have my models removed?
 
@@ -69,7 +69,7 @@ In our current experimental preview release, we don't limit training. In the fut
 
 ## Q. What size codebase is ideal for training a model?
 
-To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is.
+To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
 
 Training your own model is useful for those cases where your frequently used classes are either private to your codebases or aren't common in the open-source codebases we train with. All IntelliCode users get the benefit of the "base model" that's trained on thousands of public repos, for commonly used classes. Unless you have unusual usage patterns on those common classes, you won’t need to train on your own code to see good recommendations for them.
 
