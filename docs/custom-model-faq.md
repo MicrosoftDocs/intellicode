@@ -22,15 +22,15 @@ IntelliCode’s AI-based IntelliSense has always worked on a model&mdash;the so-
 
 To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. The extracted data is transmitted to the IntelliCode service, which uses a machine learning algorithm to extract a model for your code. It then returns the model to your computer where it's merged with the base model.
 
-We don’t track your keystrokes or extract the values of literals (such as strings) from your code. All communication with the IntelliCode service is over HTTPS (see [how secure is this]() for more information).
+We don’t track your keystrokes or extract the values of literals (such as strings) from your code. All communication with the IntelliCode service is over HTTPS. For more information, see [Q. How secure is this?](#how-secure).
 
 If you wish to inspect the detailed contents of the extracted data file, you can do so during the training process by following the "show extracted data" link. If you like, you can try the process on a public or sample codebase first to see the kind of data we collect.
 
-## Q. How secure is this? Can others see the models I create?
+## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
 
 Your models are private to you and those you explicitly share them with via the "share" function.
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized by giving them a sharing link. This means your model and what is learnt about your code stays private to you and your intended collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they explicitly authorized by giving them a sharing link. This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
@@ -47,7 +47,7 @@ In our current experimental preview release, we're not limiting training by defa
 
 ## Q. How much does this service cost? Is there a free tier?
 
-IntelliCode will always have a substantive free tier. During the free preview, we are evaluating capabilities that may be charged for once we exit preview
+IntelliCode will always have a substantive free tier. During the free preview, we're evaluating capabilities that may be charged for once we exit preview.
 
 ## Q. What else is coming? What's the roadmap? What can I expect?
 
@@ -57,7 +57,11 @@ We're actively working to expand IntelliCode’s AI-assisted development capabil
 
 Currently, only C# users in Visual Studio 2017 version 15.7 and higher can take advantage of training models on their own code in the experimental preview. We'll track feedback on the experience of C# and refine the training service as we proceed.
 
-Other languages and tools (Visual Studio: C++, Java, XAML; Visual Studio Code: JavaScript, TypeScript, Python, and XAML) are currently supported with models pre-trained on a large number of open-source codebases.
+Other languages and tools are currently supported with models pre-trained on a large number of open-source codebases. These languages are:
+
+**Visual Studio**: C#, C++, and XAML
+
+**Visual Studio Code**: Java, JavaScript, Python, and TypeScript
 
 ## Q. Can I opt out and have my models removed?
 
