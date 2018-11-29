@@ -33,7 +33,7 @@ To do so:
 - You should find one folder per training session inside that folder, with a randomized name. If you sort the folder view by date descending, you should see the folder for your most recent training session at the top. Open it.
 - Inside the folder is the entire set of files that are sent to Microsoft when extraction is complete. The UsageOutput subfolder contains a JSON file which has the information we extract from your code to train the model. The UsageOutput_ErrorStats contains any errors found when trying to build the extracted file, which can help if we need to debug issues. 
 
-If you prefer, you can try the training process on a public or sample codebase first to see the kind of data we collect. A good sample to start with is the [SmartHotel360-Website](https://github.com/Microsoft/SmartHotel360-Website).
+If you prefer, you can try the training process on a public or sample codebase first to see the kind of data we collect. A good sample to start with is the [Windows RSS Reader Sample](https://github.com/Microsoft/Windows-appsample-rssreader).
 
 ## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
 
