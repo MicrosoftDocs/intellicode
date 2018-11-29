@@ -57,6 +57,9 @@ Retraining is manual at present, so the model won't improve unless you elect to 
 There is no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
 In our current experimental preview release, we're not limiting training by default, but may do so if it's necessary to maintain acceptable service performance. Future versions of the service may impose limits to the amount of retraining you can perform.
 
+## Q. Can I train on a folder of code without opening a solution?
+No - this is not currently supported. You'll need to open a solution in Visual Studio in order to train at present.
+
 ## Q. How much does this service cost? Is there a free tier?
 
 IntelliCode will always have a substantive free tier. During the free preview, we're evaluating capabilities that may be charged for once we exit preview.
@@ -88,6 +91,13 @@ In our current experimental preview release, we don't limit training. In the fut
 To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
 
 Training your own model is useful for those cases where your frequently used classes are either private to your codebases or aren't common in the open-source codebases we train with. All IntelliCode users get the benefit of the "base model" that's trained on thousands of public repos, for commonly used classes. Unless you have unusual usage patterns on those common classes, you won’t need to train on your own code to see good recommendations for them.
+
+## Q. How do I use a sharing link to see a model shared with me by someone else?
+
+You can do this via the IntelliCode page in Visual Studio, once you have the Visual Studio IntelliCode extension installed.
+1. Open the IntelliCode page, via "View...Other Windows...IntelliCode" menu item
+2. On the IntelliCode page, find the "Add model" link underneath the "Shared With Me" item in the left hand navigation, and click it
+3. Paste the URL into the dialog box and press the Add button. The shared model should appear under "Shared With Me". You can "un link" the model later if you wish, by returning to the model in the "Shared With Me" section and pressing "Unlink"
 
 ## Q. How many people in my team can I share the model I create with?
 
