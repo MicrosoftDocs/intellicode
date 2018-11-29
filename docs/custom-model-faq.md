@@ -16,16 +16,16 @@ IntelliCode’s recommendations have previously been based on learning patterns 
 
 A model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs.
 
-IntelliCode’s AI-based IntelliSense has always worked on a model&mdash;the so-called "base model"&mdash;which we derived by training a machine learning model on thousands of highly rated, open-source projects on GitHub. A new service enables the creation of *custom models*. Custom models use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you can provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
+IntelliCode’s AI-based IntelliSense has always worked on the so-called "base model"&mdash. This was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom models*, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you can provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
 ## Q. What happens when my model is trained, and what data is sent to Microsoft?
 
 To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. The extracted data is transmitted to the IntelliCode service, which uses a machine learning algorithm to extract a model for your code. It then returns the model to your computer where it's merged with the base model.
 
-We don’t track your keystrokes or extract the values of literals (such as strings) from your code. All communication with the IntelliCode service is over HTTPS. For more information, see [Q. How secure is this?](#how-secure).
+We don’t track your keystrokes or extract the values of literals (such as strings) from your code, nor do we extract whole expressions or statements. All communication with the IntelliCode service is over HTTPS. For more information, see [Q. How secure is this?](#how-secure).
 
 ## Q. Can I see the data that is sent to Microsoft?
-If you wish to inspect the detailed contents of the extracted data, you can do so once extraction is complete during the training process. 
+If you want to inspect the detailed contents of the extracted data, you can do so once extraction is complete during the training process. 
 
 To do so:
 
@@ -33,7 +33,12 @@ To do so:
 - You should find one folder per training session inside that folder, with a randomized name. If you sort the folder view by date descending, you should see the folder for your most recent training session at the top. Open it.
 - Inside the folder is the entire set of files that are sent to Microsoft when extraction is complete. The UsageOutput subfolder contains a JSON file which has the information we extract from your code to train the model. The UsageOutput_ErrorStats contains any errors found when trying to build the extracted file, which can help if we need to debug issues. 
 
-If you prefer, you can try the training process on a public or sample codebase first to see the kind of data we collect. A good sample to start with is the [Windows RSS Reader Sample](https://github.com/Microsoft/Windows-appsample-rssreader).
+If you would like to inspect the extracted data for a different codebase before trying it on your own code, see [Q.Is there a way to try this out without using my own codebase?](#try-sample).
+
+## <a name="try-sample" /> Q. Is there a way to try this out without using my own codebase?
+Yes. If you prefer, you can try the training process out on a public or sample codebase first, for example to see the kind of data we collect. 
+
+A good sample to start with is the [Windows RSS Reader Sample](https://github.com/Microsoft/Windows-appsample-rssreader). Simply clone the repo, open the RssReader.sln solution, build to check it's working, and try out training. You should find some good completions on instances of the MainViewModel class to try out. 
 
 ## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
 
@@ -41,7 +46,7 @@ Your models are private to you and those with access to the sharing links you ge
 
 All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they authorized by having a sharing link. This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
-Authorized Microsoft service personnel may be granted access to your models for troubleshooting and diagnostic purposes only.
+Authorized Microsoft service personnel may be granted access to your models and extracted data for troubleshooting and diagnostic purposes only.
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
@@ -66,7 +71,7 @@ IntelliCode will always have a substantive free tier. During the free preview, w
 
 ## Q. What else is coming? What's the roadmap? What can I expect?
 
-We're actively working to expand IntelliCode’s AI-assisted development capabilities. We're excited to share them publicly as they become available. You can sign up for news and updates at [https://aka.ms/intellicode](https://aka.ms/intellicode) to be the first to know when new capabilities are available.
+We're actively working to expand IntelliCode’s AI-assisted development capabilities. We're excited to share them publicly as they become available. You can sign up for news and updates at [https://aka.ms/intellicode](https://aka.ms/intellicode) to be the first to know!
 
 ## Q. What languages and tools are supported?
 
@@ -80,7 +85,7 @@ Other languages and tools are currently supported with models pre-trained on a l
 
 ## Q. Can I opt out and have my models removed?
 
-Yes. You can delete your models through the IntelliCode training user interface in Visual Studio, which removes them from the service.
+You can remove models from your account using the delete button in the IntelliCode training user interface in Visual Studio, so they can no longer be used.
 
 ## Q. Is there a restriction on the size of the model, or sizes and numbers of models I can train?
 
