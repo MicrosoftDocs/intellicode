@@ -16,7 +16,7 @@ IntelliCode’s recommendations have previously been based on learning patterns 
 
 A model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs.
 
-IntelliCode’s AI-based IntelliSense has always worked on the so-called "base model"&mdash. This was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom models*, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you can provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
+IntelliCode’s AI-based IntelliSense has always worked on the so-called "base model". This was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom models*, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you can provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
 ## Q. What happens when my model is trained, and what data is sent to Microsoft?
 
