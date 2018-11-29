@@ -85,7 +85,7 @@ Other languages and tools are currently supported with models pre-trained on a l
 
 ## Q. Can I opt out and have my models removed?
 
-You can remove models from your account using the delete button in the IntelliCode training user interface in Visual Studio, so they can no longer be used.
+You can remove models from your account so they can no longer be used. Choose the **Delete** button on the IntelliCode training page in Visual Studio.
 
 ## Q. Is there a restriction on the size of the model, or sizes and numbers of models I can train?
 
