@@ -18,6 +18,18 @@ A model is an encapsulation of a set of rules that allow prediction of some usef
 
 IntelliCode’s AI-based IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
+## Q. How do I train a model?
+
+To train a model, follow these steps:
+
+1. Open a project or solution in Visual Studio.
+
+1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
+
+1. Choose **Train on my code**.
+
+   ![Train an IntelliCode model in Visual Studio](media/train-on-my-code.png)
+
 ## Q. What happens when my model is trained, and what data is sent to Microsoft?
 
 To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. The extracted data is transmitted to the IntelliCode service, which uses a machine learning algorithm to extract a model for your code. It then returns the model to your computer where it's merged with the base model.
@@ -30,11 +42,13 @@ If you want to inspect the detailed contents of the extracted data, you can do s
 
 To inspect the contents of the extracted data:
 
-1. Open the %TEMP%\Visual Studio IntelliCode folder
+1. Open the %TEMP%\Visual Studio IntelliCode folder.
 
-1. There is one folder per training session inside that folder, each with a randomized name. Sort the folder view by date descending so that the folder for your most recent training session is at the top. Open it.
+1. There is one folder per training session in that directory, each with a randomized name. Sort the folder view by date (descending) so that the folder for your most recent training session is at the top. Open it.
 
-2. The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The UsageOutput subfolder contains a JSON file, which has the information we extract from your code to train the model. The UsageOutput_ErrorStats file contains any errors found when trying to build the extracted file, and can help if we need to debug issues.
+1. The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The UsageOutput subfolder contains a JSON file, which has the information we extract from your code to train the model. The UsageOutput_ErrorStats file contains any errors found when trying to build the extracted file, and can help if we need to debug issues.
+
+   ![IntelliCode model-training directory ](media/model-training-directory.png)
 
 If you want to inspect the extracted data for a different codebase before trying it on your own code, see [Q.Is there a way to try this out without using my own codebase?](#try-sample).
 
@@ -91,6 +105,8 @@ Other languages and tools are currently supported with models pre-trained on a l
 
 You can remove models from your account so they can no longer be used. Choose the **Delete** button on the IntelliCode training page in Visual Studio.
 
+![Delete an IntelliCode model in Visual Studio](media/delete-model.png)
+
 ## Q. Is there a restriction on the size of the model, or sizes and numbers of models I can train?
 
 In our current experimental preview release, we don't limit training. In the future, we may impose training limits if we can't maintain acceptable service performance.
@@ -109,7 +125,11 @@ You can do this on the IntelliCode page in Visual Studio, after you install the 
 
 1. On the IntelliCode page, choose **Add model**. It's underneath **Shared With Me** in the left-hand navigation.
 
-1. Paste the URL into the dialog box and choose **Add**.
+   ![Add model for IntelliCode in Visual Studio](media/add-model.png)
+
+1. Paste the sharing link URL into the dialog box and choose **Add**.
+
+   ![Add shared model in IntelliCode](media/add-shared-model.png)
 
    The shared model appears under **Shared With Me**. If you want to unlink the model, choose **Unlink**.
 
