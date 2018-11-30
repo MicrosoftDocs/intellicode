@@ -26,12 +26,11 @@ The extension currently provides:
 
 The Visual Studio IntelliCode extension can be installed on Visual Studio 2017 version 15.8 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
 
-> [!NOTE]
-> The minimum Visual Studio requirements to see AI-assisted IntelliSense vary by language. If you don't see recommendations, you may not have a high enough version of Visual Studio:
+The minimum Visual Studio version to see AI-assisted IntelliSense varies by language. If you don't see recommendations, you may need to update to a more recent version.
 
-- C++ requires Visual Studio 2019 Preview 1 or higher
-- C# requires Visual Studio 2017 version 15.8 or higher
-- XAML requires Visual Studio 2017 version 15.9 or higher
+- C++ requires Visual Studio 2019 Preview 1 or later
+- C# requires Visual Studio 2017 version 15.8 or later
+- XAML requires Visual Studio 2017 version 15.9 or later
 
 ## Q. How do I generate an EditorConfig file?
 
@@ -39,25 +38,13 @@ You can add an IntelliCode-generated EditorConfig file at the project or solutio
 
 ![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
-## Q. Why does EditorConfig inference prepend a 1 to the filename?
-
-Prior to Visual Studio 2017 version 15.8, a **1.** was prepended to the *.editorconfig* filename when you created it by right-clicking and choosing **Add** > **New Item**. Files named in this way are not recognized by the editorconfig processor in Visual Studio. You can work around this issue by removing the **1** in the **Add New Item** dialog or by updating Visual Studio to version 15.8.
-
 ## Q. I don't see my EditorConfig conventions taking effect - why?
 
-There are a couple of common reasons this problem can occur:
-
-- In Visual Studio 2017 versions prior to 15.8, you need to close and reopen all open documents to see the conventions in the EditorConfig file you create take effect.
-
-- Formatting conventions never show up in the **Error List** or as "squiggles" in your code. They can, however, be fixed using the **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) command that's available in Visual Studio 2017 version 15.8 and later.
+Formatting conventions don't appear in the **Error List** or as "squiggles" in your code. They can, however, be fixed using the **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) command.
 
 ## Q. Format Document is not fixing my style conventions - why?
 
-There are a couple of common reasons this problem can occur:
-
-- You may not be using Visual Studio 2017 version 15.8 or later. You need this version to be able to use the extended **Format Document** command to perform additional code cleanup for the current document.
-
-- You may not be opted in to style fixes. The extended capability of fixing convention-based issues capability in **Format Document** only covers a fixed set of issues. You can change which issues are fixed in **Tools** > **Options** under **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**. The default settings don't fix some style conventions. You can opt in to these via **Tools** > **options**. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`.
+You may not be opted in to style fixes. The extended capability of fixing convention-based issues capability in **Format Document** only covers a fixed set of issues. You can change which issues are fixed in **Tools** > **Options** under **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**. The default settings don't fix some style conventions. You can opt in to these via **Tools** > **options**. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`.
 
 ## Q. Which EditorConfig conventions can Visual Studio IntelliCode infer?
 
@@ -138,5 +125,6 @@ If this doesn't solve the problem for you, please report your issue via the Visu
 
 ## See also
 
+- [IntelliCode models based on your code FAQ](custom-model-faq.md)
 - [IntelliCode general FAQ](faq.md)
 - [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)

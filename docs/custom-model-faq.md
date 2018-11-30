@@ -42,7 +42,7 @@ If you want to inspect the detailed contents of the extracted data, you can do s
 
 To inspect the contents of the extracted data:
 
-1. Open the %TEMP%\Visual Studio IntelliCode folder.
+1. Open the *%TEMP%\Visual Studio IntelliCode* folder.
 
 1. There is one folder per training session in that directory, each with a randomized name. Sort the folder view by date (descending) so that the folder for your most recent training session is at the top. Open it.
 
@@ -60,7 +60,7 @@ A good sample to start with is the [Windows RSS reader sample](https://github.co
 
 ## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
 
-Your models are private to you and those people that have access to the sharing links you generate via the "share" functionality.
+Your models are private to you and those people that have the sharing links that you generate by choosing **Share model**.
 
 All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they authorized by having a sharing link. This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
@@ -93,7 +93,7 @@ We're actively working to expand IntelliCode’s AI-assisted development capabil
 
 ## Q. What languages and tools are supported?
 
-Currently, only C# users in Visual Studio 2017 version 15.7 and higher can take advantage of training models on their own code in the experimental preview. We'll track feedback on the experience of C# and refine the training service as we proceed.
+Currently, only C# users of Visual Studio 2017 version 15.8 and later can take advantage of training models on their own code in the experimental preview. We'll track feedback on the experience of C# and refine the training service as we proceed.
 
 Other languages and tools are currently supported with models pre-trained on a large number of open-source codebases. These languages are:
 
