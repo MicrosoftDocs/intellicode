@@ -18,9 +18,26 @@ The extension currently provides:
 
 - AI-enhanced IntelliSense for C#, C++, and XAML that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
-- For C# developers, the extension also enables AI-enhanced IntelliSense recommendations based on your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
+- AI-enhanced IntelliSense recommendations based on your own code (C# only). For more information, see [IntelliCode models based on your code FAQ](custom-model-faq.md).
 
-- Inference of code style and formatting conventions for C# that helps you keep your code consistent by dynamically creating an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase to define coding styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. Find more details about this feature in [this blog article](https://aka.ms/vsicec).
+- Inference of code style and formatting conventions to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only). EditorConfig files help to keep your code consistent by defining code styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. Find more details about this feature in [this blog article](https://aka.ms/vsicec).
+
+## Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
+
+The Visual Studio IntelliCode extension can be installed on Visual Studio 2017 version 15.8 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
+
+> [!NOTE]
+> The minimum Visual Studio requirements to see AI-assisted IntelliSense vary by language. If you don't see recommendations, you may not have a high enough version of Visual Studio:
+
+- C++ requires Visual Studio 2019 Preview 1 or higher
+- C# requires Visual Studio 2017 version 15.8 or higher
+- XAML requires Visual Studio 2017 version 15.9 or higher
+
+## Q. How do I generate an EditorConfig file?
+
+You can add an IntelliCode-generated EditorConfig file at the project or solution level in Visual Studio (or to a solution folder). You can find the **editorconfig File (IntelliCode)** template in the **Add New Item** dialog under **Visual C# Items**. Alternatively, add one directly by right-clicking on the desired location for the file in **Solution Explorer**, and then choosing **Add** > **New EditorConfig (IntelliCode)**.
+
+![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
 ## Q. Why does EditorConfig inference prepend a 1 to the filename?
 
@@ -118,16 +135,6 @@ The conventions inference feature is experimental, so IntelliCode doesn't yet su
 IntelliCode suggestions appear in the standard Visual Studio IntelliSense UI for C#. Extensions that override that UI prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if extensions are causing this behavior by turning them off and then trying IntelliSense again.
 
 If this doesn't solve the problem for you, please report your issue via the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) feature and mention IntelliCode in your report.
-
-## Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
-
-The Visual Studio IntelliCode extension can be installed on Visual Studio 2017 version 15.8 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
-
-**Note** There are minimum Visual Studio requirements to see AI-assisted IntelliSense by language; if you’re not seeing recommendations you may not have a high enough version of Visual Studio:
-
--	C++ requires Visual Studio 2019 Preview 1 or higher
--	C# requires Visual Studio 2017 Version 15.8 or higher
--	XAML requires Visual Studio 2017 Version 15.9 or higher
 
 ## See also
 

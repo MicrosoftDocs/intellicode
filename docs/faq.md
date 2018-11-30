@@ -1,5 +1,5 @@
 ---
-title: IntelliCode questions and answers
+title: IntelliCode guide
 ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -16,9 +16,9 @@ This FAQ will hopefully answer some of the questions you may have.
 
 ## Q. What is Visual Studio IntelliCode?
 
-At Build 2018, Microsoft announced Visual Studio IntelliCode, a new capability that enhances software development using AI. IntelliCode helps developers and teams code with confidence, find issues faster, and focus code reviews.
+Microsoft announced Visual Studio IntelliCode, a new capability that enhances software development using AI, at Build 2018. IntelliCode helps developers and teams code with confidence, find issues faster, and focus code reviews.
 
-An early view of how IntelliCode showed how it enhances the software development process in the following ways:
+An early view of IntelliCode showed how it enhances the software development process in the following ways:
 
 - Delivers context-aware code completions
 - Guides developers to adhere to the patterns and styles of their team
@@ -29,13 +29,11 @@ Developers can find more information and sign up for news and future private pre
 
 ## Q. What does Visual Studio IntelliCode enable customers to do?
 
-Visual Studio IntelliCode is a range of capabilities that offers new productivity enhancements through artificial intelligence (AI).
+Visual Studio IntelliCode is a range of capabilities that offers new productivity enhancements through artificial intelligence (AI). IntelliCode extensions are available for both [Visual Studio](intellicode-visual-studio.md)] and [Visual Studio Code](intellicode-visual-studio-code.md). In both products, IntelliCode provides artificial intelligence-enhanced IntelliSense. The IntelliCode suggestions appear at the top of the completion list with a star icon next to them:
 
-For Visual Studio users developing in C#, C++, or XAML, see [IntelliCode extension for Visual Studio](intellicode-visual-studio.md).
+![IntelliCode IntelliSense in Visual Studio](media/enhanced-intellisense.png)
 
-For C# users, IntelliCode can also make IntelliSense recommendations based on your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
-
-For Visual Studio Code users developing in Python, Java, or TypeScript/JavaScript, see [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md).
+Additionally, the IntelliCode extension for Visual Studio offers further functionality for C# developers, including auto-generated EditorConfig files and customized IntelliSense based on your code. For more information, see [IntelliCode extension for Visual Studio](intellicode-visual-studio.md) or [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md).
 
 ## Q. Are there other features coming to the Visual Studio or Visual Studio Code IntelliCode extensions?
 
@@ -45,7 +43,7 @@ We're actively working on a number of capabilities that we're excited to share p
 
 With IntelliCode, the completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context and patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
-For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
+For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-model-faq.md).
 
 > [!NOTE]
 > For models trained on open-source projects, IntelliCode doesn't collect any user-defined code. For models that learn patterns from your code, IntelliCode only collects the minimum data required to create the model. We keep the trained models secured, and only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model]() and the question about [privacy](#privacy).
@@ -89,12 +87,14 @@ For C# users, IntelliCode can now learn patterns from your own code. For more in
 We are keen to hear from you as you try out IntelliCode. Tell us about any problems you encounter or features that you wish were available.
 
 - **Visual Studio Code bugs:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new). Include any **Output** window log entries from VS IntelliCode and Python with the bug. You can also browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and up-vote them using a 👍 reaction.
+
 - **Visual Studio bugs:** Use the [Help > Send Feedback > Report a Problem](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) menu. If you reproduce the problem before submitting the report, logs will be automatically included in the report.
+
 - **Feature requests:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) and mention that it's a feature request.
 
 ## Q. Is this experience only available in English?
 
-IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll be looking at support for other languages.
+IntelliCode is a preview extension today, and we're eager to understand how useful these capabilities are for a broad set of customers. When we take IntelliCode out of preview, we'll look at support for other languages.
 
 ## <a name="privacy"/> Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 

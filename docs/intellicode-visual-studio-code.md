@@ -28,13 +28,13 @@ For more information and tips, see the [Python language server troubleshooting](
 
 ## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 
-You’ll need Visual Studio Code October 2018 Release 1.29 or later to use this extension
+You’ll need Visual Studio Code October 2018 Release 1.29 or later to use this extension.
 
 ## Q. Which version of Java do I need to get AI-assisted IntelliSense for Java?
-You will need Java 8 Update 151 or higher.
 
-If you try previous Java 8 versions you will see an error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
+You'll need Java 8 Update 151 or higher.
 
+If you try previous Java 8 versions you'll see the error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
 
 ## See also
 
