@@ -10,7 +10,7 @@ ms.author: mwthomas
 ---
 # IntelliCode for Visual Studio FAQ
 
-You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=872707) for Visual Studio 2017 version 15.7 and later. Here are answers to some frequently asked questions about the extension.
+You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=872707) for Visual Studio 2017 version 15.8 and later. Here are answers to some frequently asked questions about the extension.
 
 ## Q. What functionality does the IntelliCode extension for Visual Studio provide?
 
@@ -121,7 +121,13 @@ If this doesn't solve the problem for you, please report your issue via the Visu
 
 ## Q. Which version of Visual Studio do I need to run the Visual Studio IntelliCode extension?
 
-The Visual Studio IntelliCode extension is supported on Visual Studio 2017 version 15.7 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
+The Visual Studio IntelliCode extension can be installed on Visual Studio 2017 version 15.8 and later (all SKUs). Installation of the extension halts with **This extension is not installable on any currently installed products** if you don't have the minimum required version installed.
+
+**Note** There are minimum Visual Studio requirements to see AI-assisted IntelliSense by language; if you’re not seeing recommendations you may not have a high enough version of Visual Studio:
+
+•	C++ requires Visual Studio 2019 Preview 1 or higher
+•	C# requires Visual Studio 2017 Version 15.8 or higher
+•	XAML requires Visual Studio 2017 Version 15.9 or higher
 
 ## See also
 
