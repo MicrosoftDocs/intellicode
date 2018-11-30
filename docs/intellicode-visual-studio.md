@@ -125,9 +125,9 @@ The Visual Studio IntelliCode extension can be installed on Visual Studio 2017 v
 
 **Note** There are minimum Visual Studio requirements to see AI-assisted IntelliSense by language; if you’re not seeing recommendations you may not have a high enough version of Visual Studio:
 
-•	C++ requires Visual Studio 2019 Preview 1 or higher
-•	C# requires Visual Studio 2017 Version 15.8 or higher
-•	XAML requires Visual Studio 2017 Version 15.9 or higher
+-	C++ requires Visual Studio 2019 Preview 1 or higher
+-	C# requires Visual Studio 2017 Version 15.8 or higher
+-	XAML requires Visual Studio 2017 Version 15.9 or higher
 
 ## See also
 
