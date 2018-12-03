@@ -16,7 +16,7 @@ IntelliCode’s recommendations have previously been based solely on patterns le
 
 A model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs.
 
-IntelliCode’s AI-based IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
+IntelliCode’s AI-assited IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
 ## Q. How do I train a model?
 
@@ -70,7 +70,7 @@ We expect that organizations may wish to have ways of sharing models that are un
 
 ## Q. How often should I retrain the model – does it get better over time?
 
-For AI-enhanced IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, et cetera. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
+For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, et cetera. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
 Retraining is a manual process, so the model won't improve unless you elect to retrain. In the future, we’d like to automate this process. For example, we're considering ways you may be able to include retraining as part of your continuous integration (CI) build steps.
 
