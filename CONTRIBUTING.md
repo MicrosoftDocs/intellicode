@@ -11,7 +11,7 @@ Creative Commons Attribution 4.0 License (International): https://creativecommon
 In short:
 
 - **Known issues:** See [bugs](https://github.com/MicrosoftDocs/intellicode/issues) and upvote using a "thumbs up" (👍) reaction.
-- **VS Code bugs:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) - Include any OUTPUT window log entries from VS-IntelliCode and Python with the bug.
+- **VS Code bugs:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) - Include any OUTPUT window log entries from VS-IntelliCode and Python, Java or TypeScript (depending on the language you are using) with the bug.
 - **Visual Studio bugs:** [Help > Send Feedback > Report a Problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) - Repro the problem before sending and logs are automatically attached to the report.
 
 More details below.
@@ -30,7 +30,7 @@ If you find that your issue already exists, feel free to make relevant comments 
 
 ### Step 1 - [Optional] Check output logs (VS Code)
 
-If you're seeing an error pop up that's not descriptive and you are working in Visual Studio Code, the output logs can sometimes help you understand if this is a known issue.  Simply go to the "Output" window and select the "VS IntelliCode" log stream and the "Python" log stream. Including the contents of these logs can also help us diagnose issue reports.
+If you're seeing an error pop up that's not descriptive and you are working in Visual Studio Code, the output logs can sometimes help you understand if this is a known issue.  Simply go to the "Output" window and select the "VS IntelliCode" log stream and the "Python", "Java" or "TypeScript" log stream depending on which language you are using. Including the contents of these logs can also help us diagnose issue reports.
 
 ### Step 1A - check to see if the problem has already been reported
 
@@ -56,8 +56,8 @@ Check out the tips in "[Writing good problem reports](#tip-writing-good-problem-
 
     - **VS Code Version:**  VS Code for Mac, VS Code for Windows, and version number
     - **OS and Version:** Windows 7/8/8.1/10, macOS Sierra/High Sierra
-    - **VS IntelliCode and Python Extension versions:** Mention the version you installed with your VS/VSCode
-    - **Target Platform/Language:** for example, Python
+    - **VS IntelliCode and Python or Java Extension versions:** Mention the version you installed with your VS/VSCode
+    - **Target Platform/Language:** for example, Python, Java, or TypeScript/JavaScript
     - **Repro steps:** Give as much detail as you can about what you did when the bug happened, and whether you can easily reproduce it
 
 3. **Attach logs:** Paste in the logs you captured at step 1.
