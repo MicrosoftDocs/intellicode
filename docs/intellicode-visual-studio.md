@@ -16,9 +16,9 @@ You can [download an experimental extension](https://go.microsoft.com/fwlink/?li
 
 The extension currently provides:
 
-- AI-enhanced IntelliSense for C#, C++, and XAML that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+- AI-assisted IntelliSense for C#, C++, and XAML that predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
-- AI-enhanced IntelliSense recommendations based on your own code (C# only). For more information, see [IntelliCode models based on your code FAQ](custom-model-faq.md).
+- AI-assisted IntelliSense recommendations based on your own code (C# only). For more information, see [IntelliCode models based on your code FAQ](custom-model-faq.md).
 
 - Inference of code style and formatting conventions to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only). EditorConfig files help to keep your code consistent by defining code styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. Find more details about this feature in [this blog article](https://aka.ms/vsicec).
 
@@ -38,7 +38,7 @@ You can add an IntelliCode-generated EditorConfig file at the project or solutio
 
 ![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
-## Q. I don't see my EditorConfig conventions taking effect - why?
+## Q. I don't see my EditorConfig formatting conventions taking effect - why?
 
 Formatting conventions don't appear in the **Error List** or as "squiggles" in your code. They can, however, be fixed using the **Format Document** (**Ctrl**+**K**, **Ctrl**+**D**) command.
 
