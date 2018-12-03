@@ -107,6 +107,10 @@ You can remove models from your account so they can no longer be used. Choose th
 
 ![Delete an IntelliCode model in Visual Studio](media/delete-model.png)
 
+## Q. Can I have all my data removed from the service?
+
+You can request complete removal of your data from the training service by sending email to [vsintellicodedata@microsoft.com](mailto:vsintellicodedata@microsoft.com) from the personalization account you are using, requesting this action. 
+
 ## Q. Is there a restriction on the size of the model, or sizes and numbers of models I can train?
 
 In our current experimental preview release, we don't limit training. In the future, we may impose training limits if we can't maintain acceptable service performance.
