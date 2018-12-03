@@ -46,7 +46,8 @@
       "defaultDevLang": "csharp",
       "ms.prod": "visual-studio-family",
       "uhfHeaderId": "MSDocsHeader-VisualStudio",
-      "ms.technology": "code-smarts"
+      "ms.technology": "code-smarts",
+      "titleSuffix": "IntelliCode"
     },
     "fileMetadata": {},
     "template": [],

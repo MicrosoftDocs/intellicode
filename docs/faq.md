@@ -1,5 +1,5 @@
 ---
-title: IntelliCode guide
+title: General guide
 ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
