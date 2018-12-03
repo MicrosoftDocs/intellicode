@@ -16,7 +16,7 @@ IntelliCode’s recommendations have previously been based solely on patterns le
 
 A model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs.
 
-IntelliCode’s AI-assited IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
+IntelliCode’s AI-assisted IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
 ## Q. How do I train a model?
 
@@ -30,7 +30,7 @@ To train a model, follow these steps:
 
    ![Train an IntelliCode model in Visual Studio](media/train-on-my-code.png)
 
-## Q. What happens when my model is trained, and what data is sent to Microsoft?
+## Q. <a name="what-is-sent" /> What happens when my model is trained, and what data is sent to Microsoft?
 
 To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. The extracted data is transmitted to the IntelliCode service, which uses a machine learning algorithm to extract a model for your code. It then returns the model to your computer where it's merged with the base model.
 
@@ -68,7 +68,7 @@ Authorized Microsoft service personnel may be granted access to your models and 
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
-## Q. How often should I retrain the model – does it get better over time?
+## Q. How often should I retrain the model? Does it get better over time?
 
 For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, et cetera. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 

@@ -14,7 +14,7 @@ You can [download an experimental extension](https://go.microsoft.com/fwlink/?li
 
 ## Q. What functionality does the extension provide?
 
-The IntelliCode extension for Visual Studio Code provides artificial intelligence-enhanced IntelliSense for Python, Java, TypeScript, and JavaScript. AI-assisted IntelliSense predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+The IntelliCode extension for Visual Studio Code provides artificial intelligence-assisted IntelliSense for Python, Java, TypeScript, and JavaScript. AI-assisted IntelliSense predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
@@ -34,7 +34,7 @@ You’ll need Visual Studio Code October 2018 Release 1.29 or later to use this 
 
 You'll need Java 8 Update 151 or higher.
 
-If you try previous Java 8 versions you'll see the error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
+If you try previous Java 8 versions, you'll see the error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
 
 ## See also
 
