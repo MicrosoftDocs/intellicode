@@ -56,7 +56,10 @@ If you want to inspect the extracted data for a different codebase before trying
 
 Yes. You can try out the training process on a public or sample codebase first, for example to see the kind of data we collect.
 
-A good sample to start with is the [Windows RSS reader sample](https://github.com/Microsoft/Windows-appsample-rssreader). Clone the repo, open the RssReader.sln solution, build to check that it's working, and then train the model. You should find some good completions on instances of the **MainViewModel** class to try out.
+Some interesting samples to start with are
+- The [Windows RSS reader sample](https://github.com/Microsoft/Windows-appsample-rssreader). Clone the repo, open the RssReader.sln solution, build to check that it's working, and then train the model. You should find some good completions on instances of the **MainViewModel** class to try out.
+
+- The [Azure ConferenceBuddy sample](https://github.com/Azure/ConferenceBuddy). Clone the repo, open the RssReader.sln solution, build to check that it's working, and then train the model. You should find some good completions on instances of the **AskWhoTask** class to try out.
 
 ## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
 
