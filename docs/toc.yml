@@ -6,5 +6,8 @@
   items:
   - name: IntelliCode for Visual Studio
     href: intellicode-visual-studio.md
+    items:
+    - name: IntelliCode models based on your code
+      href: custom-model-faq.md
   - name: IntelliCode for Visual Studio Code
     href: intellicode-visual-studio-code.md

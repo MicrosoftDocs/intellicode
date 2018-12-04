@@ -2,8 +2,9 @@
 layout: LandingPage
 title: IntelliCode
 description: Learn how to use the IntelliCode extension for Visual Studio.
+ms.date: 10/31/2018
 ms.prod: visual-studio-family
-ms.technology: code-smarts
+ms.technology: intellicode
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
@@ -11,7 +12,7 @@ manager: douge
 ---
 # Visual Studio IntelliCode
 
-Visual Studio IntelliCode is a new tool that enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C# in Visual Studio](intellicode-visual-studio.md), and [Python in Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode is a new tool that enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C++, C# and XAML in Visual Studio](intellicode-visual-studio.md), and [Java, TypeScript/JavaScript and Python in Visual Studio Code](intellicode-visual-studio-code.md).
 
 <br />
 
