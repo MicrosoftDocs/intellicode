@@ -90,7 +90,7 @@ We are keen to hear from you as you try out IntelliCode. Tell us about any probl
 
 - **Visual Studio bugs:** Use the [Help > Send Feedback > Report a Problem](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) menu. If you reproduce the problem before submitting the report, logs will be automatically included in the report.
 
-- **Feature requests:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) and mention that it's a feature request.
+- **Feature requests:** For both Visual Studio and Visual Studio Code, [log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) and mention that it's a feature request.
 
 ## Q. Is this experience only available in English?
 
