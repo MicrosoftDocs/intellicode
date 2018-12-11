@@ -38,7 +38,7 @@ If you try previous Java 8 versions, you'll see the error "java.security.Invalid
 
 ## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
-Please see our [general FAQ on privacy](https://docs.microsoft.com/en-us/visualstudio/intellicode/faq#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+Please see our [general FAQ on privacy](https://docs.microsoft.com/visualstudio/intellicode/faq#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
 
 ## See also
 
