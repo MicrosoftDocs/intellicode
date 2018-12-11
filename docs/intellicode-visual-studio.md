@@ -123,6 +123,10 @@ IntelliCode suggestions appear in the standard Visual Studio IntelliSense UI for
 
 If this doesn't solve the problem for you, please report your issue via the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) feature and mention IntelliCode in your report.
 
+## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
+
+Please see our [general FAQ on privacy](https://docs.microsoft.com/en-us/visualstudio/intellicode/faq#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+
 ## See also
 
 - [IntelliCode models based on your code FAQ](custom-model-faq.md)
