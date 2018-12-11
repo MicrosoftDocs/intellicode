@@ -125,7 +125,7 @@ If this doesn't solve the problem for you, please report your issue via the Visu
 
 ## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
-Please see our [general FAQ on privacy](https://docs.microsoft.com/visualstudio/intellicode/faq#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+Please see our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
 
 ## See also
 
