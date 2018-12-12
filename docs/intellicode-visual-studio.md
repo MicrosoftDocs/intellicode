@@ -117,9 +117,9 @@ The conventions inference feature is experimental, so IntelliCode doesn't yet su
 - dotnet_style_qualification_for_property
 - dotnet_style_require_accessibility_modifiers
 
-## Q. I can't see the IntelliCode suggestions in my C# editing experience. Can you help?
+## Q. I can't see the IntelliCode suggestions in my editing experience. Can you help?
 
-IntelliCode suggestions appear in the standard Visual Studio IntelliSense UI for C#. Extensions that override that UI prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if extensions are causing this behavior by turning them off and then trying IntelliSense again.
+IntelliCode suggestions appear in the standard Visual Studio IntelliSense UI for each supported language. Extensions that override that UI prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if extensions are causing this behavior by turning them off and then trying IntelliSense again, or (if the extension supports it) by turning off their auto-completion features.
 
 If this doesn't solve the problem for you, please report your issue via the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) feature and mention IntelliCode in your report.
 
