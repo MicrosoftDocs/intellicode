@@ -36,6 +36,10 @@ You'll need Java 8 Update 151 or higher.
 
 If you try previous Java 8 versions, you'll see the error "java.security.InvalidKeyException: Illegal key size", and IntelliCode AI-assisted IntelliSense recommendations won't work.
 
+## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
+
+Please see our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+
 ## See also
 
 - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
