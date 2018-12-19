@@ -10,7 +10,7 @@ ms.author: mwthomas
 ---
 # How to get the most out of sharing custom models in Visual Studio IntelliCode
 
-IntelliCode's custom model creation feature lets you get IntelliCode completion recommendations for code that is not in the public "Base Model" which we train on open source code, for example types you own yourself, or specialist common components and libraries. However, you don't want everyone who collaborates on your code to have to train their own model or worry about keeping it up to date.
+IntelliCode's custom model creation feature lets you get IntelliCode completion recommendations for code that is not in the base model. However, you don't want everyone who collaborates on your code to have to train their own model or worry about keeping it up to date.
 
 To solve these problems, IntelliCode has a model sharing feature which lets you share _any_ model you've created with _anyone you provide a link to_, and also keeps those who use the link updated whenever you retrain your model. 
 
