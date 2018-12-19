@@ -16,7 +16,7 @@ To solve these problems, IntelliCode has a model sharing feature that lets you s
 
 ## How models get applied 
 
-Before talking about using shared models, it's helpful to understand how IntelliCode uses applicable models to generate its recommendations. Models are applied to by merging together the following models:
+Before talking about using shared models, it's helpful to understand how IntelliCode generate its recommendations from multiple models. Recommendations are applied to by merging together the following models:
 
 - The base model for the language you're using (trained on thousands of public GitHub repos)
 - Any custom models you've trained
