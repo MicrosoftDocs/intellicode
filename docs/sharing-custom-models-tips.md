@@ -33,7 +33,7 @@ Suppose you have an existing codebase that contains good patterns for using type
 
 The best approach here is 
 - One person should [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase
-- That person should share it with everyone who will be using the new codebase. You can do this in whatever way you choose, whether via email, a project's wiki, a chat channel you all use or whatever makes sense for your collaborators normal practice. Note that anyone who has the sharing link will be able to access the model and its suggestions, so you should make sure that everyone who recieves the link is aware of this.
+- That person should share it with everyone who will be using the new codebase. You can do this in various ways, for example by checking it in to your codebases README.md, sending in email, posting on a project's wiki, or via a chat channel you all use - whatever makes sense for your collaborators. Note that anyone who has the sharing link will be able to access the model and its suggestions, so you should make sure that everyone who recieves the link is aware of this.
 - Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
 - If you need to re-train the custom model, there's no need for collaborators to re-apply it; the system will take care of updating their copy automatically for you
 
