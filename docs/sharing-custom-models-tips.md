@@ -36,7 +36,7 @@ The best approach here is:
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase.
 
-2. Share the link to the model with everyone who'll be using the new codebase. You can do this in various ways, for example by checking it in to your codebase's README file, sending it in email, posting it on a project's wiki, or via a chat channel you all use&mdash;whatever makes sense for your collaborators.
+2. [Share the link](custom-model-faq.md#how-to-share-custom) to the model with everyone who'll be using the new codebase. You can do this in various ways, for example by checking it in to your codebase's README file, sending it in email, posting it on a project's wiki, or via a chat channel you all use&mdash;whatever makes sense for your collaborators.
 
    > [!NOTE]
    > Anyone who has the sharing link can access the model and its suggestions, so make sure that everyone who receives the link is aware of this.
@@ -51,7 +51,7 @@ If you own a library or other package and want to help your users out with Intel
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example, if you have some sample code that makes a good selection of typical calls to the library).
 
-2. Share it with everyone who'll be using the library. For example, place the URL on your library's documentation or in the README.md of your repo, so it can easily be found and used.
+2. [Share the link](custom-model-faq.md#how-to-share-custom) with everyone who'll be using the library. For example, place the link on your library's documentation or in the README.md of your repo, so it can easily be found and used.
 
 3. Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
