@@ -26,21 +26,21 @@ Models are applied to a given user by merging together, per signed-in user:
 This means you don't need to micromanage which models apply to which solution or codebase.
 
 # How to enable common sharing scenarios
-Next we'll describe how to set up for some common cases:
+Next we'll describe how to set up for some common cases.
 
 ## You have a codebase that's a good example of usage for you and your collaborators' next project
-Suppose you have an existing codebase that contains good patterns for using types contained in a shared library. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project that uses the same library. The new project, being new, has no usage to learn from. So what do you do?
+Suppose you have an existing codebase that contains good patterns for using types contained in a shared library (for example a library of helper classes your company uses, or a shared library that is commonly used in your team). You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project that uses the same library. The new project, being new, has no usage to learn from. So what do you do?
 
 The best approach here is 
-- [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase
-- Share it with everyone who will be using the new codebase
+- One person should [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase
+- That person should share it with everyone who will be using the new codebase. You can do this in whatever way you choose, whether via email, a project's wiki, a chat channel you all use or whatever makes sense for your collaborators normal practice. Note that anyone who has the sharing link will be able to access the model and its suggestions, so you should make sure that everyone who recieves the link is aware of this.
 - Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
 - If you need to re-train the custom model, there's no need for collaborators to re-apply it; the system will take care of updating their copy automatically for you
 
 ## You have an open source package and want to share out a model that helps users incorporate the package into their code
-In the same way, if you own a library
+In the same way, if you own a library or other package and want to help your users out with IntelliCode suggestions
 - [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example if you have some sample code that makes a good selection of typical calls to the library)
-- Share it with everyone who will be using the library, for example by placing the URL on your library's web site documentation
+- Share it with everyone who will be using the library, for example by placing the URL on your library's documentation or in the README.md of your repo, so it can be easily found and used
 - Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions
 - Library users will recieve automatic updates if you re-train the model
 
