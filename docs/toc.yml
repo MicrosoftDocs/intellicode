@@ -9,5 +9,7 @@
     items:
     - name: IntelliCode models based on your code
       href: custom-model-faq.md
+    - name: Tips for sharing IntelliCode models
+      href: sharing-custom-models-tips.md
   - name: IntelliCode for Visual Studio Code
     href: intellicode-visual-studio-code.md
