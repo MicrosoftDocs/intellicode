@@ -19,7 +19,7 @@ Before talking about using shared models, it's helpful to understand how Intelli
 
 Models are applied to a given user by merging together, per signed-in user:
 
-- The "base model" for the language you are using (trained on 1000s of public GitHub repos)
+- The base model for the language you are using (trained on 1000s of public GitHub repos)
 - Any custom models ypu have trained
 - Any custom models you have added to your profile from sharing links provided by others (via "add model")
 
