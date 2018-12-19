@@ -10,7 +10,7 @@ ms.author: mwthomas
 ---
 # How to get the most out of sharing custom models in Visual Studio IntelliCode
 
-IntelliCode's custom model creation facility lets you get IntelliCode completions for code that is not in the public "Base Model" which we train on open source code, for example types you own yourself, or specialist common components and libraries. However, you don't want everyone who collaborates on your code to have to train their own model or worry about keeping it up to date.
+IntelliCode's custom model creation feature lets you get IntelliCode completion recommendations for code that is not in the public "Base Model" which we train on open source code, for example types you own yourself, or specialist common components and libraries. However, you don't want everyone who collaborates on your code to have to train their own model or worry about keeping it up to date.
 
 To solve these problems, IntelliCode has a model sharing feature which lets you share _any_ model you've created with _anyone you provide a link to_, and also keeps those who use the link updated whenever you retrain your model. 
 
@@ -19,9 +19,9 @@ Before talking about using shared models, it's useful to understand how Intellic
 
 Models are applied to a given user by merging together, per signed-in user:
 
-- The "base model" for the language they are using (trained on 1000s of public GitHub repos)
-- Any custom models they have trained themselves
-- Any custom models they have added to their profile from sharing links provided by others (via "add model")
+- The "base model" for the language you are using (trained on 1000s of public GitHub repos)
+- Any custom models ypu have trained
+- Any custom models you have added to your profile from sharing links provided by others (via "add model")
 
 This means you don't need to micromanage which models apply to which solution or codebase.
 
@@ -29,20 +29,19 @@ This means you don't need to micromanage which models apply to which solution or
 Next we'll describe how to set up for some common cases:
 
 ## You have a codebase that's a good example of usage for you and your collaborators' next project
-IntelliCode's custom model training learns from the usage of code in the codebases you train it on. It's not uncommon that you have a completed or mature codebase that is actually a great example of your usage of your own types and/or common components. You'd like to learn from usage in that that codebase to kickstart you and your collaborators when you start work on your next project of the same kind. The new project, being new, has no usage to learn from. So what do you do?
+You might have a completed or mature codebase that is actually a great example of your usage of your own types and/or common components. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project of the same kind. The new project, being new, has no usage to learn from. So what do you do?
 
 The best approach here is 
-- [Train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on the completed codebase
+- [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the completed codebase
 - Share it with everyone who will be using the new codebase
-- Collaborators then [use the sharing link](visualstudio/intellicode/custom-model-faq#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
+- Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
 - If you need to re-train the custom model, there's no need for consumers of the link to re-apply it; the system will take care of updating their copy automatically for you
 
 ## You have a library and want to share out a model that embodies good usage of that library
 In the same way, if you own a library
-- [Train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example if you have some sample code that makes a good selection of typical calls to the library)
+- [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example if you have some sample code that makes a good selection of typical calls to the library)
 - Share it with everyone who will be using the library, for example by placing the URL on your library's web site documentation
-- Library users then [use the sharing link](visualstudio/intellicode/custom-model-faq#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions
+- Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions
 - Library users will recieve automatic updates if you re-train the model
 
 We know that there are likely more scenarios for sharing, and would love to hear your feedback about your particular needs. [Raise a suggestion](https://aka.ms/vsicissues) and let us know more.
-
