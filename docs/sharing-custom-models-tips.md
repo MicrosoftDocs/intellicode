@@ -28,17 +28,21 @@ This means you don't need to micromanage which models apply to which solution or
 # How to enable common sharing scenarios
 Next we'll describe how to set up for some common cases:
 
-- I have a codebase that's a good example for usage for other codebases I work on with others
-- I own a library and want to share out good examples of usage to consumers of the library
+## You have a codebase that's a good example of usage for you and your collaborators' next project
+IntelliCode's custom model training learns from the usage of code in the codebases you train it on. It's not uncommon that you have a completed or mature codebase that is actually a great example of your usage of your own types and/or common components. You'd like to learn from usage in that that codebase to kickstart you and your collaborators when you start work on your next project of the same kind. The new project, being new, has no usage to learn from. So what do you do?
 
+The best approach here is 
+- [Train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on the completed codebase
+- Share it with everyone who will be using the new codebase
+- Collaborators then [use the sharing link](visualstudio/intellicode/custom-model-faq#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
+- If you need to re-train the custom model, there's no need for consumers of the link to re-apply it; the system will take care of updating their copy automatically for you
 
-# What to do when you have a codebase that's a good example of usage 
-IntelliCode's custom model training learns from the usage of code in the codebases you train it on. It's not uncommon that you have a completed or mature codebase that is actually a great example of your usage of your own types and/or common components, that you want to leverage when you and your collaborators start work on your next project of that type. The new project, being new, has no usage to learn from. So what do you do?
+## You have a library and want to share out a model that embodies good usage of that library
+In the same way, if you own a library
+- [Train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example if you have some sample code that makes a good selection of typical calls to the library)
+- Share it with everyone who will be using the library, for example by placing the URL on your library's web site documentation
+- Library users then [use the sharing link](visualstudio/intellicode/custom-model-faq#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions
+- Library users will recieve automatic updates if you re-train the model
 
-The best approach here is to [train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on the completed codebase, then share it with everyone who will be using the new codebase. They can then [use the sharing link](visualstudio/intellicode/custom-model-faq#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to tell IntelliCode to apply that model for completions in the new codebase too. If you need to re-train the custom model, there's no need for consumers of the link to re-apply it - the system will take care of updating their copy automatically for you.
-
-# What to do when you have a library and want to share out a model that embodies good usage of that library
-In the same way, if you own a library, you can [train a custom model](visualstudio/intellicode/custom-model-faq/#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library, then share it with everyone who will be using the library so they see completions.
-
-We know that there are likely more scenarios for sharing, and would love to hear your feedback.
+We know that there are likely more scenarios for sharing, and would love to hear your feedback about your particular needs. [Raise a suggestion](https://aka.ms/vsicissues) and let us know more.
 
