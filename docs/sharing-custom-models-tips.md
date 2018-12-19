@@ -15,7 +15,7 @@ IntelliCode's custom model creation feature lets you get IntelliCode completion 
 To solve these problems, IntelliCode has a model sharing feature which lets you share _any_ model you've created with _anyone you provide a link to_, and also keeps those who use the link updated whenever you retrain your model. 
 
 # How models get applied 
-Before talking about using shared models, it's useful to understand how Intellicode applies all models to generate its recommendations. 
+Before talking about using shared models, it's helpful to understand how IntelliCode applies all models to generate its recommendations. 
 
 Models are applied to a given user by merging together, per signed-in user:
 
