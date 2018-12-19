@@ -36,7 +36,7 @@ The best approach here is:
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase.
 
-2. Share it with everyone who'll be using the new codebase.
+2. Share it with everyone who'll be using the new codebase. You can do this in various ways, for example by checking it in to your codebases README.md, sending in email, posting on a project's wiki, or via a chat channel you all use - whatever makes sense for your collaborators. Note that anyone who has the sharing link will be able to access the model and its suggestions, so you should make sure that everyone who recieves the link is aware of this.
 
 3. Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too.
 
@@ -44,11 +44,11 @@ If you need to retrain the custom model, there's no need for collaborators to re
 
 ### You have an open source package and want to share out a model that helps users incorporate the package into their code
 
-If you own a library:
+if you own a library or other package and want to help your users out with IntelliCode suggestions:
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example, if you have some sample code that makes a good selection of typical calls to the library).
 
-2. Share it with everyone who'll be using the library, for example, by placing the URL on your library's web site documentation.
+2. Share it with everyone who'll be using the library, for example by placing the URL on your library's documentation or in the README.md of your repo, so it can easily be found and used.
 
 3. Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
