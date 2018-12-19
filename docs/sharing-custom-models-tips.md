@@ -36,7 +36,10 @@ The best approach here is:
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase.
 
-2. Share it with everyone who'll be using the new codebase. You can do this in various ways, for example by checking it in to your codebases README.md, sending in email, posting on a project's wiki, or via a chat channel you all use - whatever makes sense for your collaborators. Note that anyone who has the sharing link will be able to access the model and its suggestions, so you should make sure that everyone who recieves the link is aware of this.
+2. Share the link to the model with everyone who'll be using the new codebase. You can do this in various ways, for example by checking it in to your codebase's README file, sending it in email, posting it on a project's wiki, or via a chat channel you all use&mdash;whatever makes sense for your collaborators.
+
+   > [!NOTE]
+   > Anyone who has the sharing link can access the model and its suggestions, so make sure that everyone who receives the link is aware of this.
 
 3. Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too.
 
