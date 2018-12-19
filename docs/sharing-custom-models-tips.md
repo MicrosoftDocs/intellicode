@@ -44,4 +44,6 @@ In the same way, if you own a library
 - Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions
 - Library users will recieve automatic updates if you re-train the model
 
+#Other sharing scenarios?
+
 We know that there are likely more scenarios for sharing, and would love to hear your feedback about your particular needs. [Raise a suggestion](https://aka.ms/vsicissues) and let us know more.
