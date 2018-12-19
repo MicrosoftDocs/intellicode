@@ -29,7 +29,7 @@ This means you don't need to micromanage which models apply to which solution or
 Next we'll describe how to set up for some common cases:
 
 ## You have a codebase that's a good example of usage for you and your collaborators' next project
-You might have a completed or mature codebase that is actually a great example of your usage of your own types and/or common components. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project of the same kind. The new project, being new, has no usage to learn from. So what do you do?
+Suppose you have an existing codebase that contains good patterns for using types contained in a shared library. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project that uses the same library. The new project, being new, has no usage to learn from. So what do you do?
 
 The best approach here is 
 - [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the completed codebase
