@@ -44,7 +44,7 @@ If you need to retrain the custom model, there's no need for collaborators to re
 
 ### You have an open source package and want to share out a model that helps users incorporate the package into their code
 
-if you own a library or other package and want to help your users out with IntelliCode suggestions:
+If you own a library or other package and want to help your users out with IntelliCode suggestions:
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example, if you have some sample code that makes a good selection of typical calls to the library).
 
