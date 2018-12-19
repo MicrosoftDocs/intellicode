@@ -32,7 +32,7 @@ Next we'll describe how to set up for some common cases:
 Suppose you have an existing codebase that contains good patterns for using types contained in a shared library. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your _next_ project that uses the same library. The new project, being new, has no usage to learn from. So what do you do?
 
 The best approach here is 
-- [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the completed codebase
+- [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on the existing codebase
 - Share it with everyone who will be using the new codebase
 - Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
 - If you need to re-train the custom model, there's no need for consumers of the link to re-apply it; the system will take care of updating their copy automatically for you
