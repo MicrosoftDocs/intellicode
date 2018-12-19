@@ -20,7 +20,7 @@ Before talking about using shared models, it's helpful to understand how Intelli
 
 - The base model for the language you're using (trained on thousands of public GitHub repos)
 - Any custom models you've trained
-- Any custom models you've added to your profile from sharing links that others gave you (via the **Add mode** link in the Visual Studio IntelliCode UI)
+- Any custom models you've added to your profile from sharing links that others gave you (via the **Add model** link in the Visual Studio IntelliCode UI)
 
 This means you don't need to micromanage which models apply to which solution or codebase.
 
