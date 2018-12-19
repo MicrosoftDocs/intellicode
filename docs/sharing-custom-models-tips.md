@@ -12,7 +12,7 @@ ms.author: mwthomas
 
 IntelliCode's custom model creation feature lets you get IntelliCode completion recommendations for code that is not in the base model. However, you don't want everyone who collaborates on your code to have to train their own model or worry about keeping it up to date.
 
-To solve these problems, IntelliCode has a model sharing feature which lets you share _any_ model you've created with _anyone you provide a link to_, and also keeps those who use the link updated whenever you retrain your model. 
+To solve these problems, IntelliCode has a model sharing feature which lets you share _any_ model you've created with _anyone you provide a link to_. Users with your shared model will automatically receive the latest updates whenever you retrain your model. 
 
 # How models get applied 
 Before talking about using shared models, it's helpful to understand how IntelliCode applies all models to generate its recommendations. 
