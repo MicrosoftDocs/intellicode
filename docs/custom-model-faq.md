@@ -18,7 +18,7 @@ A model is an encapsulation of a set of rules that allow prediction of some usef
 
 IntelliCode’s AI-assisted IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
-## Q. How do I train a model?
+## Q. <a name="how-to-train-custom"/> How do I train a model?
 
 To train a model, follow these steps:
 
@@ -72,6 +72,15 @@ Authorized Microsoft service personnel may be granted access to your models and 
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
+Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
+
+## <a name="how-to-share-custom" /> Q. How do I share a custom model?
+
+Once you have trained a model, the "Share model" button will appear, which allows you to share it. Press the button to place a sharing link in your paste buffer, then share the link with your collaborators 
+ 
+ > [!NOTE]
+ > Anyone who has the sharing link can access the model and its suggestions, so make sure that everyone who receives the link is aware of this.
+ 
 Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
 
 ## Q. How often should I retrain the model? Does it get better over time?
