@@ -51,7 +51,7 @@ If you own a library or other package and want to help your users out with Intel
 
 1. [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example, if you have some sample code that makes a good selection of typical calls to the library).
 
-2. Share it with everyone who'll be using the library, for example by placing the URL on your library's documentation or in the README.md of your repo, so it can easily be found and used.
+2. Share it with everyone who'll be using the library. For example, place the URL on your library's documentation or in the README.md of your repo, so it can easily be found and used.
 
 3. Library users then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
