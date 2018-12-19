@@ -72,6 +72,8 @@ Authorized Microsoft service personnel may be granted access to your models and 
 
 We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
 
+Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
+
 ## Q. How often should I retrain the model? Does it get better over time?
 
 For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, et cetera. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
@@ -140,6 +142,8 @@ You can do this on the IntelliCode page in Visual Studio, after you install the 
    ![Add shared model in IntelliCode](media/add-shared-model.png)
 
    The shared model appears under **Shared With Me**. If you want to unlink the model, choose **Unlink**.
+   
+   Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
 
 ## Q. How many people in my team can I share the model I create with?
 
@@ -147,6 +151,7 @@ You can share your model with as many people as you like via the sharing feature
 
 ## See also
 
+- [Tips on sharing models](sharing-custom-models-tips.md) 
 - [General IntelliCode FAQ](faq.md)
 - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
 - [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)
