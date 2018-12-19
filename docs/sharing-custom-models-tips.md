@@ -37,7 +37,7 @@ The best approach here is
 - Collaborators then [use the sharing link](custom-model-faq.md#q-how-do-i-use-a-sharing-link-to-see-a-model-that-someone-else-shared-with-me) to add the model to their list, which tells IntelliCode to apply that model for completions in the new codebase too
 - If you need to re-train the custom model, there's no need for collaborators to re-apply it; the system will take care of updating their copy automatically for you
 
-## You have a library and want to share out a model that embodies good usage of that library
+## You have an open source package and want to share out a model that helps users incorporate the package into their code
 In the same way, if you own a library
 - [Train a custom model](custom-model-faq.md#q-how-do-i-train-a-model) on a codebase that has good sample usage of that library (for example if you have some sample code that makes a good selection of typical calls to the library)
 - Share it with everyone who will be using the library, for example by placing the URL on your library's web site documentation
