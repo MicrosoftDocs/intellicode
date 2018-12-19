@@ -21,7 +21,7 @@ Models are applied to a given user by merging together, per signed-in user:
 
 - The base model for the language you are using (trained on 1000s of public GitHub repos)
 - Any custom models you have trained
-- Any custom models you have added to your profile from sharing links provided by others (via "add model")
+- Any custom models you have added to your profile from sharing links provided by others (via the "Add model" link in the Visual Studio IntelliCode UI)
 
 This means you don't need to micromanage which models apply to which solution or codebase.
 
