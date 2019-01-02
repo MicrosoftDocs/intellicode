@@ -26,9 +26,9 @@ We'll update the Visual Studio Code extension with more capabilities in the comi
 
 When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings." appear, or see similar messages in the IntelliCode output window pane in Visual Studio Code. This is often accompanied by failure to show any IntelliCode starred suggestions, and can be caused by problems with correct handling of proxies behind firewalls.
 
-As a first step, please try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
+As a first step, try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
-If this doesn't work for you, please check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
+If turning on network proxy support doesn't work for you, check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
 
 ## Q. I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
 
@@ -46,7 +46,7 @@ If you try previous Java 8 versions, you'll see the error "java.security.Invalid
 
 ## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
-Please see our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+Refer to our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft) for information.
 
 ## See also
 
