@@ -24,7 +24,7 @@ We'll update the Visual Studio Code extension with more capabilities in the comi
 
 ## Q. I'm having trouble getting IntelliCode to download models behind my firewall - what should I do?
 
-When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings." appear, or see similar messages in the IntelliCode output window pane in Visual Studio Code. This is often accompanied by failure to show any IntelliCode starred suggestions. This is often caused by problems with correct handling of proxies behind firewalls.
+When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings." appear, or see similar messages in the IntelliCode output window pane in Visual Studio Code. This is often accompanied by failure to show any IntelliCode starred suggestions, and can be caused by problems with correct handling of proxies behind firewalls.
 
 As a first step, please try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
