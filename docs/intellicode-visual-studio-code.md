@@ -22,6 +22,14 @@ The IntelliCode extension for Visual Studio Code provides artificial intelligenc
 
 We'll update the Visual Studio Code extension with more capabilities in the coming months.
 
+## Q. I'm having trouble getting IntelliCode to download models behind my firewall - what should I do?
+
+When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings." appear, or see similar messages in the IntelliCode output window pane in Visual Studio Code. This is often accompanied by failure to show any IntelliCode starred suggestions. This is often caused by problems with correct handling of proxies behind firewalls.
+
+As a first step, please try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
+
+If this doesn't work for you, please check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
+
 ## Q. I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
 
 For more information and tips, see the [Python language server troubleshooting](https://github.com/Microsoft/vscode-python/issues/2177) page.
