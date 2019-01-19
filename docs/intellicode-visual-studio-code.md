@@ -18,9 +18,9 @@ You can [download an experimental extension](https://go.microsoft.com/fwlink/?li
 2. If not, try disabling the IntelliCode extension and see if you get any IntelliSense completions.
 3. If you do see IntelliSense completions, re-enable the IntelliCode extension and see the next heading: "I see IntelliSense completion lists, but none of the completion items are starred"
 4. If not, try the following for the language you're trying to use
-    * JavaScript / TypeScript `todo: link to language-specific faq`
-    * Java `todo: link to language-specific faq`
-    * Python: `todo: link to language-specific faq`
+    * JavaScript / TypeScript: [VS Code IntelliSense troubleshooting](https://code.visualstudio.com/docs/editor/intellisense#_troubleshooting) or [JavaScript IntelliSense in VS Code](https://code.visualstudio.com/docs/languages/javascript#_intellisense)
+    * Java: [How to troubleshoot and contribute to the Java language server](https://code.visualstudio.com/docs/java/java-faq#_how-to-troubleshoot-and-contribute-to-the-java-language-server)
+    * Python: [Meta issue for the Python language server](https://github.com/Microsoft/vscode-python/issues/2177)
 
 ## Q. I see IntelliSense completion lists, but none of the completion items are starred
 
