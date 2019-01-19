@@ -43,6 +43,14 @@ The IntelliCode extension for Visual Studio Code provides artificial intelligenc
 
 We'll update the Visual Studio Code extension with more capabilities in the coming months.
 
+## Q. I'm having trouble getting IntelliCode to download models behind my firewall - what should I do?
+
+When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings.", or see similar messages in the IntelliCode output window pane in Visual Studio Code. You might also see no IntelliCode starred suggestions. If you connect to the internet through a proxy or restrictive firewall, that may cause these issues.
+
+As a first step, try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
+
+If turning on network proxy support doesn't work for you, check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
+
 ## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 
 You’ll need Visual Studio Code October 2018 Release 1.29 or later to use this extension.
@@ -55,7 +63,7 @@ If you try previous Java 8 versions, you'll see the error "java.security.Invalid
 
 ## Q: What about privacy? Are you sending my code to the cloud? What customer data is being sent to Microsoft?
 
-Please see our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft).
+Refer to our [general FAQ on privacy](faq.md#-q-what-about-privacy-are-you-sending-my-code-to-the-cloud-what-customer-data-is-being-sent-to-microsoft) for information.
 
 ## See also
 
