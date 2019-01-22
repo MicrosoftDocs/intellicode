@@ -12,6 +12,27 @@ ms.author: mwthomas
 
 You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=2006060) for Visual Studio Code. This article has answers to some frequently asked questions about the extension.
 
+## Q. I'm not seeing any IntelliSense completion lists
+
+1. Take a look at the output window for the language you're trying to use, and see if there's an actionable error message
+2. If not, try disabling the IntelliCode extension and see if you get any IntelliSense completions.
+3. If you do see IntelliSense completions with IntelliCode disabled, please look at our [open issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
+4. If not, try the following troubleshooting steps for the language you're trying to use
+    * JavaScript / TypeScript: [VS Code IntelliSense troubleshooting](https://code.visualstudio.com/docs/editor/intellisense#_troubleshooting) or [JavaScript IntelliSense in VS Code](https://code.visualstudio.com/docs/languages/javascript#_intellisense)
+    * Java: [How to troubleshoot and contribute to the Java language server](https://code.visualstudio.com/docs/java/java-faq#_how-to-troubleshoot-and-contribute-to-the-java-language-server)
+    * Python: [Meta issue for the Python language server](https://github.com/Microsoft/vscode-python/issues/2177)
+
+## Q. I see IntelliSense completion lists, but none of the completion items are starred
+
+Take a look at the `VS IntelliCode` output window.
+
+* Is there a network error?
+  * Are you able to access the internet normally?
+  * Are you behind a proxy or restrictive firewall? Take a look at the heading "I'm having trouble getting IntelliCode to download models behind my firewall".
+  * If not to both of these, please look at our [open issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
+* Is there an actionable message? If so, did it help?
+* Please look at our [open issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
+
 ## Q. What functionality does the extension provide?
 
 The IntelliCode extension for Visual Studio Code provides artificial intelligence-assisted IntelliSense for Python, Java, TypeScript, and JavaScript. AI-assisted IntelliSense predicts the most likely correct API for the developer to use, rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
@@ -29,10 +50,6 @@ When using IntelliCode, you may see the error message "Couldn't download Intelli
 As a first step, try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
 If turning on network proxy support doesn't work for you, check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
-
-## Q. I'm having problems with Python IntelliSense in Visual Studio Code. Can you help?
-
-For more information and tips, see the [Python language server troubleshooting](https://github.com/Microsoft/vscode-python/issues/2177) page.
 
 ## Q. Which version of Visual Studio Code do I need to run the Visual Studio Code IntelliCode extension?
 
