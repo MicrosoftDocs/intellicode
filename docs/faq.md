@@ -80,7 +80,7 @@ IntelliCode will likely be expanded to more languages and tools in the Visual St
 
 For all languages, we are continuously working to improve its base model's coverage of common libraries and types. We’d love to hear from you if there’s a common library we're missing&mdash;see [where should I raise bugs](#q-where-should-i-raise-bugs-issues-or-feature-requests).
 
-For C# users, IntelliCode can now learn patterns from your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code]().
+For C# users, IntelliCode can now learn patterns from your own code. For more information, see [AI-assisted IntelliSense recommendations based on your code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode).
 
 ## Q. Where should I raise bugs, issues, or feature requests?
 
