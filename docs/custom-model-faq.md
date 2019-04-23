@@ -1,6 +1,6 @@
 ---
 title: IntelliSense based on your code
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -8,21 +8,22 @@ manager: douge
 author: markw-t
 ms.author: mwthomas
 ---
-# IntelliCode models based on your code FAQ
+# IntelliCode models based on your code
 
-IntelliCode’s recommendations have previously been based solely on patterns learned from thousands of open-source GitHub repos. But what if you’re using code that isn’t in that set of repos? Perhaps you use numerous internal utility and base class libraries, or domain-specific libraries that aren’t commonly used in open-source code, and you'd like to see IntelliCode recommendations for them too. For C# users, IntelliCode can learn patterns from your code to make recommendations for things that aren’t in the open-source domain.
+Use a custom IntelliCode model to get AI-assisted IntelliSense recommendations based on *your* C# codebase. Custom models are useful if you use code such as internal utility and base class libraries or domain-specific libraries that aren’t commonly used in open-source code. This is because IntelliCode’s *base model* recommendations are based solely on patterns learned from open-source GitHub repos. If you’re using code that isn’t in that set of repos, those recommendations aren't as useful to you. For C# users, IntelliCode can learn patterns from your code to make recommendations for things that aren’t in the open-source domain.
 
-## Q. What is a model and what should I expect from it?
+An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs. IntelliCode creates *custom* models using the same learning process as for the IntelliCode base models, except they are trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
-A model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs.
+> [!NOTE]
+> Custom model training is currently available only for C# code.
 
-IntelliCode’s AI-assisted IntelliSense has always worked on the so-called *base model*. The base model was derived by training on thousands of highly rated, open-source projects on GitHub. Our new service enables the creation of *custom* models, which use the same learning process but are trained on your own code. Using a custom model enables IntelliCode to make recommendations for things found only in your codebase. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
+## Train a model
 
-## Q. <a name="how-to-train-custom"/> How do I train a model?
+To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
 
 To train a model, follow these steps:
 
-1. Open a project or solution in Visual Studio.
+1. Open the project or solution in Visual Studio.
 
 1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
 
@@ -30,115 +31,66 @@ To train a model, follow these steps:
 
    ![Train an IntelliCode model in Visual Studio](media/train-on-my-code.png)
 
-## Q. <a name="what-is-sent" /> What happens when my model is trained, and what data is sent to Microsoft?
+> [!NOTE]
+> You must open a solution in Visual Studio in order to train a model. You can't train on just a folder of code.
 
-To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. The extracted data is transmitted to the IntelliCode service, which uses machine learning algorithms to train a model for your code. It then returns the model to your computer where it's merged with the base model.
+### Train on a public codebase
 
-We don’t track your keystrokes or extract the values of literals (such as strings) from your code, nor do we extract whole expressions or statements. All communication with the IntelliCode service is over HTTPS. For more information, see [Q. How secure is this?](#how-secure).
+Before you train on your own code, you might want to create a custom model on a public codebase. You can see how the custom model affects IntelliSense, or if you're concerned about the kind of data that IntelliSense collects, you can inspect the extracted data. Some interesting samples to train on are:
 
-## Q. Can I see the data that is sent to Microsoft?
+- [Azure ConferenceBuddy](https://github.com/Azure/ConferenceBuddy)
 
-If you want to inspect the detailed contents of the extracted data, you can do so after extraction during the training process is complete.
+   Clone the repo, open the *ConferenceBuddy.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **AskWhoTask** class.
+
+- [Windows RSS reader](https://github.com/Microsoft/Windows-appsample-rssreader)
+
+   Clone the repo, open the *RssReader.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **MainViewModel** class.
+
+## Data and privacy
+
+To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
+
+The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
+
+### View extracted data
 
 To inspect the contents of the extracted data:
 
-1. Open the *%TEMP%\Visual Studio IntelliCode* folder.
+1. Open the *%TEMP%\Visual Studio IntelliCode* directory.
 
-1. There is one folder per training session in that directory, each with a randomized name. Sort the folder view by date (descending) so that the folder for your most recent training session is at the top. Open it.
+1. To find and open the training for your most recent training session, sort the folder view by date (descending). The folder for your most recent training session is now at the top.
 
-1. The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The UsageOutput subfolder contains a JSON file, which has the information we extract from your code to train the model. The UsageOutput_ErrorStats file contains any errors found when trying to build the extracted file, and can help if we need to debug issues.
+   > [!TIP]
+   > There's one folder per training session in the *%TEMP%\Visual Studio IntelliCode* directory, each with a randomized name.
 
-   ![IntelliCode model-training directory ](media/model-training-directory.png)
+The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The *UsageOutput* subfolder contains a JSON file that has the information IntelliCode extracts from your code to train the model. The *UsageOutput_ErrorStats* file contains any errors found when trying to build the extracted file and can help if Microsoft needs to debug issues.
 
-If you want to inspect the extracted data for a different codebase before trying it on your own code, see [Q.Is there a way to try this out without using my own codebase?](#try-sample).
+![IntelliCode model-training directory ](media/model-training-directory.png)
 
-## <a name="try-sample" /> Q. Is there a way to try this out without using my own codebase?
+If you want to inspect the extracted data for a different codebase before trying it on your own code, train a model on a public codebase.
 
-Yes. You can try out the training process on a public or sample codebase first, for example to see the kind of data we collect.
-
-Some interesting samples to start with:
-- [Azure ConferenceBuddy sample](https://github.com/Azure/ConferenceBuddy). Clone the repo, open the ConferenceBuddy.sln solution, build to check that it's working, and then train the model. You should find some good completions on instances of the **AskWhoTask** class to try out.
-- [Windows RSS reader sample](https://github.com/Microsoft/Windows-appsample-rssreader). Clone the repo, open the RssReader.sln solution, build to check that it's working, and then train the model. You should find some good completions on instances of the **MainViewModel** class to try out.
-
-
-
-## <a name="how-secure" /> Q. How secure is this? Can others see the models I create?
+### How we secure your data
 
 Your models are private to you and those people that have the sharing links that you generate by choosing **Share model**.
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, or by someone they authorized by having a sharing link. This means that your model and what is learned about your code stays private to you and your intended collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training or by someone they authorized by sharing the link to the model. This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
-Authorized Microsoft service personnel may be granted access to your models and extracted data for troubleshooting and diagnostic purposes only.
+If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
 
-We expect that organizations may wish to have ways of sharing models that are unique to their organizational structure, access control models, et cetera. We’re interested to hear more from you about this subject.
+## Share a custom model
 
-Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
+After you've trained a model, the **Share model** button appears. Click the button to copy the sharing link. From there, you can share the link with your collaborators.
 
-## <a name="how-to-share-custom" /> Q. How do I share a custom model?
-
-Once you have trained a model, the "Share model" button will appear, which allows you to share it. Press the button to place a sharing link in your paste buffer, then share the link with your collaborators 
- 
  > [!NOTE]
  > Anyone who has the sharing link can access the model and its suggestions, so make sure that everyone who receives the link is aware of this.
- 
-Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
 
-## Q. How often should I retrain the model? Does it get better over time?
+You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, et cetera. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
+For suggestions on how to get the most out of sharing models, see [tips on sharing models](sharing-custom-models-tips.md).
 
-Retraining is a manual process, so the model won't improve unless you elect to retrain. In the future, we’d like to automate this process. For example, we're considering ways you may be able to include retraining as part of your continuous integration (CI) build steps.
+### Use a sharing link
 
-## Q. Are there limits to the amount of training I can or should do?
-
-There is no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
-In our current experimental preview release, we're not limiting training by default, but may do so if it's necessary to maintain acceptable service performance. Future versions of the service may impose limits to the amount of retraining you can perform.
-
-## Q. Can I train on a folder of code without opening a solution?
-
-No, this is not currently supported. You must open a solution in Visual Studio in order to train a model.
-
-## Q. How much does this service cost? Is there a free tier?
-
-IntelliCode will always have a substantive free tier. During the free preview, we're evaluating capabilities that we may charge for after we exit preview.
-
-## Q. What else is coming? What's the roadmap? What can I expect?
-
-We're actively working to expand IntelliCode’s AI-assisted development capabilities. We're excited to share them publicly as they become available. You can sign up for news and updates at [https://aka.ms/intellicode](https://aka.ms/intellicode) to be the first to know!
-
-## Q. What languages and tools are supported?
-
-Currently, only C# users of Visual Studio 2017 version 15.8 and later can take advantage of training models on their own code in the experimental preview. We'll track feedback on the experience of C# and refine the training service as we proceed.
-
-Other languages and tools are currently supported with models pre-trained on a large number of open-source codebases. These languages are:
-
-**Visual Studio**: C#, C++, and XAML
-
-**Visual Studio Code**: Java, JavaScript, Python, and TypeScript
-
-## Q. Can I opt out and have my models removed?
-
-You can remove models from your account so they can no longer be used. Choose the **Delete** button on the IntelliCode training page in Visual Studio.
-
-![Delete an IntelliCode model in Visual Studio](media/delete-model.png)
-
-## Q. Can I have all my data removed from the service?
-
-You can request complete removal of your data from the training service by sending email to [vsintellicodedata@microsoft.com](mailto:vsintellicodedata@microsoft.com) from the personalization account you are using, requesting this action. 
-
-## Q. Is there a restriction on the size of the model, or sizes and numbers of models I can train?
-
-In our current experimental preview release, we don't limit training. In the future, we may impose training limits if we can't maintain acceptable service performance.
-
-## Q. What size codebase is ideal for training a model?
-
-To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
-
-Training your own model is useful for those cases where your frequently used classes are either private to your codebases or aren't common in the open-source codebases we train with. All IntelliCode users get the benefit of the "base model" that's trained on thousands of public repos, for commonly used classes. Unless you have unusual usage patterns on those common classes, you won’t need to train on your own code to see good recommendations for them.
-
-## Q. How do I use a sharing link to see a model that someone else shared with me?
-
-You can do this on the IntelliCode page in Visual Studio, after you install the Visual Studio IntelliCode extension.
+To use a model link that someone shared with you, first install the Visual Studio IntelliCode extension. Then follow these steps:
 
 1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
 
@@ -151,16 +103,29 @@ You can do this on the IntelliCode page in Visual Studio, after you install the 
    ![Add shared model in IntelliCode](media/add-shared-model.png)
 
    The shared model appears under **Shared With Me**. If you want to unlink the model, choose **Unlink**.
-   
-   Read our [tips on sharing models](sharing-custom-models-tips.md) for some suggestions on how to get the most out of sharing models.
 
-## Q. How many people in my team can I share the model I create with?
+## Retrain a model
 
-You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model, but do see the same completion recommendations as you do.
+For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, and so forth. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
+
+You can manually retrain your model after you make changes, or you can include retraining as part of your continuous integration (CI) build steps.
+
+[TODO - add CI details]
+
+There's no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
+
+## Delete a model
+
+You can remove models from your account so they can no longer be used. To do this, choose the **Delete** button on the IntelliCode training page in Visual Studio.
+
+![Delete an IntelliCode model in Visual Studio](media/delete-model.png)
+
+To completely remove your data from the training service, send a request to [vsintellicodedata@microsoft.com](mailto:vsintellicodedata@microsoft.com) from the personalization account you're using.
 
 ## See also
 
-- [Tips on sharing models](sharing-custom-models-tips.md) 
+- [Tips on sharing models](sharing-custom-models-tips.md)
 - [General IntelliCode FAQ](faq.md)
 - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
 - [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)
+- [IntelliCode news and updates](https://aka.ms/intellicode)

@@ -12,7 +12,7 @@ manager: douge
 ---
 # Visual Studio IntelliCode
 
-Visual Studio IntelliCode is a new tool that enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C++, C# and XAML in Visual Studio](intellicode-visual-studio.md), and [Java, TypeScript/JavaScript and Python in Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C++, C# and XAML in Visual Studio](intellicode-visual-studio.md), and [Java, TypeScript/JavaScript and Python in Visual Studio Code](intellicode-visual-studio-code.md).
 
 <br />
 
@@ -46,7 +46,7 @@ Visual Studio IntelliCode is a new tool that enhances software development using
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get answers to your IntelliCode for Visual Studio questions</h3>
+                        <h3>IntelliCode for Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ Visual Studio IntelliCode is a new tool that enhances software development using
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get answers to your IntelliCode for Visual Studio Code questions</h3>
+                        <h3>IntelliCode for Visual Studio Code</h3>
                     </div>
                 </div>
             </div>

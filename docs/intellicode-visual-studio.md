@@ -1,6 +1,6 @@
 ---
 title: Visual Studio extension
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -8,7 +8,7 @@ manager: douge
 author: markw-t
 ms.author: mwthomas
 ---
-# IntelliCode for Visual Studio FAQ
+# IntelliCode for Visual Studio
 
 You can [download an experimental extension](https://go.microsoft.com/fwlink/?linkid=872707) for Visual Studio 2017 version 15.8 and later. Here are answers to some frequently asked questions about the extension.
 
