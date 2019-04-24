@@ -4,7 +4,7 @@ ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-manager: douge
+manager: jillfra
 author: markw-t
 ms.author: mwthomas
 ---
@@ -100,7 +100,7 @@ IntelliCode is a preview extension today, and we're eager to understand how usef
 
 Developers are invited to experience Visual Studio IntelliCode today as an experimental preview extension. The purpose of the extension is to enable developers to test IntelliCode's capabilities and to provide feedback to the product team.
 
-We capture some anonymized usage and error-reporting data from the extension to help improve the product. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results. 
+We capture some anonymized usage and error-reporting data from the extension to help improve the product. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results.
 
 For base model suggestions, which are open-source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion in order to monitor and improve the base model.
 

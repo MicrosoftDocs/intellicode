@@ -4,7 +4,7 @@ ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-manager: douge
+manager: jillfra
 author: markw-t
 ms.author: mwthomas
 ---

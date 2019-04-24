@@ -8,7 +8,7 @@ ms.technology: intellicode
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ---
 # Visual Studio IntelliCode
 

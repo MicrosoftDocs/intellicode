@@ -4,7 +4,7 @@ ms.date: 04/22/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-manager: douge
+manager: jillfra
 author: markw-t
 ms.author: mwthomas
 ---
@@ -16,6 +16,16 @@ An IntelliCode model is an encapsulation of a set of rules that allow prediction
 
 > [!NOTE]
 > Custom model training is currently available only for C# code.
+
+## How models get applied
+
+IntelliCode generates its recommendations from multiple models by merging together:
+
+- The base model for the language you're using (which is trained on thousands of public GitHub repos)
+- Any custom models you've trained
+- Any custom models you've added to your profile from sharing links that others gave you; you add a custom model by clicking the **Add model** link in the Visual Studio IntelliCode UI
+
+You don't need to manage which models apply to which solution or codebase because IntelliCode takes care of this for you.
 
 ## Train a model
 
@@ -86,33 +96,13 @@ After you've trained a model, the **Share model** button appears. Click the butt
 
 You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-For suggestions on how to get the most out of sharing models, see [tips on sharing models](sharing-custom-models-tips.md).
-
-### Use a sharing link
-
-To use a model link that someone shared with you, first install the Visual Studio IntelliCode extension. Then follow these steps:
-
-1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
-
-1. On the IntelliCode page, choose **Add model**. It's underneath **Shared With Me** in the left-hand navigation.
-
-   ![Add model for IntelliCode in Visual Studio](media/add-model.png)
-
-1. Paste the sharing link URL into the dialog box and choose **Add**.
-
-   ![Add shared model in IntelliCode](media/add-shared-model.png)
-
-   The shared model appears under **Shared With Me**. If you want to unlink the model, choose **Unlink**.
+For more information about sharing models, see [How to: Share custom models](sharing-custom-models-tips.md).
 
 ## Retrain a model
 
 For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, and so forth. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
-You can manually retrain your model after you make changes, or you can include retraining as part of your continuous integration (CI) build steps.
-
-[TODO - add CI details]
-
-There's no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
+After you make changes, you must manually retrain your model. However, there's no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
 
 ## Delete a model
 
