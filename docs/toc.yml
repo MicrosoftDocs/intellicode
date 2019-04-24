@@ -12,7 +12,7 @@
   - name: Code style inference
     href: code-style-inference.md
   - name: Custom models for C#
-    href: custom-model.md
+    href: custom-models.md
   - name: Share models
     href: share-models.md
 - name: IntelliCode for Visual Studio Code

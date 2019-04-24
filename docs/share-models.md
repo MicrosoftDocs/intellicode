@@ -58,11 +58,11 @@ The best approach here is:
    > [!CAUTION]
    > Anyone who has the sharing link can access the model and its suggestions. Make sure that everyone who receives the link is aware of this.
 
-3. Collaborators then [use the sharing link](#use-a-sharing-link) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
+3. Collaborators then [use the sharing link](#add-a-custom-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
 
 If you need to retrain the custom model, there's no need for collaborators to reapply it. The IntelliCode service automatically updates their copies.
 
-### Open source package
+### Open-source package
 
 If you own a library or other package and want to help your users out with IntelliCode suggestions:
 
@@ -72,7 +72,7 @@ If you own a library or other package and want to help your users out with Intel
 
    For example, place the link in your library's documentation or in the *README.md* file of your repo, so it can easily be found and used.
 
-3. Library users then [use the sharing link](#use-a-sharing-link) to add the model to their list, which tells IntelliCode to apply that model for completions.
+3. Library users then [use the sharing link](#add-a-custom-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
 Library users receive automatic updates if you retrain the model.
 
