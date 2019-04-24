@@ -96,7 +96,7 @@ After you've trained a model, the **Share model** button appears. Click the butt
 
 You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-For more information about sharing models, see [How to: Share custom models](sharing-custom-models-tips.md).
+For more information about sharing models, see [How to: Share custom models](share-models.md).
 
 ## Retrain a model
 
@@ -114,7 +114,7 @@ To completely remove your data from the training service, send a request to [vsi
 
 ## See also
 
-- [Tips on sharing models](sharing-custom-models-tips.md)
+- [Tips on sharing models](share-models.md)
 - [General IntelliCode FAQ](faq.md)
 - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
 - [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)

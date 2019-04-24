@@ -4,6 +4,16 @@
             "source_path": "docs/intellicode-faq.md",
             "redirect_url": "/visualstudio/intellicode/faq",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/custom-model-faq.md",
+            "redirect_url": "/visualstudio/intellicode/custom-models",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/sharing-custom-models-tips.md",
+            "redirect_url": "/visualstudio/intellicode/share-models",
+            "redirect_document_id": true
         }
     ]
 }

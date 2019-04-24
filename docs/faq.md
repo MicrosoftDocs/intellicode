@@ -10,9 +10,9 @@ ms.author: mwthomas
 ---
 # Visual Studio IntelliCode FAQ
 
-Thanks for your interest in Visual Studio IntelliCode! IntelliCode extensions are available for [Visual Studio](intellicode-visual-studio.md), and [Visual Studio Code](intellicode-visual-studio-code.md).
+IntelliCode extensions are available for [Visual Studio](intellicode-visual-studio.md), and [Visual Studio Code](intellicode-visual-studio-code.md).
 
-This FAQ will hopefully answer some of the questions you may have.
+This FAQ answers some of the questions you may have.
 
 ## Q. What is Visual Studio IntelliCode?
 
@@ -43,10 +43,10 @@ We're actively working on a number of capabilities that we're excited to share p
 
 With IntelliCode, the completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context and patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
-For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-model-faq.md).
+For C# developers, IntelliCode can learn patterns from your code. This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-models.md).
 
 > [!NOTE]
-> For models trained on open-source projects, IntelliCode doesn't collect any user-defined code. For models that learn patterns from your code, IntelliCode only collects the minimum data required to create the model. We keep the trained models secured, and only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model](custom-model-faq.md#what-is-sent) and the question about [privacy](#privacy).
+> For models trained on open-source projects, IntelliCode doesn't collect any user-defined code. For models that learn patterns from your code, IntelliCode only collects the minimum data required to create the model. We keep the trained models secured, and only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model](custom-models.md#what-is-sent) and the question about [privacy](#privacy).
 
 ## Q: How good are the IntelliCode completion suggestions?
 
@@ -112,7 +112,7 @@ In Visual Studio Code, developers can turn off sending usage data to Microsoft b
 
 The IntelliCode extension may periodically ask the developer to complete a survey, which again is anonymized. Users can sign up for news and a future private preview, but are not currently required to do so to use the experimental extension.
 
-If you use the new capability to create models that learn patterns from your own C# code, you need to [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) to be able to use the preview model training service. The training service collects only the minimum data that's required to create the model. Microsoft keeps the trained models secured to your account so only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model](custom-model-faq.md#what-is-sent).
+If you use the new capability to create models that learn patterns from your own C# code, you need to [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) to be able to use the preview model training service. The training service collects only the minimum data that's required to create the model. Microsoft keeps the trained models secured to your account so only you and those you choose to share them with can access them. Your model and what it’s learned about your code stays private to you. For more information, see [What is sent to Microsoft to create my model](custom-models.md#what-is-sent).
 
 ## Q. Are you planning to release Visual Studio IntelliCode as Open Source Software?
 
