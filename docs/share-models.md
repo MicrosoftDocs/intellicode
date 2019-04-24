@@ -1,12 +1,12 @@
 ---
 title: Share custom models
-ms.date: 04/23/2019
+ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-manager: jillfra
 author: markw-t
 ms.author: mwthomas
+manager: jillfra
 ---
 # How to: Share custom models in Visual Studio IntelliCode
 

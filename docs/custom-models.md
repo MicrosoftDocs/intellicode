@@ -1,12 +1,12 @@
 ---
 title: IntelliSense based on your code
-ms.date: 04/22/2019
+ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-manager: jillfra
 author: markw-t
 ms.author: mwthomas
+manager: jillfra
 ---
 # IntelliCode models based on your code
 
