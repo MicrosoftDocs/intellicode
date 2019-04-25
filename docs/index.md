@@ -12,7 +12,7 @@ manager: jillfra
 ---
 # Visual Studio IntelliCode
 
-Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C++, C# and XAML in Visual Studio](intellicode-visual-studio.md), and [Java, TypeScript/JavaScript and Python in Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode is available for [Visual Studio](intellicode-visual-studio.md), and [Visual Studio Code](intellicode-visual-studio-code.md).
 
 <br />
 
@@ -53,6 +53,11 @@ Visual Studio IntelliCode enhances software development using artificial intelli
         </div>
         </a>
     </li>
+</ul>
+
+<br />
+
+<ul class="panelContent cardsFTitle">
     <li>
         <a href="intellicode-visual-studio.md">
         <div class="cardSize">

@@ -114,8 +114,7 @@ To completely remove your data from the training service, send a request to [vsi
 
 ## See also
 
-- [Tips on sharing models](share-models.md)
+- [Share models](share-models.md)
+- [Overview of IntelliCode](overview.md)
 - [General IntelliCode FAQ](faq.md)
 - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
-- [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)
-- [IntelliCode news and updates](https://aka.ms/intellicode)

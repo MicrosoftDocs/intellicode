@@ -12,7 +12,7 @@ manager: jillfra
 
 [EditorConfig files](/visualstudio/ide/create-portable-custom-editor-options) help to keep your code consistent by defining code styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. For C# developers, IntelliCode can infer your code style and formatting conventions to dynamically create an EditorConfig file.
 
-You can add an IntelliCode-generated EditorConfig file at the project or solution level in Visual Studio (or to a solution folder). To add an EditorConfig file:
+You can add an IntelliCode-generated EditorConfig file at the project or solution level in Visual Studio (or to a solution folder). To add a prepopulated EditorConfig file:
 
 - Find the **editorconfig File (IntelliCode)** template in the **Add New Item** dialog under **Visual C# Items**, or,
 
@@ -20,8 +20,18 @@ You can add an IntelliCode-generated EditorConfig file at the project or solutio
 
    ![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
+After you add the file in this way, IntelliCode automatically populates it with code style conventions it infers from your codebase.
+
 > [!NOTE]
 > Code style inference is a preview feature. It is currently available only for C# code.
+
+For more information about generating an EditorConfig file based on code styles in your codebase, see [this blog article](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-inferring-coding-conventions-for-consistent-code/).
+
+## Apply EditorConfig conventions
+
+Code style conventions in an EditorConfig file don't appear in the **Error List** or as "squiggles" in your code. They can, however, be applied by using the **Code Cleanup** command (Visual Studio 2019) or the **Format Document** command (Visual Studio 2017).
+
+If you're using Visual Studio 2017 and **Format Document** is not fixing your style conventions, you may not be opted in to code style fixes during document formatting. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`. Configure which issues are fixed by using the formatting options dialog box. Choose **Tools** > **Options** > **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**.
 
 ## Inferred convention reference
 
@@ -93,14 +103,6 @@ IntelliCode doesn't yet support the full set of conventions documented in [code 
 - dotnet_style_qualification_for_method
 - dotnet_style_qualification_for_property
 - dotnet_style_require_accessibility_modifiers
-
-## Code Cleanup
-
-Formatting conventions don't appear in the **Error List** or as "squiggles" in your code. They can, however, be fixed using the **Code Cleanup** command (Visual Studio 2019) or the **Format Document** command (Visual Studio 2017).
-
-If you're using Visual Studio 2017 and **Format Document** is not fixing your style conventions, you may not be opted in to code style fixes during document formatting. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`. Configure which issues are fixed by using the formatting options dialog box. Choose **Tools** > **Options** > **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**.
-
-For more information about generating an EditorConfig file based on code styles in your codebase, see [this blog article](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-inferring-coding-conventions-for-consistent-code/).
 
 ## See also
 
