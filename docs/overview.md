@@ -11,17 +11,7 @@ manager: jillfra
 ---
 # Overview of IntelliCode
 
-Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, find issues faster, and focus code reviews. IntelliCode extensions are available for [Visual Studio](intellicode-visual-studio.md) and [Visual Studio Code](intellicode-visual-studio-code.md).
-
-IntelliCode enhances the software development process in the following ways:
-
-- Delivers [context-aware code completions](context-aware-code-completions.md)
-
-- Guides developers to adhere to the [patterns and styles of their team](code-style-inference.md)
-
-- Finds difficult-to-catch code issues
-
-- Focuses code reviews by drawing attention to areas that really matter
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode delivers [context-aware code completions](#context-aware-code-completions) and guides developers to adhere to the [patterns and styles of their team](code-style-inference.md). IntelliCode extensions are available for [Visual Studio](intellicode-visual-studio.md) and [Visual Studio Code](intellicode-visual-studio-code.md).
 
 For more information and to sign up for news and updates, see [Visual Studio IntelliCode](https://visualstudio.microsoft.com/services/intellicode/).
 
