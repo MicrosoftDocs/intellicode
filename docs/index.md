@@ -8,15 +8,33 @@ ms.technology: intellicode
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ---
 # Visual Studio IntelliCode
 
-Visual Studio IntelliCode is a new tool that enhances software development using artificial intelligence. IntelliCode helps developers and teams code with confidence, focus code reviews, and find issues faster. IntelliCode extensions are available for [C++, C# and XAML in Visual Studio](intellicode-visual-studio.md), and [Java, TypeScript/JavaScript and Python in Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode is available for [Visual Studio](intellicode-visual-studio.md), and [Visual Studio Code](intellicode-visual-studio-code.md).
 
 <br />
 
 <ul class="panelContent cardsFTitle">
+    <li>
+        <a href="overview.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Overview graphic">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Overview of Visual Studio IntelliCode</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
     <li>
         <a href="faq.md">
         <div class="cardSize">
@@ -35,6 +53,11 @@ Visual Studio IntelliCode is a new tool that enhances software development using
         </div>
         </a>
     </li>
+</ul>
+
+<br />
+
+<ul class="panelContent cardsFTitle">
     <li>
         <a href="intellicode-visual-studio.md">
         <div class="cardSize">
@@ -46,7 +69,7 @@ Visual Studio IntelliCode is a new tool that enhances software development using
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get answers to your IntelliCode for Visual Studio questions</h3>
+                        <h3>IntelliCode for Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -64,7 +87,7 @@ Visual Studio IntelliCode is a new tool that enhances software development using
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Get answers to your IntelliCode for Visual Studio Code questions</h3>
+                        <h3>IntelliCode for Visual Studio Code</h3>
                     </div>
                 </div>
             </div>
