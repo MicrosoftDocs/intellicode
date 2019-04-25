@@ -24,7 +24,7 @@ For C# developers, IntelliCode can learn patterns from your code. This means Int
 
 ## Q: How good are the IntelliCode completion suggestions?
 
-Developers at Microsoft have been using IntelliCode’s recommendations internally for some time and believe the suggestions are useful. We also train our model based on what you pick from the recommendations and update the extensions as the base models improves.
+Developers at Microsoft have been using IntelliCode’s recommendations internally for some time and believe the suggestions are useful. Additionally, we constantly tune our models based on user feedback and new innovations from our data science teams.
 
 ## Q. Why isn’t my favorite library seeing recommendations?
 
