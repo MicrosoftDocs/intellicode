@@ -1,5 +1,5 @@
 ---
-title: VSCode extension
+title: VS Code extension
 ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -13,6 +13,14 @@ manager: jillfra
 The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) provides artificial intelligence-assisted IntelliSense for Python, Java, TypeScript, and JavaScript. AI-assisted IntelliSense predicts the most likely correct API for the developer to use rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
+
+## Supported languages
+
+The supported languages for AI-assisted IntelliSense completions are:
+
+- Java
+- JavaScript and TypeScript
+- Python
 
 ## Prerequisites
 
@@ -59,6 +67,10 @@ If you see IntelliSense completion lists, but none of the completion items are s
 - Is there an actionable message that helps?
 
 If you're still facing a problem, look through the [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
+
+## Provide feedback
+
+If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, or TypeScript with the bug.
 
 ## See also
 

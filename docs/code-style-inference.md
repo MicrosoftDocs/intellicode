@@ -20,6 +20,9 @@ You can add an IntelliCode-generated EditorConfig file at the project or solutio
 
    ![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
+> [!NOTE]
+> Code style inference is a preview feature. It is currently available only for C# code.
+
 ## Inferred convention reference
 
 IntelliCode doesn't yet support the full set of conventions documented in [code style settings reference](/visualstudio/ide/editorconfig-code-style-settings-reference). IntelliCode can currently infer the following [formatting](#formatting-conventions) and [style](#style-conventions) conventions:

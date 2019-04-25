@@ -18,6 +18,24 @@ Visual Studio IntelliCode enhances software development using artificial intelli
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="overview.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Overview graphic">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Overview of Visual Studio IntelliCode</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="faq.md">
         <div class="cardSize">
             <div class="cardPadding">
