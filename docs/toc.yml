@@ -1,15 +1,19 @@
 - name: IntelliCode docs
   href: index.md
+- name: Overview of IntelliCode
+  href: overview.md
 - name: FAQ
   href: faq.md
+- name: IntelliCode for Visual Studio
   expanded: true
   items:
-  - name: IntelliCode for Visual Studio
+  - name: Overview
     href: intellicode-visual-studio.md
-    items:
-    - name: IntelliCode models based on your code
-      href: custom-model-faq.md
-    - name: Tips for sharing IntelliCode models
-      href: sharing-custom-models-tips.md
-  - name: IntelliCode for Visual Studio Code
-    href: intellicode-visual-studio-code.md
+  - name: Code style inference
+    href: code-style-inference.md
+  - name: Custom models for C#
+    href: custom-models.md
+  - name: Share models
+    href: share-models.md
+- name: IntelliCode for Visual Studio Code
+  href: intellicode-visual-studio-code.md
