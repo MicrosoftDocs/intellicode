@@ -12,18 +12,15 @@ manager: jillfra
 
 [EditorConfig files](/visualstudio/ide/create-portable-custom-editor-options) help to keep your code consistent by defining code styles and formats. These conventions allow Visual Studio to offer automatic style and format fixes to clean up your document. For C# developers, IntelliCode can infer your code style and formatting conventions to dynamically create an EditorConfig file.
 
-You can add an IntelliCode-generated EditorConfig file at the project or solution level in Visual Studio (or to a solution folder). To add a prepopulated EditorConfig file:
-
-- Find the **editorconfig File (IntelliCode)** template in the **Add New Item** dialog under **Visual C# Items**, or,
-
-- Add the file directly by right-clicking on the desired location in **Solution Explorer** and choosing **Add** > **New EditorConfig (IntelliCode)**
+You can add an IntelliCode-generated EditorConfig file at the project or solution level in Visual Studio (or to a solution folder). To add a prepopulated EditorConfig file, right-click on the desired location in **Solution Explorer** and choose **Add** > **New EditorConfig (IntelliCode)**
 
    ![Add IntelliCode-generated EditorConfig file in Visual Studio](media/intellicode-editorconfig.png)
 
 After you add the file in this way, IntelliCode automatically populates it with code style conventions it infers from your codebase.
 
 > [!NOTE]
-> Code style inference is a preview feature. It is currently available only for C# code.
+> Code style inference is a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. 
+It is currently available only for C# code.
 
 For more information about generating an EditorConfig file based on code styles in your codebase, see [this blog article](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-inferring-coding-conventions-for-consistent-code/).
 
