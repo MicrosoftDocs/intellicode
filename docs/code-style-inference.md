@@ -19,8 +19,7 @@ You can add an IntelliCode-generated EditorConfig file at the project or solutio
 After you add the file in this way, IntelliCode automatically populates it with code style conventions it infers from your codebase.
 
 > [!NOTE]
-> Code style inference is a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. 
-It is currently available only for C# code.
+> Code style inference is a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# code.
 
 For more information about generating an EditorConfig file based on code styles in your codebase, see [this blog article](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-inferring-coding-conventions-for-consistent-code/).
 
