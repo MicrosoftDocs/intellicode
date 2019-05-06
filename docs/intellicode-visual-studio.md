@@ -25,7 +25,7 @@ The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.c
 
 ## Preview features
 
-Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
+Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
 
 ![Options to enable IntelliCode preview features](media/intellicode-options.png)
 

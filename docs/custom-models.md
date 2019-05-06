@@ -15,7 +15,7 @@ Use a custom IntelliCode model to get AI-assisted IntelliSense recommendations b
 An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on well-understood inputs. IntelliCode creates *custom* models using the same learning process as for the IntelliCode base models, except they are trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be of offering good recommendations.
 
 > [!NOTE]
-> Custom model training is a preview feature. It is currently available only for C# code.
+> Custom model training is a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# code.
 
 ## How models get applied
 
