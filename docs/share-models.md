@@ -1,6 +1,6 @@
 ---
 title: Share custom models
-ms.date: 04/24/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -25,7 +25,9 @@ You can share your model with as many people as you like via the sharing feature
 
 ## Add a custom model
 
-To use a model link that someone shared with you, first install the Visual Studio IntelliCode extension. Then follow these steps:
+To use a model link that someone shared with you, follow these steps:
+
+1. (Optional) If you're using a version of Visual Studio prior to Visual Studio 2019 version 16.1, first install the IntelliCode extension.
 
 1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
 

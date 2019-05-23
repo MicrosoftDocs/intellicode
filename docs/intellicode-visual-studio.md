@@ -1,7 +1,7 @@
 ---
-title: IntelliCode extension for Visual Studio
+title: IntelliCode for Visual Studio
 titleSuffix: ""
-ms.date: 04/24/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -11,7 +11,7 @@ manager: jillfra
 ---
 # IntelliCode for Visual Studio overview
 
-The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) provides the following functionality:
+[IntelliCode for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) provides the following functionality:
 
 - [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages that predicts the most likely correct API for the developer to use instead of just an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
@@ -40,7 +40,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ## Prerequisites
 
-The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
+Starting in Visual Studio 2019 version 16.1, IntelliCode is available as a built-in feature. If you're using a prior version of Visual Studio, the [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
 
 - Visual Studio 2019, or,
 - Visual Studio 2017 version 15.8 and later (all SKUs)
