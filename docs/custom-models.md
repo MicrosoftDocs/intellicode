@@ -58,7 +58,7 @@ Before you train on your own code, you might want to create a custom model on a 
 
 ## Data and privacy
 
-To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
+To train a model based on your code, IntelliCode extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
 
 The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
@@ -117,4 +117,4 @@ To completely remove your data from the training service, send a request to [vsi
 - [Share models](share-models.md)
 - [Overview of IntelliCode](overview.md)
 - [General IntelliCode FAQ](faq.md)
-- [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
+- [IntelliCode for Visual Studio](intellicode-visual-studio.md)
