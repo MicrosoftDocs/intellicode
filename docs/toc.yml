@@ -1,6 +1,6 @@
 - name: IntelliCode docs
   href: index.md
-- name: Overview of IntelliCode
+- name: Overview
   href: overview.md
 - name: FAQ
   href: faq.md
