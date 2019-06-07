@@ -39,7 +39,7 @@ To train a model, follow these steps:
 
 1. Choose **Create new model**.
 
-   ![Create an IntelliCode model in Visual Studio](media/train-on-my-code.png)
+   ![Create an IntelliCode model in Visual Studio](media/create-new-model.png)
 
 > [!NOTE]
 > You must open a solution in Visual Studio in order to train a model. You can't train on just a folder of code.
