@@ -29,7 +29,7 @@ To use a model link that someone shared with you, follow these steps:
 
 1. (Optional) If you're using a version of Visual Studio prior to Visual Studio 2019 version 16.1, first install the IntelliCode extension.
 
-1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
+1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode Model Management**.
 
 1. On the IntelliCode page, choose **Add model**. It's underneath **Shared With Me** in the left-hand navigation.
 
@@ -51,7 +51,7 @@ Suppose you have an existing codebase that contains good patterns for using type
 
 The best approach here is:
 
-1. [Train a custom model](custom-models.md#train-a-model) on the existing codebase.
+1. [Create a custom model](custom-models.md#create-a-model) on the existing codebase.
 
 2. [Share the link](custom-models.md#share-a-custom-model) to the model with everyone who'll be using the new codebase.
 
@@ -68,7 +68,7 @@ If you need to retrain the custom model, there's no need for collaborators to re
 
 If you own a library or other package and want to help your users out with IntelliCode suggestions:
 
-1. [Train a custom model](custom-models.md#train-a-model) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
+1. [Create a custom model](custom-models.md#create-a-model) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
 
 2. [Share the link](custom-models.md#share-a-custom-model) with everyone who'll be using the library.
 
