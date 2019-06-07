@@ -27,7 +27,7 @@ IntelliCode generates its recommendations from multiple models by merging togeth
 
 You don't need to manage which models apply to which solution or codebase because IntelliCode takes care of this for you.
 
-## Train a model
+## Create a model
 
 To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
 
@@ -35,11 +35,11 @@ To train a model, follow these steps:
 
 1. Open the project or solution in Visual Studio.
 
-1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
+1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode Model Management**.
 
-1. Choose **Train on my code**.
+1. Choose **Create new model**.
 
-   ![Train an IntelliCode model in Visual Studio](media/train-on-my-code.png)
+   ![Create an IntelliCode model in Visual Studio](media/create-new-model.png)
 
 > [!NOTE]
 > You must open a solution in Visual Studio in order to train a model. You can't train on just a folder of code.

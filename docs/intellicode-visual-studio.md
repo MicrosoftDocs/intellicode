@@ -40,16 +40,34 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ## Prerequisites
 
-Starting in Visual Studio 2019 version 16.1, IntelliCode is available as a built-in feature. If you're using a prior version of Visual Studio, the [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
+Starting in Visual Studio 2019 version 16.1, IntelliCode is available as a built-in feature if you install a [supported workload](#supported-workloads). If you're using a prior version of Visual Studio, the [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
 
 - Visual Studio 2019, or,
-- Visual Studio 2017 version 15.8 and later (all SKUs)
+- Visual Studio 2017 version 15.8 and later (all editions)
 
 To see AI-assisted IntelliSense for certain languages, you may need a more recent version than that required just to install the extension:
 
 - XAML requires Visual Studio 2017 version 15.9 or later
 - C++ requires Visual Studio 2019 or later
 - JavaScript and TypeScript requires Visual Studio 2019 version 16.1 or later and TypeScript 3.4.2 or later
+
+### Supported workloads
+
+IntelliCode is included in Visual Studio 2019 version 16.1 as part of any of the following workloads:
+
+- Azure development
+- .NET desktop development
+- Mobile development with .NET
+- Game development with Unity
+- .NET Core cross-platform development
+- ASP.NET and web development
+- Visual Studio extension development
+- Universal Windows Platform development
+- Office/SharePoint development
+- Desktop development with C++
+- Game development with C++
+- Mobile development with C++
+- Linux development with C++
 
 ## Troubleshoot
 
