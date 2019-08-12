@@ -25,7 +25,7 @@ For more information about generating an EditorConfig file based on code styles 
 
 ## Apply EditorConfig conventions
 
-Violations of Code style conventions in an EditorConfig file don't appear in the **Error List** or as "squiggles" in your code. They can, however, be applied by using the **Code Cleanup** command (Visual Studio 2019) or the **Format Document** command (Visual Studio 2017).
+Violations of code style conventions in an EditorConfig file don't appear in the **Error List** or as "squiggles" in your code. They can, however, be applied by using the **Code Cleanup** command (Visual Studio 2019) or the **Format Document** command (Visual Studio 2017).
 
 If you're using Visual Studio 2017 and **Format Document** is not fixing your style conventions, you may not be opted in to code style fixes during document formatting. For example, **Apply implicit/explicit type preferences** runs style rules about the use of `var`. Configure which issues are fixed by using the formatting options dialog box. Choose **Tools** > **Options** > **Text Editor** > **C#** > **Code Style** > **Formatting** > **General** > **Format Document Settings (Experiment)**.
 
