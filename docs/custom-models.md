@@ -100,9 +100,32 @@ For more information about sharing models, see [How to: Share custom models](sha
 
 ## Retrain a model
 
-For AI-assisted IntelliSense recommendations, the model becomes stale if you change method usages and names, add new methods, and so forth. The model doesn't know about those new usages and names until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
+For AI-assisted IntelliSense recommendations, the model becomes stale if you make changes such as renaming a method or adding new methods. The model doesn't know about those changes until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
-After you make changes, you must manually retrain your model. However, there's no benefit to retraining your model unless you’ve made significant code changes and are looking to see those changes reflected in your recommendations from IntelliCode.
+You can retrain your model manually or [automatically](#automatically-retrain-a-model) as part of a continuous integration (CI) pipeline.
+
+There's no benefit to retraining your model unless you’ve made significant code changes and would like to see those changes reflected in IntelliCode's recommendations.
+
+### Automatically retrain a model
+
+You can automatically retrain a model as part of continuous integration (CI) pipeline in [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops). When code changes are pushed to your repository and the build task runs, the custom IntelliCode model is retrained and then made available to everyone that you've shared the model with. Visual Studio periodically checks for updates to custom models, so the updated model automatically appears on the IntelliCode Model Management page.
+
+To set up custom model retraining in Azure Pipelines:
+
+1. Before you start, make sure that:
+
+   - You have access to the source code you're training on.
+   - The build agent has Visual Studio 2017 or later installed.
+
+2. Add a task to your pipeline to download any NuGet packages that are required by the codebase.
+
+2. Download the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization or Azure DevOps Server (formerly TFS). This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
+
+3. Add the IntelliCode Build task to your pipeline. Place it after the compilation task.
+
+4. In the IntelliCode Build task, select the solution that you want to train the model on.
+
+5. Under **IntelliCode connection**, select **New** to create a new OAuth 2.0 connection to the IntelliCode service. This connection is used to upload the training data to create the model. Use the same account that you use to sign in to Visual Studio, so you can see the model in Visual Studio.
 
 ## Delete a model
 
