@@ -119,13 +119,13 @@ To set up custom model retraining in Azure Pipelines:
 
 2. Add a task to your pipeline to download any NuGet packages that are required by the codebase.
 
-2. Download the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization or Azure DevOps Server (formerly TFS). This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
+3. Download the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization or Azure DevOps Server (formerly TFS). This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
 
-3. Add the IntelliCode Build task to your pipeline. Place it after the compilation task.
+4. Add the IntelliCode Build task to your pipeline. Place it after the compilation task.
 
-4. In the IntelliCode Build task, select the solution that you want to train the model on.
+5. In the IntelliCode Build task, select the solution that you want to train the model on.
 
-5. Under **IntelliCode connection**, select **New** to create a new OAuth 2.0 connection to the IntelliCode service. This connection is used to upload the training data to create the model. Use the same account that you use to sign in to Visual Studio, so you can see the model in Visual Studio.
+6. Under **IntelliCode connection**, select **New** to create a new OAuth 2.0 connection to the IntelliCode service. This connection is used to upload the training data to create the model. Use the same account that you use to sign in to Visual Studio, so you can see the model in Visual Studio.
 
 ## Delete a model
 
