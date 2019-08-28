@@ -11,7 +11,9 @@ manager: jillfra
 # IntelliCode refactorings (Preview)
 
 IntelliCode refactorings improves your code refactoring experience. It locally tracks your edits, detects when you are performing a repetitive action, and offers to apply that same action in other places you may need to do so.  For instance, if you are making a refactoring, and have missed locations where that refactoring could be applied, it will help you find those locations and fix them.
+
 Opportunities to apply refactorings show up as a lightbulb in the editor, along with green warning-level squiggles, and warnings in the error list. The code cleanup indicator will also show any opportunities found in the current file. Clicking on the lightbulb displays a menu from which you can apply the change to the detected location.
+
 IntelliCode refactorings is aware of the semantic structure of your code. One advantage is it will detect cases where the variable names in your refactorings are different but the essential structure of the change is the same:
 
    ![Illustration of IntelliCode refactorings showing how repeated edits lead to finding other refactorings](media/refactorings-illustrated.png)
