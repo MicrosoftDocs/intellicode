@@ -23,6 +23,10 @@ manager: jillfra
 
 - (Preview) [Inference of code style and formatting conventions](code-style-inference.md) to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only).
 
+- (Preview) [IntelliCode refactorings](refactorings.md) which locally tracks your edits, detects when you are performing a repetitive action like a refactoring, and offers to apply that same action in other places you may need to do so (C# only).
+
+   ![Refactorings for C# in Visual Studio](media/refactorings-illustrated.png)
+
 ## Preview features
 
 Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
