@@ -26,3 +26,4 @@ Go to the Tools-Options page, IntelliCode General tab, Preview features area, an
 
   ![Tools-Options showing the IntelliCode General tab with refactorings turned on](media/refactorings-toolsoptions.png)
 
+Once you change this setting, close any files you may have open, then restart Visual Studio.
