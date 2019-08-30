@@ -12,7 +12,9 @@ manager: jillfra
 
 IntelliCode refactorings improves your editing experience when you're making similar edits in many places in your code. It locally tracks your edits, detects when you are performing a repetitive action, and offers to apply that same action in other places you may need to do so.  For instance, if you are making a refactoring, and have missed locations where it could be applied, IntelliCode will help you find those locations and fix them.
 
-Opportunities to apply refactorings show up as a [lightbulb](/visualstudio/ide/quick-actions) in the editor, along with green [warning-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features), and warnings in the [error list](/visualstudio/ide/reference/error-list-window). The [code cleanup indicator](/visualstudio/ide/find-and-fix-code-errors?#run-code-cleanup) will also show any opportunities found in the current file. Clicking on the lightbulb displays a menu from which you can apply the change to the detected location.
+   ![Video showing IntelliCode refactorings experience in Visual Studio](media/IntelliCoderefactorings.mp4)
+
+As shown in the video above, opportunities to apply refactorings show up in the Visual Studio editor as a [lightbulb](/visualstudio/ide/quick-actions) in the editor, along with green [warning-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features), and warnings in the [error list](/visualstudio/ide/reference/error-list-window). The [code cleanup indicator](/visualstudio/ide/find-and-fix-code-errors?#run-code-cleanup) will also show any opportunities found in the current file. Clicking on the lightbulb displays a menu from which you can apply the change to the detected location.
 
 Refactorings is aware of the semantic structure of your code. One advantage is it will detect cases where the variable names in your changes are different but the essential structure of the change is the same:
 
