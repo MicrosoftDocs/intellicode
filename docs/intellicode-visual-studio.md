@@ -23,7 +23,7 @@ manager: jillfra
 
 - (Preview) [Inference of code style and formatting conventions](code-style-inference.md) to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only).
 
-- (Preview) [IntelliCode refactorings](refactorings.md) which locally tracks your edits, detects when you are performing a repetitive action like a refactoring, and offers to apply that same action in other places you may need to do so (C# only).
+- (Preview) [IntelliCode refactorings](refactorings.md), which locally tracks your edits, detects when you're performing a repetitive action like a refactoring, and offers to apply that same action in other, similar places (C# only).
 
    ![Refactorings for C# in Visual Studio](media/refactorings-illustrated.png)
 
