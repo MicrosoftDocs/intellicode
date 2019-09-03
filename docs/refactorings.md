@@ -12,7 +12,7 @@ manager: jillfra
 
 IntelliCode refactorings improves your editing experience when you're making similar edits in multiple places in your code. It locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other places where you may want it. For example, if you're making a refactoring and have missed locations where it could be applied, IntelliCode helps you find those locations and fix them.
 
-   ![Animation showing IntelliCode refactorings experience in Visual Studio](media/IntelliCodeRefactorings.gif)
+   ![Animation showing IntelliCode refactorings experience in Visual Studio](media/intellicode-refactorings.gif)
 
 As shown in the video, opportunities to apply refactorings appear as a [light bulb](/visualstudio/ide/quick-actions) in the Visual Studio editor, along with green [warning-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and warnings in the [Error List](/visualstudio/ide/reference/error-list-window). The [code cleanup indicator](/visualstudio/ide/find-and-fix-code-errors?#run-code-cleanup) also shows any opportunities found in the current file. Click on the light bulb to display a menu from which you can apply the change to the detected location.
 
