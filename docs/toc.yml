@@ -15,5 +15,7 @@
     href: custom-models.md
   - name: Share models
     href: share-models.md
+  - name: Refactorings
+    href: refactorings.md
 - name: IntelliCode for Visual Studio Code
   href: intellicode-visual-studio-code.md
