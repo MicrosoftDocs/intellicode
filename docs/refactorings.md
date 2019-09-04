@@ -8,7 +8,7 @@ author: markw-t
 ms.author: mwthomas
 manager: jillfra
 ---
-# Refactorings (Preview)
+# Refactorings (preview)
 
 IntelliCode improves your editing experience when you're making similar edits in multiple places in your code. It locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other places where you may want it. For example, if you're making a refactoring and have missed locations where it could be applied, IntelliCode helps you find those locations and fix them.
 
