@@ -17,6 +17,7 @@ IntelliCode improves your editing experience when you're making similar edits in
 
 As shown in the video, opportunities to apply refactorings appear as a [Quick Action light bulb](/visualstudio/ide/quick-actions) in the Visual Studio editor, along with green [warning-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and warnings in the [Error List](/visualstudio/ide/reference/error-list-window). The [code cleanup indicator](/visualstudio/ide/find-and-fix-code-errors?#run-code-cleanup) also shows any opportunities found in the current file. Click on the light bulb to display a menu from which you can apply the change to the detected location.
 
+## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
 
 ![Illustration of refactorings showing how repeated edits lead to finding other refactorings](media/refactorings-illustrated.png)
