@@ -4,7 +4,7 @@ ms.date: 09/04/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-description: IntelliCode refactorings
+description: IntelliCode refactorings - note this doc is for an AB test and is not in TOC
 author: markw-t
 ms.author: mwthomas
 manager: jillfra
