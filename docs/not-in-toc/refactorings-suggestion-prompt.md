@@ -1,6 +1,6 @@
 ---
 title: IntelliCode refactorings
-ms.date: 09/04/2019
+ms.date: 09/12/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
