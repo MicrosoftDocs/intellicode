@@ -18,7 +18,8 @@ The first time IntelliCode finds a suggestion of this sort, you'll see a prompt 
 
 As shown in the screenshot, opportunities to apply refactorings appear as a [Quick Action light bulb](/visualstudio/ide/quick-actions) in the Visual Studio editor, along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and message-level entries in the [Error List](/visualstudio/ide/reference/error-list-window). By default, Visual Studio doesn't show messages in the Error List. To display them, select the blue Messages icon in the toolbar at the top of the Error List. When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
 
-Note: Prior to Visual Studio 2019 version 16.4 Preview 1, refactorings were shown as warning-level entries. 
+> [!NOTE]
+> Prior to Visual Studio 2019 version 16.4 Preview 1, refactorings were shown as warning-level entries. 
 
 ## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
