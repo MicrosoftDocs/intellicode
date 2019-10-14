@@ -23,7 +23,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.gif"
+          "**/*.gif",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -46,7 +47,7 @@
       "defaultDevLang": "csharp",
       "ms.prod": "visual-studio-family",
       "uhfHeaderId": "MSDocsHeader-VisualStudio",
-      "ms.technology": "code-smarts",
+      "ms.technology": "intellicode",
       "titleSuffix": "Visual Studio IntelliCode"
     },
     "fileMetadata": {},

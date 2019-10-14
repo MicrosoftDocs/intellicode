@@ -1,7 +1,7 @@
 ---
-title: IntelliCode extension for Visual Studio
+title: IntelliCode for Visual Studio
 titleSuffix: ""
-ms.date: 04/24/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -11,7 +11,7 @@ manager: jillfra
 ---
 # IntelliCode for Visual Studio overview
 
-The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) provides the following functionality:
+[IntelliCode for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) provides the following functionality:
 
 - [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages that predicts the most likely correct API for the developer to use instead of just an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
@@ -23,9 +23,13 @@ The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.c
 
 - (Preview) [Inference of code style and formatting conventions](code-style-inference.md) to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only).
 
+- (Preview) [Refactorings](refactorings.md): IntelliCode locally tracks your edits, detects when you're performing a repetitive action like a refactoring, and offers to apply that same action in other, similar places (C# only).
+
+   ![refactorings for C# in Visual Studio](media/refactorings-illustrated.png)
+
 ## Preview features
 
-Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
+Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
 
 ![Options to enable IntelliCode preview features](media/intellicode-options.png)
 
@@ -40,16 +44,34 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ## Prerequisites
 
-The [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
+Starting in Visual Studio 2019 version 16.1, IntelliCode is available as a built-in feature if you install a [supported workload](#supported-workloads). If you're using a prior version of Visual Studio, the [IntelliCode extension for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) is supported on:
 
 - Visual Studio 2019, or,
-- Visual Studio 2017 version 15.8 and later (all SKUs)
+- Visual Studio 2017 version 15.8 and later (all editions)
 
 To see AI-assisted IntelliSense for certain languages, you may need a more recent version than that required just to install the extension:
 
 - XAML requires Visual Studio 2017 version 15.9 or later
 - C++ requires Visual Studio 2019 or later
 - JavaScript and TypeScript requires Visual Studio 2019 version 16.1 or later and TypeScript 3.4.2 or later
+
+### Supported workloads
+
+IntelliCode is included in Visual Studio 2019 version 16.1 as part of any of the following workloads:
+
+- Azure development
+- .NET desktop development
+- Mobile development with .NET
+- Game development with Unity
+- .NET Core cross-platform development
+- ASP.NET and web development
+- Visual Studio extension development
+- Universal Windows Platform development
+- Office/SharePoint development
+- Desktop development with C++
+- Game development with C++
+- Mobile development with C++
+- Linux development with C++
 
 ## Troubleshoot
 

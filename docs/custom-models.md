@@ -27,7 +27,7 @@ IntelliCode generates its recommendations from multiple models by merging togeth
 
 You don't need to manage which models apply to which solution or codebase because IntelliCode takes care of this for you.
 
-## Train a model
+## Create a model
 
 To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. The larger the variety of common usages that a codebase illustrates, the more useful the resulting model is in predicting those usages.
 
@@ -35,11 +35,11 @@ To train a model, follow these steps:
 
 1. Open the project or solution in Visual Studio.
 
-1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**.
+1. Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode Model Management**.
 
-1. Choose **Train on my code**.
+1. Choose **Create new model**.
 
-   ![Train an IntelliCode model in Visual Studio](media/train-on-my-code.png)
+   ![Create an IntelliCode model in Visual Studio](media/create-new-model.png)
 
 > [!NOTE]
 > You must open a solution in Visual Studio in order to train a model. You can't train on just a folder of code.
@@ -58,7 +58,7 @@ Before you train on your own code, you might want to create a custom model on a 
 
 ## Data and privacy
 
-To train a model based on your code, the IntelliCode extension extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
+To train a model based on your code, IntelliCode extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
 
 The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
@@ -117,4 +117,4 @@ To completely remove your data from the training service, send a request to [vsi
 - [Share models](share-models.md)
 - [Overview of IntelliCode](overview.md)
 - [General IntelliCode FAQ](faq.md)
-- [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
+- [IntelliCode for Visual Studio](intellicode-visual-studio.md)

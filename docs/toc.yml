@@ -1,6 +1,6 @@
 - name: IntelliCode docs
   href: index.md
-- name: Overview of IntelliCode
+- name: Overview
   href: overview.md
 - name: FAQ
   href: faq.md
@@ -15,5 +15,7 @@
     href: custom-models.md
   - name: Share models
     href: share-models.md
+  - name: Refactorings
+    href: refactorings.md
 - name: IntelliCode for Visual Studio Code
   href: intellicode-visual-studio-code.md

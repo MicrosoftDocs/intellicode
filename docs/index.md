@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: IntelliCode
-description: Learn how to use the IntelliCode extension for Visual Studio.
+description: Learn how to use IntelliCode for Visual Studio.
 ms.date: 10/31/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -12,7 +12,7 @@ manager: jillfra
 ---
 # Visual Studio IntelliCode
 
-Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode is available for [Visual Studio](intellicode-visual-studio.md), and [Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode is available for [Visual Studio](intellicode-visual-studio.md) and [Visual Studio Code](intellicode-visual-studio-code.md).
 
 <br />
 
