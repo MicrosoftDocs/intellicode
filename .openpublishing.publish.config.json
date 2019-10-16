@@ -18,8 +18,8 @@
     }
   ],
   "notification_subscribers": [
-    "gewarren@microsoft.com",
-    "mwthomas@microsoft.com"
+    "mwthomas@microsoft.com",
+    "ghogen@microsoft.com"
   ],
   "sync_notification_subscribers": [
     "gewarren@microsoft.com"
