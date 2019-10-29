@@ -18,11 +18,11 @@
     }
   ],
   "notification_subscribers": [
-    "gewarren@microsoft.com",
-    "mwthomas@microsoft.com"
+    "mwthomas@microsoft.com",
+    "ghogen@microsoft.com"
   ],
   "sync_notification_subscribers": [
-    "gewarren@microsoft.com"
+    "ghogen@microsoft.com"
   ],
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/intellicode",
