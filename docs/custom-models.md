@@ -91,15 +91,15 @@ Before you start, make sure that:
       - For C++ repositories: Visual Studio 2019 Update 4 or higher
    - The IntelliCode task must be completed within 1 hour of the start of the pipeline. 
       - We recommend setting up a simpler pipeline for the IntelliCode task if you have a lengthy build process.
-   - You have a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode.
-      - You can use the same service connection across your projects' pipelines. 
    - You have enabled acquisition of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
 
-Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
+#### Setup
+1. Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
 
    ![Azure DevOps organization selection screen](media/SelectOrg.jpg)
 
    - This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
+1. Set up a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode. You only need to do this once, the same connection can be reused for multiple pipelines.
 
 #### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops):
 
