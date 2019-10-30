@@ -93,7 +93,7 @@ Before you start, make sure that:
       - We recommend setting up a simpler pipeline for the IntelliCode task if you have a lengthy build process.
    - You have a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode.
       - You can use the same service connection across your projects' pipelines. 
-   - You have enabled acquisiton of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
+   - You have enabled acquisition of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
 
 Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
 
@@ -109,7 +109,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 ![Add IntelliCode build task](media/AddYAMLTask.jpg)
 
 2. In the task configuration pane, type the branch that you want to train the model on. 
-   - We recommend using any persistant branch such as master or a release branch.
+   - We recommend using any persistent branch such as master or a release branch.
 3. Select the IntelliCode service connection you'd like to use for this task from the dropdown.
    - If you don't have an available service connection, you'll need to [create one](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) before you can proceed.
 
@@ -128,7 +128,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 
 ![Add training task to pipeline](media/AddTask.jpg)
 
-4. In the task configuration pane, select the branch that you want to train the model on. We recommend using any persistant branch such as master or a release branch.
+4. In the task configuration pane, select the branch that you want to train the model on. We recommend using any persistent branch such as master or a release branch.
 
 ![Configure IntelliCode task](media/ConfigOptions.jpg)
 
@@ -137,7 +137,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 ![Add IntelliCode service connection](media/AddConnection.jpg)
 
 6. Save and run your pipeline to create your team model.
-7. Open the corresponding repository to your pipeline in Visual Studioto to automatically download the created team model via the [automatic team model acquisition](#sharing-your-repository-associated-models) feature after your pipeline completes.
+7. Open the corresponding repository to your pipeline in Visual Studio to to automatically download the created team model via the [automatic team model acquisition](#sharing-your-repository-associated-models) feature after your pipeline completes.
 8. Your model will be automatically updated with each CI build.
 
 
@@ -174,6 +174,8 @@ You can remove models from your account so they can no longer be used.
       - All IntelliCode models you have access to will be listed in the Output window. 
 5.	Go to **View** > **Other Windows** > **Delete IntelliCode models**. Paste the model ID into the box and hit **Delete**.
 
+When you delete your models, your request will remove the model from your account, and the data will be purged from IntelliCode’s systems within 72 hours.
+
 ## User-associated team models
 
 > [!NOTE] 
@@ -202,7 +204,7 @@ For more information about sharing models, see [How to: Share custom models](sha
 
 ## Retrain your model
 
-For AI-assisted IntelliSense recommendations, the model becomes stale if you make changes such as renaming a method or adding new methods. The model doesn't know about those changes until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
+Your team model becomes stale if you make changes such as renaming a method or adding new methods. The model doesn't know about those changes until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
 There's no benefit to retraining your model unless you’ve made significant code changes and would like to see those changes reflected in IntelliCode's recommendations.
 
@@ -212,8 +214,7 @@ You can remove models from your account so they can no longer be used. To do thi
 
 ![Delete an IntelliCode model in Visual Studio](media/delete-model.png)
 
-To completely remove your data from the training service, send a request to [vsintellicodedata@microsoft.com](mailto:vsintellicodedata@microsoft.com) from the personalization account you're using.
-
+When you delete your models, your request will remove the model from your account, and the data will be purged from IntelliCode’s systems within 72 hours.
 
 ### Train on a public codebase
 
@@ -221,15 +222,15 @@ Before you train on your own code, you might want to create a custom model on a 
 
 - [Azure ConferenceBuddy](https://github.com/Azure/ConferenceBuddy)
 
-   Fork the repo to your person account, clone the repo, open the *ConferenceBuddy.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **AskWhoTask** class.
+   Fork the repo to your personal account, clone the repo, open the *ConferenceBuddy.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **AskWhoTask** class.
 
 - [Windows RSS reader](https://github.com/Microsoft/Windows-appsample-rssreader)
 
-   Fork the repo to your person account, clone the repo, open the *RssReader.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **MainViewModel** class.
+   Fork the repo to your personal account, clone the repo, open the *RssReader.sln* solution, build to check that it's working, and then train the model. You'll find some good completions on instances of the **MainViewModel** class.
 
 ## Data and privacy
 
-To train a model based on your code, IntelliCode extracts only those elements of the code that are needed to create a model for recommending completion values. For example, it extracts the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
+To build your team model, we extract a summary file with metadata on your types and their usages. For example, the summary file contains the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
 
 The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
@@ -237,7 +238,9 @@ The extracted data is transmitted, over HTTPS, to the IntelliCode service. The s
 
 To inspect the contents of the extracted data:
 
-1. Open the *%TEMP%\Visual Studio IntelliCode* directory.
+1. Open the extracted data directory:
+   - For repository-associated models: %temp%\Intellicode_Extraction_2019-10-23—234524
+   - For user-associated mdoels: *%TEMP%\Visual Studio IntelliCode*
 
 1. To find and open the training for your most recent training session, sort the folder view by date (descending). The folder for your most recent training session is now at the top.
 
@@ -252,9 +255,9 @@ If you want to inspect the extracted data for a different codebase before trying
 
 ### How we secure your data
 
-Your models are private to you and those people that have the sharing links that you generate by choosing **Share model**.
+Your models are private to you, those people that have the sharing links that you generate by choosing **Share model**, and, those who have access to a [repository with an associated model](#sharing-your-repository-associated-models). 
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training or by someone they authorized by sharing the link to the model. This means that your model and what is learned about your code stays private to you and your intended collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, by someone they authorized by sharing the link to the model, and by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
 If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
 
