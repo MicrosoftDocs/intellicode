@@ -51,9 +51,9 @@ Suppose you have an existing codebase that contains good patterns for using type
 
 The best approach here is:
 
-1. [Create a custom model](custom-models.md#create-a-model) on the existing codebase.
+1. [Create a custom model](custom-models.md#user-associated-team-models) on the existing codebase.
 
-2. [Share the link](custom-models.md#share-a-custom-model) to the model with everyone who'll be using the new codebase.
+2. [Share the link](custom-models.md#user-associated-team-models) to the model with everyone who'll be using the new codebase.
 
    You can do this in various ways, for example, by checking it in to your codebase's *README* file, sending it in email, posting it on a project's wiki, or via a chat channel&mdash;whatever makes sense for your collaborators.
 
@@ -68,9 +68,9 @@ If you need to retrain the custom model, there's no need for collaborators to re
 
 If you own a library or other package and want to help your users out with IntelliCode suggestions:
 
-1. [Create a custom model](custom-models.md#create-a-model) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
+1. [Create a custom model](custom-models.md#user-associated-team-models) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
 
-2. [Share the link](custom-models.md#share-a-custom-model) with everyone who'll be using the library.
+2. [Share the link](custom-models.md#user-associated-team-models) with everyone who'll be using the library.
 
    For example, place the link in your library's documentation or in the *README.md* file of your repo, so it can easily be found and used.
 

@@ -34,7 +34,7 @@ You don't need to manage which models apply to which solution or codebase becaus
 
 You are two ways you can obtain team models:
 
-1.	**Repository-associated**: Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. See [automatic acquisition of team models for more information](#auto-acquire-models)
+1.	**Repository-associated**: Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. See [automatic acquisition of team models for more information](#sharing-your-repository-associated-models)
 
 >[!NOTE]
 > Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
@@ -63,7 +63,7 @@ To train a repository-associated model, follow these steps:
 4.	You’ll be prompted to sign-in with the account you’d like to use.
 5.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
-You can also build a repository-associated model by [integrating our build task](#build-task) as part of your Azure DevOps CI pipeline.
+You can also build a repository-associated model by [integrating our build task](#automatically-create-and-retrain-a-model-in-Azure-Pipelines) as part of your Azure DevOps CI pipeline.
 
 >[!NOTE] 
 >You must open a solution or folder of code in Visual Studio in order to train a model.
@@ -72,7 +72,7 @@ You can also build a repository-associated model by [integrating our build task]
 
 For AI-assisted IntelliSense recommendations, the model becomes stale if you make changes such as renaming a method or adding new methods. The model doesn't know about those changes until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
-You can retrain your model manually by opening the associated repository and going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or [automatically](#build-task) as part of a continuous integration (CI) pipeline.
+You can retrain your model manually by opening the associated repository and going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or [automatically](#automatically-create-and-retrain-a-model-in-Azure-Pipelines) as part of a continuous integration (CI) pipeline.
 
 There's no benefit to retraining your model unless you’ve made significant code changes and would like to see those changes reflected in IntelliCode's recommendations.
 
@@ -91,7 +91,7 @@ Before you start, make sure that:
       - For C++ repositories: Visual Studio 2019 Update 4 or higher
    - The IntelliCode task must be completed within 1 hour of the start of the pipeline. 
       - We recommend setting up a simpler pipeline for the IntelliCode task if you have a lengthy build process.
-   - You have a [service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode.
+   - You have a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode.
       - You can use the same service connection across your projects' pipelines. 
    - You have enabled acquisiton of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
 
@@ -101,7 +101,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 
    - This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
 
-#### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/en-us/azure/devops/pipelines/customize-pipeline?view=azure-devops):
+#### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops):
 
 
 1.	Search for and add the IntelliCode task in the assistant pane.
@@ -111,7 +111,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 2. In the task configuration pane, type the branch that you want to train the model on. 
    - We recommend using any persistant branch such as master or a release branch.
 3. Select the IntelliCode service connection you'd like to use for this task from the dropdown.
-   - If you don't have an available service connection, you'll need to [create one](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) before you can proceed.
+   - If you don't have an available service connection, you'll need to [create one](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) before you can proceed.
 
 ![Configure IntelliCode build task](media/ConfigYAMLTask.jpg)
 
@@ -120,7 +120,7 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 5.	Open the corresponding repository from your pipeline in Visual Studio to download the created team model via the automatic team model acquisition feature after your pipeline completes.
 6.	Your model will be automatically updated and shared with each CI build.
 
-#### Set up team model creation and retraining in Azure Pipelines using the [classic editor](https://docs.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&tabs=classic):
+#### Set up team model creation and retraining in Azure Pipelines using the [classic editor](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&tabs=classic):
 
 
 
@@ -137,12 +137,12 @@ Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstu
 ![Add IntelliCode service connection](media/AddConnection.jpg)
 
 6. Save and run your pipeline to create your team model.
-7. Open the corresponding repository to your pipeline in Visual Studioto to automatically download the created team model via the [automatic team model acquisition](#auto-acquire-team-models) feature after your pipeline completes.
+7. Open the corresponding repository to your pipeline in Visual Studioto to automatically download the created team model via the [automatic team model acquisition](#sharing-your-repository-associated-models) feature after your pipeline completes.
 8. Your model will be automatically updated with each CI build.
 
 
 
-### Sharing your model
+### Sharing your repository-associated models
 
 Repository-associated models are automatically shared with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
 Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
