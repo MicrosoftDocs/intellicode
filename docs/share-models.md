@@ -16,7 +16,7 @@ By creating a custom model, you get IntelliCode completion recommendations for c
 
 ## Share a repository-associated team model
 
-Repository-associated models are automatically shared with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
+Repository-associated models are **automatically shared** with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
 
 Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
 
@@ -72,7 +72,7 @@ The best approach here is:
    > [!CAUTION]
    > Anyone who has the sharing link can access the model and its suggestions. Make sure that everyone who receives the link is aware of this.
 
-3. Collaborators then [use the sharing link](#add-a-custom-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
+3. Collaborators then [use the sharing link](#add-a-user-associated-team-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
 
 If you need to retrain the custom model, there's no need for collaborators to reapply it. The IntelliCode service automatically updates their copies.
 
@@ -86,7 +86,7 @@ If you own a library or other package and want to help your users out with Intel
 
    For example, place the link in your library's documentation or in the *README.md* file of your repo, so it can easily be found and used.
 
-3. Library users then [use the sharing link](#add-a-custom-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
+3. Library users then [use the sharing link](#add-a-user-associated-team-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
 Library users receive automatic updates if you retrain the model.
 

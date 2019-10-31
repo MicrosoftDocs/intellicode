@@ -63,7 +63,7 @@ To train a repository-associated model, follow these steps:
 4.	You’ll be prompted to sign-in with the account you’d like to use.
 5.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
-You can also build a repository-associated model by [integrating our build task](#automatically-create-and-retrain-a-model-in-Azure-Pipelines) as part of your Azure DevOps CI pipeline.
+You can also build a repository-associated model by [integrating our build task](#automatically-create-and-retrain-a-model-in-azure-pipelines) as part of your Azure DevOps CI pipeline.
 
 >[!NOTE] 
 >You must open a solution or folder of code in Visual Studio in order to train a model.
@@ -72,7 +72,7 @@ You can also build a repository-associated model by [integrating our build task]
 
 For AI-assisted IntelliSense recommendations, the model becomes stale if you make changes such as renaming a method or adding new methods. The model doesn't know about those changes until you train it again. If you've made numerous changes or additions to a codebase, consider retraining any models that were created from it.
 
-You can retrain your model manually by opening the associated repository and going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or [automatically](#automatically-create-and-retrain-a-model-in-Azure-Pipelines) as part of a continuous integration (CI) pipeline.
+You can retrain your model manually by opening the associated repository and going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or [automatically](#automatically-create-and-retrain-a-model-in-azure-pipelines) as part of a continuous integration (CI) pipeline.
 
 There's no benefit to retraining your model unless you’ve made significant code changes and would like to see those changes reflected in IntelliCode's recommendations.
 
