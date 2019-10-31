@@ -1,5 +1,5 @@
 ---
-title: Share custom models
+title: Share user-associated models
 ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -8,13 +8,25 @@ author: markw-t
 ms.author: mwthomas
 manager: jillfra
 ---
-# How to: Share custom models in Visual Studio IntelliCode
+# How to: Share team models in Visual Studio IntelliCode
 
-IntelliCode has a model sharing feature that lets you share any model you've created with anyone you provide a link to. Additionally, users that have access to the shared model automatically receive the latest updates when you retrain the model.
+IntelliCode has team model sharing features that let you share any model you've created and automatically update users that have access when you retrain the model.
 
 By creating a custom model, you get IntelliCode completion recommendations for code that's not in the base model. Sharing a model with collaborators extends the enhanced IntelliSense recommendations to everyone; they don't have to create or retrain a custom model themselves.
 
-## Share a custom model
+## Share a repository-associated team model
+
+Repository-associated models are automatically shared with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
+
+Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
+
+When anyone clones and opens the codebase the model was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the model.
+
+Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
+
+You can also share your model by going to **View** > **Other Windows** > **IntelliCode Model Management**, selecting your model from the left pane, and hitting the **Share** button. This generates a sharing link you can send to anyone you'd like to share the model with.
+
+## Share a user-associated team model
 
 After you've trained a model, the **Share model** button appears. Click the button to copy the sharing link. From there, you can share the link with your collaborators.
 
@@ -23,7 +35,7 @@ After you've trained a model, the **Share model** button appears. Click the butt
 
 You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-## Add a custom model
+## Add a user-associated team model
 
 To use a model link that someone shared with you, follow these steps:
 
@@ -51,7 +63,7 @@ Suppose you have an existing codebase that contains good patterns for using type
 
 The best approach here is:
 
-1. [Create a custom model](custom-models.md#user-associated-team-models) on the existing codebase.
+1. [Create a team model](custom-models.md#user-associated-team-models) on the existing codebase.
 
 2. [Share the link](custom-models.md#user-associated-team-models) to the model with everyone who'll be using the new codebase.
 
@@ -68,7 +80,7 @@ If you need to retrain the custom model, there's no need for collaborators to re
 
 If you own a library or other package and want to help your users out with IntelliCode suggestions:
 
-1. [Create a custom model](custom-models.md#user-associated-team-models) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
+1. [Create a team model](custom-models.md#user-associated-team-models) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
 
 2. [Share the link](custom-models.md#user-associated-team-models) with everyone who'll be using the library.
 

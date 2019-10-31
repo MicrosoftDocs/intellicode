@@ -116,7 +116,7 @@ Before you start, make sure that:
 ![Configure IntelliCode build task](media/ConfigYAMLTask.jpg)
 
 3.	Ensure the IntelliCode Model Training task occurs after your build step.
-4.	 Save and run your pipeline to create your model.
+4.	Save and run your pipeline to create your model.
 5.	Open the corresponding repository from your pipeline in Visual Studio to download the created team model via the automatic team model acquisition feature after your pipeline completes.
 6.	Your model will be automatically updated and shared with each CI build.
 
@@ -124,7 +124,7 @@ Before you start, make sure that:
 
 
 
-3. Add the IntelliCode Build task to your pipeline. Place it after the compilation and build tasks.
+3. Add the IntelliCode Build task to your pipeline. Place it after any build tasks.
 
 ![Add training task to pipeline](media/AddTask.jpg)
 
@@ -150,6 +150,8 @@ Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode
 When anyone clones and opens the codebase the model was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the model.
 
 Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
+
+You can also share your model by going to **View** > **Other Windows** > **IntelliCode Model Management**, selecting your model from the left pane, and hitting the **Share** button. This generates a sharing link you can send to anyone you'd like to share the model with.
 
 ### Delete your model
 
