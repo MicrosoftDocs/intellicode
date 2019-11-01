@@ -30,7 +30,7 @@ Developers at Microsoft have been using IntelliCode’s recommendations internal
 
 For each languages, we continuously improve its base model's coverage of common libraries and types. If there’s a common library you'd like to see included, use the feedback controls at the bottom of this page to let us know.
 
-For C# users, IntelliCode can learn patterns from your own code. For more information, see [IntelliCode models based on your code](custom-models.md).
+For C# users, IntelliCode can learn patterns from your own code. For more information, see [IntelliCode team completions](custom-models.md).
 
 ## Q: How do I turn starred suggestions off?
 
@@ -39,6 +39,32 @@ To turned starred IntelliSense suggestions off, disable the extension:
 - In Visual Studio, choose **Extensions** > **Manage Extensions**, find and select the IntelliCode extension, and then click **Disable**.
 
 - In Visual Studio Code, click **Extensions**, find and select the IntelliCode extension, and then click **Disable**.
+
+
+## Q. Error training team model for completions in Azure DevOps task
+
+The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task will only work when you use build or release pipelines of the following types: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline types see:
+
+  - `Build.Reason` in [Build variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables).
+  - `Release.Reason` in [Release variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch#release-variables)
+
+In particular, it will not work on pull requests. This is by design in order to avoid creating team models for completions that use temporary commits that may get squashed once the pull request is completed.
+
+## Q. Error training team model for completions due to model ownership
+
+Team models can only be trained and re-trained by the owner of the model. When no model has been trained for a repository, anyone can create a team model for that repository and become the model's owner. The owner can also delete the model from IntelliCode's services, see [Delete your model](custom-models#delete-your-model).
+
+We're currently working on improving this experience so that anyone with access to the repository can train and re-train team models for it. Sign up for news and updates about team models at [Visual Studio IntelliCode](https://visualstudio.microsoft.com/services/intellicode/).
+
+## Q. Error training team model for completions due to throttling
+
+Team models can only be trained once per day for each repository. Typically that is enough to keep a team model for completions freshly updated with the latest version of your code.
+
+## Q. Error consuming or training team model due to unknown commit
+
+When a team model is trained on a commit, and then that commit is deleted from the git history, or the commit is not accessible to the training machine for another reason, then you'll not be able to consume the model associated to that commit. You may also be unable to train new models going forward if that's the case.
+
+If your model is unable to be re-trained due to changes in the git history, try deleting the model and then do another team model training. See [Delete your model](custom-models#delete-your-model).
 
 ## Q. Is it free?
 
