@@ -10,14 +10,14 @@ manager: jillfra
 ---
 # IntelliCode team completions: AI-assisted IntelliSense based on your code
 
-Use IntelliCode team models for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ codebases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open source code. This is because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. When working with code that isn’t in that set of repos, those recommendations aren't as useful to you. C# and C++ users in Visual Studio can now use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code. 
+Use IntelliCode team models for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ codebases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open source code. This is because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. When working with code that isn’t in that set of repos, those recommendations aren't as useful to you. C# and C++ users in Visual Studio can now use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code.
 
-An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on an analysis of code. IntelliCode creates custom models for your team using the same learning process as for the IntelliCode base models, except they are trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be at offering useful recommendations. 
+An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on an analysis of code. IntelliCode creates custom models for your team using the same learning process as for the IntelliCode base models, except they are trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable the custom model will be at offering useful recommendations.
 
 To build your team model, we extract a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
 
-> [!NOTE]
-> Team completions are a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
+   > [!NOTE]
+   > Team completions are a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
 
 ## How models get applied
 
@@ -34,12 +34,10 @@ You don't need to manage which models apply to which solution or codebase becaus
 
 You are two ways you can obtain team models:
 
-1.	**Repository-associated**: Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. See [automatic acquisition of team models for more information](#sharing-your-repository-associated-models)
+1. **Repository-associated**: Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. See [automatic acquisition of team models for more information](#sharing-your-repository-associated-models).
+    - Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
 
->[!NOTE]
-> Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
-
-2. **User-associated**: Models are tied to your personal identity and must be shared with others through a sharing link. 
+2. **User-associated**: Models are tied to your personal identity and must be shared with others through a sharing link.
    - This type of team model is only available for C# and will be deprecated in the next year.
 
 ## Repository-associated team models
@@ -47,21 +45,22 @@ You are two ways you can obtain team models:
 ### Create your model
 
 To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. A codebase with a wide variety of common usage patterns will create a model that provides useful results for more cases.
-[Learn more]() 
 
 Requirements:
-1.	The repository must not already have a repository-associated model already trained on it.
-2.	The repository must be under Git source control.
-3. You must enable the following settings in **Tools** > **Options** > **IntelliCode**.
+
+- The repository must not already have a repository-associated model already trained on it.
+- The repository must be under Git source control.
+- You must enable the following settings in **Tools** > **Options** > **IntelliCode**.
    - C# or C++ team models for completions
    - Acquire team models for completions
 
 To train a repository-associated model, follow these steps:
-1.	Clone the repository with the solution you’d like to train on.
-2.	Open the solution or repository folder in Visual Studio.
-3.	Create a model by going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or by searching for the command in Visual Studio Search (**Ctrl + Q**). 
-4.	You’ll be prompted to sign-in with the account you’d like to use.
-5.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
+
+1. Clone the repository with the solution you’d like to train on.
+1.	Open the solution or repository folder in Visual Studio.
+1.	Create a model by going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or by searching for the command in Visual Studio Search (**Ctrl + Q**).
+1.	You’ll be prompted to sign-in with the account you’d like to use.
+1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
 You can also build a repository-associated model by [integrating our build task](#automatically-create-and-retrain-a-model-in-azure-pipelines) as part of your Azure DevOps CI pipeline.
 
@@ -84,61 +83,60 @@ You can automatically create and retrain a model as part of your continuous inte
 
 Before you start, make sure that:
 
-   - You have permission to create and edit pipelines for the project.
-   - Your project uses Git source control.
-   - The build agent has the minimum required version of Visual Studio installed.
-      - For C# repositories: Visual Studio 2017 or higher
-      - For C++ repositories: Visual Studio 2019 Update 4 or higher
-   - The IntelliCode task must be completed within 1 hour of the start of the pipeline. 
-      - We recommend setting up a simpler pipeline for the IntelliCode task if you have a lengthy build process.
-   - You have enabled acquisition of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
+- You have permission to create and edit pipelines for the project.
+- Your project uses Git source control.
+- The build agent has the minimum required version of Visual Studio installed.
+   - For C# repositories: Visual Studio 2017 or higher
+   - For C++ repositories: Visual Studio 2019 Update 4 or higher
+- The IntelliCode task must be completed within 1 hour of the start of the pipeline. 
+   - We recommend setting up a simpler pipeline for the IntelliCode task if you have a lengthy build process.
+- You have enabled acquisition of team models. You can verify this setting in **Tools** > **Options** > **IntelliCode** > **Acquire team models for completions**.
 
 #### Setup
+
 1. Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
 
-   ![Azure DevOps organization selection screen](media/SelectOrg.jpg)
+   ![Azure DevOps organization selection screen](media/select-org.jpg)
 
    - This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
 1. Set up a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode. You only need to do this once, the same connection can be reused for multiple pipelines.
 
-#### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops):
-
+#### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops)
 
 1.	Search for and add the IntelliCode task in the assistant pane.
+   ![Add IntelliCode build task](media/add-yaml-task.jpg)
 
-![Add IntelliCode build task](media/AddYAMLTask.jpg)
-
-2. In the task configuration pane, type the branch that you want to train the model on. 
+1. In the task configuration pane, type the branch that you want to train the model on. 
    - We recommend using any persistent branch such as master or a release branch.
-3. Select the IntelliCode service connection you'd like to use for this task from the dropdown.
+1. Select the IntelliCode service connection you'd like to use for this task from the dropdown.
    - If you don't have an available service connection, you'll need to [create one](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) before you can proceed.
+   
+   ![Configure IntelliCode build task](media/config-yaml-task.jpg)
 
-![Configure IntelliCode build task](media/ConfigYAMLTask.jpg)
+1.	Ensure the IntelliCode Model Training task occurs after your build step.
+1.	Save and run your pipeline to create your model.
+1.	Open the corresponding repository from your pipeline in Visual Studio to download the created team model via the automatic team model acquisition feature after your pipeline completes.
+1.	Your model will be automatically updated and shared with each CI build.
 
-3.	Ensure the IntelliCode Model Training task occurs after your build step.
-4.	Save and run your pipeline to create your model.
-5.	Open the corresponding repository from your pipeline in Visual Studio to download the created team model via the automatic team model acquisition feature after your pipeline completes.
-6.	Your model will be automatically updated and shared with each CI build.
+#### Set up team model creation and retraining in Azure Pipelines using the [classic editor](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&tabs=classic)
 
-#### Set up team model creation and retraining in Azure Pipelines using the [classic editor](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-get-started?view=azure-devops&tabs=classic):
+1. Add the IntelliCode Build task to your pipeline. Place it after any build tasks.
 
+   ![Add training task to pipeline](media/add-task.jpg)
 
+1. In the task configuration pane, select the branch that you want to train the model on. We recommend using any persistent branch such as master or a release branch.
 
-3. Add the IntelliCode Build task to your pipeline. Place it after any build tasks.
+   ![Configure IntelliCode task](media/config-options.jpg)
 
-![Add training task to pipeline](media/AddTask.jpg)
+1. Select an existing IntelliCode connection from the dropdown or select New to create a new OAuth 2.0 connection to the IntelliCode service. This connection is used to upload the training data to create the model. 
 
-4. In the task configuration pane, select the branch that you want to train the model on. We recommend using any persistent branch such as master or a release branch.
+   ![Add IntelliCode service connection](media/add-connection.jpg)
 
-![Configure IntelliCode task](media/ConfigOptions.jpg)
+1. Save and run your pipeline to create your team model.
 
-5. Select an existing IntelliCode connection from the dropdown or select New to create a new OAuth 2.0 connection to the IntelliCode service. This connection is used to upload the training data to create the model. 
+1. Open the corresponding repository to your pipeline in Visual Studio to to automatically download the created team model via the [automatic team model acquisition](#sharing-your-repository-associated-models) feature after your pipeline completes.
 
-![Add IntelliCode service connection](media/AddConnection.jpg)
-
-6. Save and run your pipeline to create your team model.
-7. Open the corresponding repository to your pipeline in Visual Studio to to automatically download the created team model via the [automatic team model acquisition](#sharing-your-repository-associated-models) feature after your pipeline completes.
-8. Your model will be automatically updated with each CI build.
+1. Your model will be automatically updated with each CI build.
 
 
 
@@ -242,7 +240,7 @@ To inspect the contents of the extracted data:
 
 1. Open the extracted data directory:
    - For repository-associated models: %temp%\Intellicode_Extraction_2019-10-23—234524
-   - For user-associated mdoels: *%TEMP%\Visual Studio IntelliCode*
+   - For user-associated models: *%TEMP%\Visual Studio IntelliCode*
 
 1. To find and open the training for your most recent training session, sort the folder view by date (descending). The folder for your most recent training session is now at the top.
 
@@ -262,7 +260,6 @@ Your models are private to you, those people that have the sharing links that yo
 All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, by someone they authorized by sharing the link to the model, and by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
 If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
-
 
 ## See also
 
