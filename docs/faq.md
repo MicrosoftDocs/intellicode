@@ -43,12 +43,12 @@ To turned starred IntelliSense suggestions off, disable the extension:
 
 ## Q. Error training team model for completions in Azure DevOps task
 
-The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task will only work when you use build or release pipelines of the following types: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline types see:
+The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task will only work when you use build or release was caused by one of the following reasons: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline event reasons see:
 
   - `Build.Reason` in [Build variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables).
   - `Release.Reason` in [Release variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch#release-variables)
 
-In particular, it will not work on pull requests. This is by design in order to avoid creating team models for completions that use temporary commits that may get squashed once the pull request is completed.
+In particular, team model for completion training will not work on pull requests. This is by design in order to avoid creating team models for completions that use temporary commits that may get squashed once the pull request is completed, given that users would be unable to consume such models. See [Q. Error consuming or training team model due to unknown commit](#q-error-consuming-or-training-team-model-due-to-unknown-commit).
 
 ## Q. Error training team model for completions due to model ownership
 
