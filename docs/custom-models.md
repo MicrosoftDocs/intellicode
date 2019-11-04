@@ -94,7 +94,7 @@ Before you start, make sure that:
 
 #### Setup
 
-1. Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeBuild) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
+1. Install the [Visual Studio IntelliCode Build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) from Visual Studio Marketplace to your Azure DevOps organization and select the organization you’d like to add the task to.
 
    ![Azure DevOps organization selection screen](media/select-org.jpg)
 
