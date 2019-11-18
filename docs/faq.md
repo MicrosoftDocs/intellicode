@@ -28,7 +28,7 @@ Developers at Microsoft have been using IntelliCode’s recommendations internal
 
 ## Q. Why isn’t my favorite library seeing recommendations?
 
-For each languages, we continuously improve its base model's coverage of common libraries and types. If there’s a common library you'd like to see included, use the feedback controls at the bottom of this page to let us know.
+For each language, we continuously improve its base model's coverage of common libraries and types. If there’s a common library you'd like to see included, use the feedback controls at the bottom of this page to let us know.
 
 For C# users, IntelliCode can learn patterns from your own code. For more information, see [IntelliCode team completions](custom-models.md).
 
