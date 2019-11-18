@@ -43,7 +43,7 @@ To turned starred IntelliSense suggestions off, disable the extension:
 
 ## Q. Error training team model for completions in Azure DevOps task
 
-The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task will only train new team models when your build or release was triggered by one of the following reasons: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline triggering reasons see:
+The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task is triggered _only_ when you run a build or release caused by one of the following reasons: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline triggering reasons see:
 
   - `Build.Reason` in [Build variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables).
   - `Release.Reason` in [Release variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch#release-variables)
