@@ -101,7 +101,7 @@ Before you start, make sure that:
    - This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
 1. Set up a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode. You only need to do this once, the same connection can be reused for multiple pipelines.
 
-   ![Azure DevOps service connection screen](media/Azure DevOps service connection selection menu.PNG)
+   ![Azure DevOps service connection screen](media/select-servic-connection.PNG)
 
 #### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops)
 
