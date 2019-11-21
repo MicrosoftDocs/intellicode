@@ -8,19 +8,19 @@ author: markw-t
 ms.author: mwthomas
 manager: jillfra
 ---
-# How to: Share team models in Visual Studio IntelliCode
+# How to: Share team completions in Visual Studio IntelliCode
 
-IntelliCode has team model sharing features that let you share any model you've created and automatically update users that have access when you retrain the model.
+IntelliCode has team completions sharing features that let you share any model you've created and automatically update users that have access when you retrain the model.
 
-By creating a custom model, you get IntelliCode completion recommendations for code that's not in the base model. Sharing a model with collaborators extends the enhanced IntelliSense recommendations to everyone; they don't have to create or retrain a custom model themselves.
+By creating a team completions model, you get IntelliCode completion recommendations for code that's not in the base model. Sharing a team completions model with collaborators extends the enhanced IntelliSense recommendations to everyone; they don't have to create or retrain a completions model themselves.
 
-## Share a repository-associated team model
+## Share a repository-associated team completions model
 
 Repository-associated models are **automatically shared** with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
 
 Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
 
-When anyone clones and opens the codebase the model was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the model.
+When anyone clones and opens the codebase the model was trained on, any completions models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the completions model.
 
 Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
 
@@ -35,7 +35,7 @@ After you've trained a model, the **Share model** button appears. Click the butt
 
 You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-## Add a user-associated team model
+## Add a user-associated team completions model
 
 To use a model link that someone shared with you, follow these steps:
 
@@ -72,7 +72,7 @@ The best approach here is:
    > [!CAUTION]
    > Anyone who has the sharing link can access the model and its suggestions. Make sure that everyone who receives the link is aware of this.
 
-3. Collaborators then [use the sharing link](#add-a-user-associated-team-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
+3. Collaborators then [use the sharing link](#add-a-user-associated-team-completions-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
 
 If you need to retrain the custom model, there's no need for collaborators to reapply it. The IntelliCode service automatically updates their copies.
 
@@ -86,7 +86,7 @@ If you own a library or other package and want to help your users out with Intel
 
    For example, place the link in your library's documentation or in the *README.md* file of your repo, so it can easily be found and used.
 
-3. Library users then [use the sharing link](#add-a-user-associated-team-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
+3. Library users then [use the sharing link](#add-a-user-associated-team-completions-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
 
 Library users receive automatic updates if you retrain the model.
 

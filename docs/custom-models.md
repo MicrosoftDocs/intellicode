@@ -30,9 +30,9 @@ IntelliCode generates its recommendations from multiple models by merging togeth
 
 You don't need to manage which models apply to which solution or codebase because IntelliCode takes care of this for you.
 
-## Types of team models
+## Types of team completions models
 
-You are two ways you can obtain team models:
+You are two ways you can obtain team completions models:
 
 1. **Repository-associated**: Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. See [automatic acquisition of team models for more information](#sharing-your-repository-associated-models).
     - Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
@@ -42,7 +42,7 @@ You are two ways you can obtain team models:
 
 ## Repository-associated team models
 
-### Create your model
+### Create your completions model
 
 To get useful predictions, a codebase should represent the common usage patterns for the APIs, objects, and methods that you use. A codebase with a wide variety of common usage patterns will create a model that provides useful results for more cases.
 
@@ -79,7 +79,7 @@ There's no benefit to retraining your model unless you’ve made significant cod
 
 ### Automatically create and retrain a model in Azure Pipelines
 
-You can automatically create and retrain a model as part of your continuous integration (CI) pipeline in [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops). When code changes are pushed to your repository and the build task runs, the team model for completions is retrained and then made available to everyone that you've shared the model with. Visual Studio periodically checks for updates to custom models and will download updates to your team model automatically.
+You can automatically create and retrain a model as part of your continuous integration (CI) pipeline in [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops). When code changes are pushed to your repository and the build task runs, the team model for completions is retrained and then made available to everyone that you've shared the model with. Visual Studio periodically checks for updates to completions models and will download updates to your team model automatically.
 
 Before you start, make sure that:
 
@@ -100,6 +100,8 @@ Before you start, make sure that:
 
    - This task scans your source code and extracts the data it needs to create an IntelliCode model. The extracted data is uploaded to the IntelliCode service, which creates the model and associates it with your account.
 1. Set up a [service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml) for IntelliCode. You only need to do this once, the same connection can be reused for multiple pipelines.
+
+   ![Azure DevOps service connection screen](media/select-service-connection.PNG)
 
 #### Set up team model creation and retraining in Azure Pipelines using the [YAML editor](https://docs.microsoft.com/azure/devops/pipelines/customize-pipeline?view=azure-devops)
 
@@ -179,7 +181,7 @@ When you delete your models, your request will remove the model from your accoun
 ## User-associated team models
 
 > [!NOTE] 
-> User-associated team models will be deprecated in the next year. We encourage you to utilize [repository-associated team models](#repository-associated-team-models) moving forward.
+> User-associated team completions models will be deprecated in the next year. We encourage you to utilize [repository-associated team models](#repository-associated-team-models) moving forward.
 
 ### Create your model
 
@@ -200,7 +202,7 @@ After you've trained a model, the **Share model** button appears. Click the butt
 
 You can share your model with as many people as you like via the sharing feature. Team members can't retrain the model but they do see the same completion recommendations as you do.
 
-For more information about sharing models, see [How to: Share custom models](share-models.md).
+For more information about sharing completions models, see [How to: Share custom models](share-models.md).
 
 ## Retrain your model
 
@@ -218,7 +220,7 @@ When you delete your models, your request will remove the model from your accoun
 
 ### Train on a public codebase
 
-Before you train on your own code, you might want to create a custom model on a public codebase. You can see how the custom model affects IntelliSense, or if you're concerned about the kind of data that IntelliSense collects, you can inspect the extracted data. Some interesting samples to train on are:
+Before you train on your own code, you might want to create a completions model on a public codebase. You can see how the completions model affects IntelliSense, or if you're concerned about the kind of data that IntelliSense collects, you can inspect the extracted data. Some interesting samples to train on are:
 
 - [Azure ConferenceBuddy](https://github.com/Azure/ConferenceBuddy)
 
@@ -255,7 +257,7 @@ If you want to inspect the extracted data for a different codebase before trying
 
 ### How we secure your data
 
-Your models are private to you, those people that have the sharing links that you generate by choosing **Share model**, and, those who have access to a [repository with an associated model](#sharing-your-repository-associated-models). 
+Your models are private to you, those people that have the sharing links that you generate by choosing **Share completions**, and, those who have access to a [repository with an associated model](#sharing-your-repository-associated-models). 
 
 All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, by someone they authorized by sharing the link to the model, and by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
