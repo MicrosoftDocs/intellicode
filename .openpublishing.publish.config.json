@@ -51,5 +51,8 @@
     ]
   },
   "need_generate_pdf_url_template": true,
-  "targets": {}
+  "targets": {},
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
