@@ -17,7 +17,7 @@ An IntelliCode model is an encapsulation of a set of rules that allow prediction
 To build your team model, we extract a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
 
    > [!NOTE]
-   > Team completions are a preview feature in [Visual Studio version 16.4 preview 4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview) and above and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
+   > Team completions are a preview feature in [Visual Studio version 16.4 preview 4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
 
 ## How models get applied
 
