@@ -17,7 +17,7 @@ An IntelliCode model is an encapsulation of a set of rules that allow prediction
 To build your team model, we extract a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
 
    > [!NOTE]
-   > Team completions are a preview feature and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
+   > Team completions are a preview feature in [Visual Studio version 16.4 preview 4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview) and above and is disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. It is currently available only for C# and C++ code.
 
 ## How models get applied
 
@@ -53,6 +53,9 @@ Requirements:
 - You must enable the following settings in **Tools** > **Options** > **IntelliCode**.
    - C# or C++ team models for completions
    - Acquire team models for completions
+   
+   > [!NOTE]
+   > If you don't see the above settings, be sure that you have installed at least [Visual Studio version 16.4 preview 4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-preview) or above. Once the preview has been installed, you can be enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
 
 To train a repository-associated model, follow these steps:
 
