@@ -24,7 +24,7 @@ After downloading the above .vsix, you can install by:
 > have at minimum the [Visual Studio Code Python extension version 2019.8.29288](https://marketplace.visualstudio.com/items?itemName=ms-python.python) (an August 2019 release). 
 
 ## How to enable completions for Python: Deep Learning beta
-completions for Python: deep learning is a beta feature, so it is turned off by default. 
+completions for Python: deep learning is a beta feature, so it is turned on by default.
 ![Illustration of enabling completions for python:deep learning](.../media/deep-learning-extension-vscode-setting.png)
 
 If you would like to enable completions for Python: deep learning feature, select the **enabled** option in _File_ > _Preferences_ > _Settings_ > _Extensions_ > _Visual Studio IntelliCode_ 
