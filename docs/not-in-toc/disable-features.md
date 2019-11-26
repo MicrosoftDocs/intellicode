@@ -11,7 +11,7 @@ manager: mwthomas
 ---
 # Install IntelliCode beta extension to get completions for Python: Deep Learning
 IntelliCode improves your authoring experience when you're writing python code.
-Download this [beta feature](https://devdiv.visualstudio.com/_apis/resources/Containers/4851656?itemPath=vsix-merge%2Fvscodeintellicode-1.2.1.vsix) for VS Code powered by Deep LSTM model, you should expect significant recommendation precision improvement over our IntelliCode preview version.
+Download this [internal Microsoft dogfood feature](https://devdiv.visualstudio.com/_apis/resources/Containers/4851656?itemPath=vsix-merge%2Fvscodeintellicode-1.2.1.vsix) for VS Code powered by Deep LSTM model, you should expect significant recommendation precision improvement over our IntelliCode preview version.
 
 After downloading the above .vsix, you can install by: 
   *_Manually from VS Code_: Via the extensions tab, right-click the ... and select "Install from VSIX..." as shown in screenshot below
