@@ -4,8 +4,8 @@ ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: ccaldwel
-ms.author: ccaldwel
+author: catycaldwell
+ms.author: catycaldwell
 manager: jillfra
 ---
 # Quickstart: IntelliCode team completion - AI-assisted IntelliSense based on your code
@@ -18,7 +18,7 @@ You can now acquire IntelliCode team completions for better AI-assisted IntelliS
 To build your team model, we extract a summary file with metadata on your types and their usages and securely upload it to our service.
 
    > [!NOTE]
-   > Team completions are a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
+   > Team completions are a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
    
 ## How to obtain team completions
 
@@ -38,7 +38,7 @@ Requirements:
    - Acquire team models for completions
    
    > [!NOTE]
-   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
+   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
 
 To train team completions on your repo, follow these steps:
 
@@ -48,7 +48,7 @@ To train team completions on your repo, follow these steps:
 1.	You’ll be prompted to sign-in with the account you’d like to use.
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
-Once you are happy with the team completions on your repo, you can set up to automatically create and retrain team completions as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) with the IntelliCode build task.
+Once you are happy with the team completions on your repo, you can set up to automatically create and retrain team completions as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) with the IntelliCode build task.
 
 ## Automate model retraining
 
