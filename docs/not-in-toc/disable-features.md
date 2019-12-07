@@ -5,8 +5,8 @@ ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: error
 description: Turning off IntelliCode deep learning beta features - note this doc is for turning off the beta extension and is not in TOC
-author: ccaldwel
-ms.author: ccaldwel
+author: catycaldwell
+ms.author: catycaldwell
 manager: mwthomas
 ---
 # Install IntelliCode beta extension to get completions for Python: Deep Learning
@@ -17,7 +17,7 @@ After downloading the above .vsix, you can install by:
   *_Manually from VS Code_: Via the extensions tab, right-click the ... and select "Install from VSIX..." as shown in screenshot below
   *_Via Command Prompt_: type code --install-extension<path_to_vsix>\vscodeintellicode-1.2.1.vsix
 
-![Illustration of Manual VSIX Visual Studio Code extension install](.../media/visual-studio-code-extension-install-from-vsix.png)
+![Illustration of Manual VSIX Visual Studio Code extension install](/media/visual-studio-code-extension-install-from-vsix.png)
 
 > [!NOTE] 
 > To try out completions for Python based on a Deep Learning model, you can use any Visual Studio Code version, however, you will need to
@@ -25,7 +25,7 @@ After downloading the above .vsix, you can install by:
 
 ## How to enable completions for Python: Deep Learning beta
 completions for Python: deep learning is a beta feature, so it is turned on by default.
-![Illustration of enabling completions for python:deep learning](.../media/deep-learning-extension-vscode-setting.png)
+![Illustration of enabling completions for python:deep learning](/media/deep-learning-extension-vscode-setting.png)
 
 If you would like to enable completions for Python: deep learning feature, select the **enabled** option in _File_ > _Preferences_ > _Settings_ > _Extensions_ > _Visual Studio IntelliCode_ 
 
