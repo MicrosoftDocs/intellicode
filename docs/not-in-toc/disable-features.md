@@ -1,12 +1,12 @@
 ---
 title: IntelliCode completions for Python: Deep Learning (beta) extension in Visual Studio Code 
-ms.date: 11/25/2019
+ms.date: 12/11/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: error
 description: Turning off IntelliCode deep learning beta features - note this doc is for turning off the beta extension and is not in TOC
 author: catycaldwell
-ms.author: catycaldwell
+ms.author: ccaldwel
 manager: mwthomas
 ---
 # Disabling IntelliCode Python: Deep Learning beta feature
