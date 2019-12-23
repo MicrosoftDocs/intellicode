@@ -1,6 +1,6 @@
 ---
-title: IntelliCode team completions quickstart
-titleSuffix: ""
+title: Visual Studio IntelliCode team completions - Quickstart
+titleSuffix: Visual Studio IntelliCode
 ms.date: 12/19/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -9,9 +9,7 @@ author: catycaldwell
 ms.author: ccaldwel
 manager: jillfra
 ---
-# Quickstart: IntelliCode team completion - AI-assisted IntelliSense based on your code
-
-## Why do I want team completions? 
+# Quickstart - IntelliCode team completions - AI-assisted IntelliSense suggestions based on your code
 
 Visual Studio IntelliCode uses machine learning to offer useful, contextually rich code completion suggestion, in-line as you code.
 
