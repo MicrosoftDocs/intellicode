@@ -11,7 +11,9 @@
     href: intellicode-visual-studio.md
   - name: Code style inference
     href: code-style-inference.md
-  - name: Team models
+  - name: Team completions quickstart
+    href: quickstart-team-completions.md
+  - name: Team completions
     href: custom-models.md
   - name: Share models
     href: share-models.md
