@@ -63,10 +63,10 @@ Once you are happy with the team completions on your repo, you can set up to aut
 To keep your completions up-to-date as your code changes, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
 
 Before you start, make sure that: 
-1. You have permission to create and edit pipelines for the project. Or, ask your CI Admin.
-1. The build agent has the minimum required version of Visual Studio installed:
-  1. For C# repositories: Visual Studio 2017 or higher
-  1. For C++ repositories: Visual Studio 2019 Update 4 or higher
+* You have permission to create and edit pipelines for the project. Or, ask your CI Admin.
+* The build agent has the minimum required version of Visual Studio installed:
+  *  For C# repositories: Visual Studio 2017 or higher
+  * For C++ repositories: Visual Studio 2019 Update 4 or higher
 
 ### Setup
 1. [Install](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) the Visual Studio IntelliCode team model training task from Visual Studio Marketplace to your Azure DevOps organization or Azure DevOps Server to automatically retrain your team completions whenever your code changes.
@@ -77,8 +77,6 @@ Before you start, make sure that:
 1. Save and run your pipeline to create your model.
 1. Open the corresponding repository from your pipeline in Visual Studio to download the newly created model. 
 1. Your model will be automatically updated and shared with each CI build.
-
-## Troubleshooting FAQ
 
 
 ## See also
