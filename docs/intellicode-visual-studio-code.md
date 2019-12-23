@@ -21,6 +21,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 - Java
 - JavaScript and TypeScript
 - Python
+- SQL
 
 ## Prerequisites
 
@@ -70,7 +71,7 @@ If you're still facing a problem, look through the [existing issues](https://git
 
 ## Provide feedback
 
-If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, or TypeScript with the bug.
+If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, TypeScript, or SQL with the bug.
 
 ## See also
 
