@@ -4,7 +4,7 @@ ms.date: 12/23/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-description: Turning off IntelliCode deep learning beta feature - note this doc is for turning off the beta featur and is not in TOC
+description: Turning off IntelliCode deep learning beta feature - note this doc is for turning off the beta feature and is not in TOC
 author: catycaldwell
 ms.author: ccaldwel
 manager: jillfra
