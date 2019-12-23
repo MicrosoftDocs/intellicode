@@ -1,14 +1,15 @@
 ---
-title: IntelliCode completions for Python: Deep Learning feature in Visual Studio Code
+title: IntelliCode completions for Python deep learning feature in Visual Studio Code
 ms.date: 12/23/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: error
 description: Turning off IntelliCode deep learning beta feature - note this doc is for turning off the beta featur and is not in TOC
-authro: catycaldwell
+author: catycaldwell
 ms.author: ccaldwel
 manager: jillfra
 ---
+
 # Disabling IntelliCode Python: Deep Learning beta feature
 With the IntelliCode Python: Deep Learning beta feature, you can improve your authoring experience when you're writing python code in Visual Studio Code.
 
