@@ -20,8 +20,13 @@ With the IntelliCode Python: Deep Learning beta feature, you can improve your au
 
 ## How to disable completions for Python: Deep Learning beta
 
-To disable this beta feature, choose _File_ > _Preferences_ > _Settings_ > _Extensions_ > _Visual Studio IntelliCode_, and then switch Python:Deep Learning to **disabled**.
+To disable this beta feature, choose **File** > **Preferences** > **Settings** > **Extensions** > **Visual Studio IntelliCode**, and then switch Python:Deep Learning to **disabled**.
+
 After you change this setting, close any open files, and then restart Visual Studio Code.
+
+
+![Disable deep learning feature in Visual Studio Code](../media/deep-learning-extension-vscode-setting.png)
+
 
 
 ## How to enable completions for Python: Deep Learning beta
