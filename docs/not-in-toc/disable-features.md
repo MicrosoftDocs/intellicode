@@ -3,7 +3,7 @@ title: IntelliCode completions for Python deep learning feature in Visual Studio
 ms.date: 12/23/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
-ms.topic: error
+ms.topic: conceptual
 description: Turning off IntelliCode deep learning beta feature - note this doc is for turning off the beta featur and is not in TOC
 author: catycaldwell
 ms.author: ccaldwel
@@ -25,7 +25,7 @@ After you change this setting, close any open files, and then restart Visual Stu
 
 
 ## How to enable completions for Python: Deep Learning beta
-Completions for Python: deep learning is a beta feature, so it is turned on by default for all Microsoft Internal users. If you've disabled this beta feature, you can re-enable it by following the below instructions. 
+Completions for Python: deep learning is a beta feature, so it is turned on by default for all Microsoft Internal users. If you've disabled this beta feature, you can enable it by following the below instructions. 
 
 If you would like to enable completions for Python: deep learning feature, select the **enabled** option in _File_ > _Preferences_ > _Settings_ > _Extensions_ > _Visual Studio IntelliCode_ 
 
