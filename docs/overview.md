@@ -43,9 +43,9 @@ The completion list suggests the most likely correct API for a developer to use 
 
 The supported languages for AI-assisted IntelliSense completions are:
 
-- C#, C++, XAML, JavaScript, and TypeScript for Visual Studio.
+- C#, C++, XAML, JavaScript, TypeScript, and Visual Basic for Visual Studio.
 
-- Java, JavaScript, TypeScript, and Python for Visual Studio Code.
+- Java, JavaScript, TypeScript, Python, and SQL for Visual Studio Code.
 
 ## Telemetry
 
