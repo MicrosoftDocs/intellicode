@@ -71,7 +71,7 @@ When anyone clones and opens the codebase the model was trained on, any completi
 
 Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
 
-3. Automate retraining your model with [the Azure Pipelines IntelliCode task](custom-models#automatically-create-and-retrain-a-model-in-azure-pipelines) to keep completions up-to-date with code changes. Your team automatically gets updates whenever the repo is trained. 
+3. Automate retraining your model with [the Azure Pipelines IntelliCode task](custom-models.md#automatically-create-and-retrain-a-model-in-azure-pipelines) to keep completions up-to-date with code changes. Your team automatically gets updates whenever the repo is trained. 
 
 ### Other sharing scenarios
 
