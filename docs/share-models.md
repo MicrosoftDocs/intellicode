@@ -57,38 +57,21 @@ To use a model link that someone shared with you, follow these steps:
 
 This section describes how to set up model sharing for some common cases.
 
-### Brand new project
+### Open Source project (git-based)
 
 Suppose you have an existing codebase that contains good patterns for using types contained in a shared library. You'd like IntelliCode to learn from usage in that codebase to kickstart you and your collaborators when you start work on your next project that uses the same library. The new project, being new, has no usage to learn from. So what do you do?
 
 The best approach here is:
 
-1. [Create a team model](custom-models.md#user-associated-team-models) on the existing codebase.
+1. [Train a model for team completions] (custom-models.md#repository-associated-team-models) on the existing codebase.
 
-2. [Share the link](custom-models.md#user-associated-team-models) to the model with everyone who'll be using the new codebase.
+2. Inform your teammates to enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion** in Visual Studio 2019 version 16.1 or later.
 
-   You can do this in various ways, for example, by checking it in to your codebase's *README* file, sending it in email, posting it on a project's wiki, or via a chat channel&mdash;whatever makes sense for your collaborators.
+When anyone clones and opens the codebase the model was trained on, any completions models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the completions model.
 
-   > [!CAUTION]
-   > Anyone who has the sharing link can access the model and its suggestions. Make sure that everyone who receives the link is aware of this.
+Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
 
-3. Collaborators then [use the sharing link](#add-a-user-associated-team-completions-model) to add the model to their list of models, which tells IntelliCode to apply that model for completions in the new codebase too.
-
-If you need to retrain the custom model, there's no need for collaborators to reapply it. The IntelliCode service automatically updates their copies.
-
-### Open-source package
-
-If you own a library or other package and want to help your users out with IntelliCode suggestions:
-
-1. [Create a team model](custom-models.md#user-associated-team-models) on a codebase that has good sample usage of your library (for example, some sample code that makes a good selection of typical calls to the library).
-
-2. [Share the link](custom-models.md#user-associated-team-models) with everyone who'll be using the library.
-
-   For example, place the link in your library's documentation or in the *README.md* file of your repo, so it can easily be found and used.
-
-3. Library users then [use the sharing link](#add-a-user-associated-team-completions-model) to add the model to their list, which tells IntelliCode to apply that model for completions.
-
-Library users receive automatic updates if you retrain the model.
+3. Automate retraining your model with [the Azure Pipelines IntelliCode task] (custom-models#automatically-create-and-retrain-a-model-in-azure-pipelines) to keep completions up-to-date with code changes. Your team automatically gets updates whenever the repo is trained. 
 
 ### Other sharing scenarios
 
