@@ -55,7 +55,7 @@ To see AI-assisted IntelliSense for certain languages, you may need a more recen
 - XAML requires Visual Studio 2017 version 15.9 or later
 - C++ requires Visual Studio 2019 or later
 - JavaScript and TypeScript requires Visual Studio 2019 version 16.1 or later and TypeScript 3.4.2 or later
-- Visual Basic requires Visual Studio 2019 version 16.1 or later 
+- Visual Basic requires Visual Studio 2019 version 16.3 or later 
 
 ### Supported workloads
 
