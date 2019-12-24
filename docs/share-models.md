@@ -63,7 +63,7 @@ Suppose you have an existing codebase that contains good patterns for using type
 
 The best approach here is:
 
-1. [Train a model for team completions] (custom-models.md#repository-associated-team-models) on the existing codebase.
+1. [Train a model for team completions](custom-models.md#repository-associated-team-models) on the existing codebase.
 
 2. Inform your teammates to enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion** in Visual Studio 2019 version 16.1 or later.
 
@@ -71,7 +71,7 @@ When anyone clones and opens the codebase the model was trained on, any completi
 
 Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
 
-3. Automate retraining your model with [the Azure Pipelines IntelliCode task] (custom-models#automatically-create-and-retrain-a-model-in-azure-pipelines) to keep completions up-to-date with code changes. Your team automatically gets updates whenever the repo is trained. 
+3. Automate retraining your model with [the Azure Pipelines IntelliCode task](custom-models#automatically-create-and-retrain-a-model-in-azure-pipelines) to keep completions up-to-date with code changes. Your team automatically gets updates whenever the repo is trained. 
 
 ### Other sharing scenarios
 
