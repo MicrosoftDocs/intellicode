@@ -49,6 +49,7 @@ You can also try the following troubleshooting steps for your language:
 
 - Python: [Meta issue for the Python language server](https://github.com/Microsoft/vscode-python/issues/2177)
 
+
 ### No starred suggestions
 
 If you see IntelliSense completion lists, but none of the completion items are starred, look at the **VS IntelliCode** output window.
