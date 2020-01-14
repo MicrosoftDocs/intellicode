@@ -17,6 +17,13 @@ If you use many types that are not common in the open source codebases we train 
 
 To train your own model for team completions, we extract a summary file with metadata on your types and their usages and securely upload it to our service.
 
+ > [!NOTE]
+   > To create a model for team completions, Visual Studio will: 
+   1. Analyze your solution locally in order to create a summary file with metadata on your types and their usages across the solution.
+   1. Upload the summary file to the Visual Studio IntelliCode service to create your model.
+   1. Download and activate model within Visual Studio. Your model will only be available to you and those you choose to share it with. 
+   Your raw source code will not leave your computer. [Learn more about this process](custom-models.md)
+
    > [!NOTE]
    > IntelliCode team completions is a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
    
