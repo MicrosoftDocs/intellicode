@@ -15,7 +15,9 @@ Visual Studio IntelliCode uses machine learning to offer useful, contextually ri
 
 If you use many types that are not common in the open source codebases we train our base models on, you can get IntelliCode's contextual completion suggestions (the items in the IntelliSense list with the stars) using team completions. Team completions trains a model just for your codebase, and lets you share it just with anyone with access to your code. You can also keep it up to date automatically by including a task in your CI build pipeline.
 
-To train your own model for team completions, we extract a summary file with metadata on your types and their usages and securely upload it to our service. For details on how to build a team completions model, see [https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy]
+To train your own model for team completions, we extract a summary file with metadata on your types and their usages and securely upload it to our service. For details on how to build a team completions model, see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy)
+
+just link to https://docs.microsoft.com/en-us/visualstudio/intellicode/custom-models#data-and-privacy with some text like "for details of the information used to build a team completions model, see [https://docs.microsoft.com/en-us/visualstudio/intellicode/custom-models#data-and-privacy]"
 
    > [!NOTE]
    > IntelliCode team completions is a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
