@@ -51,15 +51,16 @@ Requirements:
    > [!NOTE]
    > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
 
-Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred recommendations for the most common cases.
+Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
 Once you are happy with the team completions on your repo, you can set up to automatically create and retrain team completions as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) with the IntelliCode build task.
 
 ## What happens once you train your model?
 
-Once you train your model for team completions, we analyze your code locally to extract a summary file with metadata on your types and their usages and securely upload it to our service. Your raw source code never leaves your computer.
+Once you kick off training your model for team completions, we analyze your code locally to extract a summary file with metadata on your types and their usages and securely upload it to our service. You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
-For the full details on how to build a team completions model, see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
+If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
+
 
 ## Automate model retraining
 To keep your completions up-to-date as your code changes, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
