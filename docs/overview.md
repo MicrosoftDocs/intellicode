@@ -5,8 +5,8 @@ ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: catycaldwell
+ms.author: ccaldwel
 manager: jillfra
 ---
 # Overview of IntelliCode
