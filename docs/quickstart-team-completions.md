@@ -51,6 +51,7 @@ Requirements:
    - Acquire team models for completions
    
    </br>
+   
    > [!NOTE]
    > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
 
