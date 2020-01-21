@@ -14,7 +14,7 @@ manager: jillfra
 Visual Studio IntelliCode uses machine learning to offer useful, contextually rich code completion suggestion, in-line as you code.
 
 
-To get IntelliCode's starred contextual completion suggestions for your own types, or other types not commonly found in open source, use team completions. Team completions [trains a model](quickstart-team-completions.md#what-happens-once-you-train-your-model) just for your codebase, and lets you share it just with anyone with access to your code. You can also keep it up to date automatically by including a task in your CI build pipeline.
+To get IntelliCode's starred contextual completion suggestions for your own types, or other types not commonly found in open source, use team completions. Team completions [trains a model](quickstart-team-completions.md#what-happens-when-you-train-your-model) just for your codebase, and lets you share it just with anyone with access to your code. You can also keep it up to date automatically by including a task in your CI build pipeline.
 
    > [!NOTE]
    > IntelliCode team completions is a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
@@ -62,7 +62,8 @@ Once you are happy with the team completions on your repo, you can set up to aut
 When you kickoff training your model for team completions:
 * We analyze your code locally.
 * We extract a summary file with metadata on your types and their usages.
-* Finally, we secure upload it to the IntelliCode service.
+* We securely upload it to the IntelliCode service and download a completions model tailored to your code.
+* Your completions are automatically shared with those who have access to your repo. 
 
 You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
