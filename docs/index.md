@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: landing-page
-ms.author: gewarren
-author: gewarren
+author: catycaldwell
+ms.author: ccaldwel
 manager: jillfra
 ---
 # Visual Studio IntelliCode
