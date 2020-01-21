@@ -21,13 +21,15 @@ If you use many types that are not common in the open source codebases we train 
 ## How to obtain team completions
 
 You can train models for team completions to a repository and all users who can clone and edit the repository are granted automatic access to your completions. See [automatic acquisition of team models for more information](share-models.md).
-    - Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
+
+</br> **NOTE:** Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
 
 ## Two steps to team completions
 
 Getting team completions on your codebase is quick and easy, in just two steps:
 
 Step 1: Train your repository manually and try out the completions on your code
+</br>
 Step 2: Automate the training as part of your CI build
 
 ### Train models for team completions
@@ -47,7 +49,8 @@ Requirements:
 - Enable the following settings in **Tools** > **Option** > **IntelliCode**.
    - C# or C++ team models for completions
    - Acquire team models for completions
-
+   
+   </br>
    > [!NOTE]
    > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
 
@@ -57,10 +60,14 @@ Once you are happy with the team completions on your repo, you can set up to aut
 
 ## What happens once you train your model?
 
-Once you kick off training your model for team completions, we analyze your code locally to extract a summary file with metadata on your types and their usages and securely upload it to our service. You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
+Once you kickoff training your model for team completions:
+* We analyze your code locally.
+* We extract a summary file with metadata on your types and their usages.
+* Finally, we secure upload it to the IntelliCode service.
 
-If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
+You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
+</br> If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
 
 ## Automate model retraining
 To keep your completions up-to-date as your code changes, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
