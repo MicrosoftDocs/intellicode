@@ -62,12 +62,12 @@ Once you are happy with the team completions on your repo, you can set up to aut
 When you kickoff training your model for team completions:
 * We analyze your code locally.
 * We extract a summary file with metadata on your types and their usages.
-* We securely upload it to the IntelliCode service and download a completions model tailored to your code.
-* Your completions are automatically shared with those who have access to your repo. 
+* We securely upload it to the IntelliCode service and train a completions model tailored to your code.
+* Your completions model is automatically shared with those who have access to your repo. 
 
-You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
+You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.  
 
-</br> If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
+If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custommodels#data-and-privacy).
 
 ## Automate model retraining
 To keep your completions up-to-date as your code changes, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
