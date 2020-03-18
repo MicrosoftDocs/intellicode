@@ -4,8 +4,8 @@ ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: markw-t
-ms.author: mwthomas
+author: catycaldwell
+ms.author: ccaldwel
 manager: jillfra
 ---
 # Generate an EditorConfig file
@@ -68,7 +68,7 @@ IntelliCode doesn't yet support the full set of conventions documented in [code 
 - csharp_new_line_before_members_in_object_initializers
 - csharp_new_line_before_finally_style
 - csharp_new_line_between_query_expression_clauses
-- csharp_prefer_braces_style
+- csharp_prefer_braces
 - csharp_preferred_modifier_order_style
 - csharp_prefer_simple_default_expression
 - csharp_preserve_single_line_blocks
