@@ -4,8 +4,8 @@ ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: markw-t
-ms.author: mwthomas
+author: catycaldwell
+ms.author: ccaldwel
 manager: jillfra
 ---
 # Visual Studio IntelliCode FAQ
@@ -52,13 +52,13 @@ In particular, team model for completion training will not work on pull requests
 
 ## Q. Error training team model for completions due to model ownership
 
-Team models can only be trained and re-trained by the owner of the model. When no model has been trained for a repository, anyone can create a team model for that repository and become the model's owner. The owner can also delete the model from IntelliCode's services, see [Delete your model](custom-models.md#delete-your-model).
+Team models can only be trained and re-trained by the owner of the model. The owner can also delete the model from IntelliCode's services, see [Delete your model](custom-models.md#delete-your-model).
 
 We're currently working on improving this experience so that anyone with access to the repository can train and re-train team models for it. Sign up for news and updates about team models at [Visual Studio IntelliCode](https://aka.ms/vsicsignup).
 
 ## Q. Error training team model for completions due to throttling
 
-Team models can only be trained once per day for each repository. Typically that is enough to keep a team model for completions freshly updated with the latest version of your code. If you are finding that your model is still stale when trained at this rate, please let us know by raising an issue at [https://aka.ms/vsicissues](https://aka.ms/vsicissues).
+Team models can only be trained once per minute for each repository. Typically that is enough to keep a team model for completions freshly updated with the latest version of your code. If you are finding that your model is still stale when trained at this rate, please let us know by raising an issue at [https://aka.ms/vsicissues](https://aka.ms/vsicissues).
 
 ## Q. Error consuming or training team model due to unknown commit
 
