@@ -16,23 +16,23 @@ metadata:
 
 landingContent: 
   # Card
-  - title: Overview
+  - title: Learn about IntelliCode
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview of IntelliCode
+          - text: IntelliCode overview
             url: overview.md
 
   # Card
-  - title: FAQ
+  - title: Get answers to IntelliCode questions
     linkLists:
       - linkListType: concept
         links:
-          - text: Get answers to your IntelliCode questions
+          - text: IntelliCode FAQ
             url: faq.md
 
   # Card
-  - title: Products
+  - title: Products that use IntelliCode
     linkLists:
       - linkListType: concept
         links:
