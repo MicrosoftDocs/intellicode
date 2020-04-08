@@ -1,37 +1,39 @@
 ---
-title: IntelliCode refactorings
-ms.date: 09/12/2019
+title: IntelliCode suggestions
+ms.date: 04/08/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-description: IntelliCode refactorings - note this doc is for an AB test and is not in TOC
+description: IntelliCode suggestions - note this doc was originally for an AB test and is deliberatley not in TOC. A clone of it will be in TOC now the feature is GA.
 author: markw-t
 ms.author: mwthomas
 manager: jillfra
 ---
-# Refactorings - Suggestion Level (preview)
+# Suggestions - Suggestion Level 
 IntelliCode improves your editing experience when you're making similar edits in multiple places in your code. It locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other places where you may want it. For example, if you're making a refactoring and have missed locations where it could be applied, IntelliCode helps you find those locations and fix them.
 
-The first time IntelliCode finds a suggestion of this sort, you'll see a prompt at the top of your editor letting you know about it. You can opt not to see this prompt again by selecting **Don't show again**.
+When IntelliCode detects a repeated edit and finds opportunities to apply it in your currently open documents, you'll see a lightbulb like the one shown below, and an action allowing you to see a list of the suggestions found. You can use the link to open the IntelliCode suggestions window which lets you locate and act on those suggestions.
 
-![Refactorings illustration](../media/intellicode-refactorings-message-level-xp.png)
+![IntelliCode Suggestions discovery](../media/intellicode-suggestions-discovery-and-toolwindow.png)
 
-As shown in the screenshot, opportunities to apply refactorings appear as a [Quick Action light bulb](/visualstudio/ide/quick-actions) in the Visual Studio editor, along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and message-level entries in the [Error List](/visualstudio/ide/reference/error-list-window). By default, Visual Studio doesn't show messages in the Error List. To display them, select the blue Messages icon in the toolbar at the top of the Error List. When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
+Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/visualstudio/ide/quick-actions) , along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and entries in the new IntelliCode suggestions toolwindow, as shown in the screenshot below:
+
+![IntelliCode Suggestions lightbulb](../media/intellicode-suggestions-lightbulb.png)
+
+When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
 
 > [!NOTE]
-> Prior to Visual Studio 2019 version 16.4 Preview 1, refactorings were shown as warning-level entries. 
+> IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown solely in the IntelliCode suggestions toolwindow.
 
 ## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
 
-![Illustration of refactorings showing how repeated edits lead to finding other refactorings](../media/refactorings-illustrated.png)
+![Illustration of suggestions showing how repeated edits lead to finding suggestions](../media/refactorings-illustrated.png)
 
 If you don’t like a suggested change, select the **Ignore** option on the light bulb, and IntelliCode won’t bother you about that pattern again unless you recreate it. 
 
-## Enable refactorings
-Refactorings is a preview feature, so it is turned off by default. 
-To turn it on, choose **Tools** > **Options**, **IntelliCode General** tab, **Preview features** area, and then switch **C# refactorings** to **Enabled**:
-
-![Tools-Options showing the IntelliCode General tab with refactorings turned on](../media/refactorings-toolsoptions.png)
+## Enable suggestions
+Suggestions is turned on by default. 
+If you wish to turn it off, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Disabled**:
 
 After you change this setting, close any open files, and then restart Visual Studio.
