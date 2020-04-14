@@ -12,18 +12,18 @@ manager: jillfra
 # IntelliCode suggestions 
 IntelliCode suggestions assists you when making similar edits in multiple places in your code. It tracks your edits locally, and detects repetition. It then offers to apply that same edits in other places where they might apply. For example, if you have missed locations where a refactoring could be applied, IntelliCode suggestions helps you find those locations and fix them.
 
-You will see a lightbulb when IntelliCode detects a repeated edit and finds opportunities to apply it in your currently open documents. The lightbulb has an action which will show you a list of the suggestions found. This action opens the IntelliCode suggestions window, to locate and act on those suggestions.
+You will see a lightbulb when IntelliCode detects a repeated edit and finds opportunities to apply it in your currently open documents. The lightbulb has an action which will show you a list of the suggestions found. This opens the IntelliCode suggestions window, so you can locate and act on the suggestions.
 
 ![IntelliCode suggestions discovery](media/intellicode-suggestions-discovery-and-toolwindow.png)
 
-Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/visualstudio/ide/quick-actions) , along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and entries in the new IntelliCode suggestions toolwindow,as shown in the screenshot below:
+Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/visualstudio/ide/quick-actions) , along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and entries in the new IntelliCode suggestions tool window,as shown in the screenshot below:
 
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-lightbulb.png)
 
 When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
 
 > [!NOTE]
-> IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown solely in the IntelliCode suggestions toolwindow.
+> IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown solely in the IntelliCode suggestions tool window.
 
 ## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
