@@ -4,7 +4,7 @@ ms.date: 04/08/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-description: IntelliCode suggestions - note this doc was originally for an AB test and is deliberatley not in TOC. A clone of it will be in TOC now the feature is GA.
+description: IntelliCode suggestions - note this doc was originally for an AB test and is deliberately not in TOC. A clone of it will be in TOC now the feature is GA.
 author: markw-t
 ms.author: mwthomas
 manager: jillfra
