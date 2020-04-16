@@ -26,7 +26,7 @@ When you see a light bulb on a line of code with a suggestion, select it to disp
 > In Visual Studio 16.6 and newer, IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown in the IntelliCode suggestions tool window.
 
 ## Changes IntelliCode can detect
-IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
+IntelliCode is aware of the semantic structure of your code. That structure is used to detect situations where changes can be applied, even if variable names are different:
 
 ![Illustration of suggestions showing how repeated edits lead to finding suggestions](media/refactorings-illustrated.png)
 
