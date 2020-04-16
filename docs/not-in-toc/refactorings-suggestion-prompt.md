@@ -12,7 +12,7 @@ manager: jillfra
 # IntelliCode Suggestions 
 IntelliCode improves your editing experience when you're making similar edits in multiple places in your code. It locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other places where you may want it. For example, if you're making a refactoring and have missed locations where it could be applied, IntelliCode helps you find those locations and fix them.
 
-When IntelliCode detects a repeated edit and finds opportunities to apply it in your currently open documents, you'll see a lightbulb like the one shown below, and an action allowing you to see a list of the suggestions found. You can use the link to open the IntelliCode suggestions window which lets you locate and act on those suggestions.
+When IntelliCode detects a repeated edit and finds opportunities to apply it in your currently open documents, you'll see a lightbulb like the one shown below, and an action allowing you to see a list of the suggestions found. Clicking that action will open the IntelliCode suggestions window which lets you locate and act on those suggestions.
 
 ![IntelliCode Suggestions discovery](../media/intellicode-suggestions-discovery-and-toolwindow.png)
 
