@@ -30,7 +30,7 @@ IntelliCode is aware of the semantic structure of your code. That structure is u
 
 ![Illustration of suggestions showing how repeated edits lead to finding suggestions](media/refactorings-illustrated.png)
 
-If you don’t like a suggested change, select the **Ignore** option on the light bulb.  IntelliCode won’t bother you about that pattern again unless you recreate it. 
+If you don’t like a suggested change, select the **Ignore** option on the light bulb. IntelliCode won’t bother you about that pattern again unless you recreate it.
 
 ## Enable suggestions
 Suggestions is turned on by default. 
