@@ -16,7 +16,7 @@ You will see a lightbulb when IntelliCode detects a repeated edit and finds oppo
 
 ![IntelliCode suggestions discovery](media/intellicode-suggestions-discovery-and-toolwindow.png)
 
-Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/visualstudio/ide/quick-actions) , along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and entries in the new IntelliCode suggestions tool window,as shown in the screenshot below:
+Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/visualstudio/ide/quick-actions), along with grey-dotted [suggestion-level squiggles](/visualstudio/get-started/csharp/visual-studio-ide#popular-productivity-features) and in the IntelliCode suggestions tool window, as shown in the screenshot below:
 
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-lightbulb.png)
 
