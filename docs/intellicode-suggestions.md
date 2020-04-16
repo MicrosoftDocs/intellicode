@@ -23,7 +23,7 @@ Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/
 When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
 
 > [!NOTE]
-> IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown solely in the IntelliCode suggestions tool window.
+> In Visual Studio 16.6 and newer, IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown in the IntelliCode suggestions tool window.
 
 ## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. It detects situations where the variable names in your changes are different but the essential structure of the change is the same:
