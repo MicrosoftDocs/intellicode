@@ -36,4 +36,4 @@ If you don’t like a suggested change, select the **Ignore** option on the ligh
 Suggestions is turned on by default in Visual Studio 16.6 and newer.
 If you wish to turn it off, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Disabled**:
 
-After you change this setting, close any open files, and reopen them.
+After you change this setting, either restart Visual Studio, or close any open files and reopen them to activate IntelliCode suggestions in them.
