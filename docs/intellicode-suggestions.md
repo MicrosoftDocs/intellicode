@@ -33,7 +33,8 @@ IntelliCode is aware of the semantic structure of your code. That structure is u
 If you don’t like a suggested change, select the **Ignore** option on the light bulb. IntelliCode won’t bother you about that pattern again unless you recreate it.
 
 ## Enable suggestions
-Suggestions is turned on by default in Visual Studio 16.6 and newer.
-If you wish to turn it off, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Disabled**:
+Suggestions is turned off by default as it is currently in preview.
+
+If you wish to turn it on, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Enabled**:
 
 After you change this setting, either restart Visual Studio, or close any open files and reopen them to activate IntelliCode suggestions in them.
