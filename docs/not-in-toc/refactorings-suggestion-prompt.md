@@ -10,6 +10,6 @@ ms.author: mwthomas
 manager: jillfra
 ---
 # IntelliCode Suggestions 
-IntelliCode suggestions is the new name for IntelliCode refactorings. The feature is on by default for Visual Studio 2019 16.6 and higher versions.
+IntelliCode suggestions is the new name for IntelliCode refactorings. 
 
 Find out more at [IntelliCode suggestions](../refactorings.md)
