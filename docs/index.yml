@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Visual Studio IntelliCode 
-summary: Visual Studio IntelliCode enhances software development by using artificial intelligence. IntelliCode is available for [Visual Studio](docs/intellicode/intellicode-visual-studio/) and [Visual Studio Code](docs/intellicode/intellicode-visual-studio-code/).
+summary: Visual Studio IntelliCode enhances software development by using artificial intelligence. IntelliCode is available for <a href="https://docs.microsoft.com/en-us/visualstudio/intellicode/intellicode-visual-studio">Visual Studio</a> and [Visual Studio Code](https://docs.microsoft.com/en-us/visualstudio/intellicode/intellicode-visual-studio-code).
 
 metadata:
   title: Visual Studio IntelliCode
