@@ -34,7 +34,7 @@ landingContent:
             url: faq.md
 
   # Card
-  - title: Products that use IntelliCode
+  - title: Where you can use IntelliCode
     linkLists:
       - linkListType: concept
         links:
