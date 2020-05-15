@@ -38,7 +38,7 @@ To train team completions on your repo, follow these steps:
 
 1.  Clone the repository with the solution you’d like to train on.
 1.  Open the solution or repository folder in Visual Studio.
-1.	Create a model by going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or by searching for **"Train"** in Visual Studio Search (**Ctrl + Q**).
+1.	Create a model by going to **View** > **Other Windows** > **IntelliCode Model Management** or by searching for **"Train"** in Visual Studio Search (**Ctrl + Q**).
 1.	You’ll be prompted to sign-in with the account you’d like to use. Use the account you normally log in to Visual Studio with.
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
@@ -46,7 +46,7 @@ Requirements:
 
 - The repository must not already have a repository-associated model already trained on it.
 - The repository must be under Git source control.
-- Enable the following settings in **Tools** > **Option** > **IntelliCode**.
+- Enable the following settings in **Tools** > **Options** > **IntelliCode**.
    - C# or C++ team models for completions
    - Acquire team models for completions
  
