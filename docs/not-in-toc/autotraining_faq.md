@@ -22,7 +22,7 @@ When you enable autotraining, IntelliCode will [train a model](quickstart-team-c
    
 ## How does autotraining models for IntelliCode Team Completions work?
 
-Upon a successful build of a solution, you will be prompted to enable IntelliCode to autotrain a model for IntelliCode Team completions for the respective solution. 
+After successfully building a solution, you may be prompted to enable IntelliCode to autotrain a model for IntelliCode Team completions for that solution. 
 By enabling autotraining models for IntelliCode Team Completions, IntelliCode will train a model for Team completions for the active solution and only the user who has access to the solution on the machine where the autotraining was enabled will have access to the respective model. If you'd like to share your Team completions with anyone who can access your repository, you should [set up automatic training as part of your CI workflow](quickstart-team-completions.md).
 
 **NOTE:** For autotraining a model for IntelliCode Team completions for your solution in Visual Studio, there are no source control requirements. However, if you'd like to share your custom completions with your team, your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
