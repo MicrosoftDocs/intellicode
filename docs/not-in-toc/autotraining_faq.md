@@ -11,7 +11,7 @@ manager: jillfra
 ---
 # IntelliCode team completions - automatically update IntelliSense suggestions based on your code
 
-Visual Studio IntelliCode uses machine learning to offer useful, contextually rich code completion suggestion, in-line as you code.
+Visual Studio IntelliCode uses machine learning to offer useful, contextually rich code completion suggestions in-line as you code.
 
 
 To get IntelliCode's starred contextual completion suggestions for your own types, or other types not commonly found in open source, use Team completions. Team completions [trains a model](quickstart-team-completions.md#what-happens-when-you-train-your-model) just for your codebase. You can also keep these completions up to date automatically and share the completions with your teammates by enabling autotraining directly in Visual Studio and/or including a task in your CI build pipeline.
