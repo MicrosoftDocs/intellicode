@@ -15,33 +15,33 @@ Visual Studio IntelliCode uses machine learning to offer useful, contextually ri
 
 When you enable autotraining, IntelliCode will train a machine-learning model based on patterns in your code, giving you IntelliCode's starred contextual completion suggestions for your own types, and other types not commonly found in open source. IntelliCode will retrain this model as you update your code, ensuring that the model changes alongside your code.
 
-Autotraining models for IntelliCode Team completions is a preview feature capability in [Visual Studio version 16.7](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. You can enable autotraining these custom code completions via the infobar prompt after a successful build, through the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
+Autotraining models for IntelliCode custom code completions is a preview feature capability in [Visual Studio version 16.7](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. You can enable autotraining these custom code completions via the infobar prompt after a successful build, through the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
    
-## How does autotraining models for IntelliCode Team Completions work?
+## How does autotraining models for IntelliCode custom code Completions work?
 
 After successfully building a solution, you may be prompted to enable IntelliCode to autotrain a model for IntelliCode completions for that solution. 
 By enabling autotraining models for IntelliCode completions, IntelliCode will train a machine-learning model for completions for the active solution and only the user who has access to the solution on the machine where the autotraining was enabled will have access to the respective model. If you'd like to share your custom code completions with anyone who can access your repository, you should [set up automatic training Team completions as part of your CI workflow](https://aka.ms/vsic-teamcompletions-quickstart).
 
 **NOTE:** For autotraining a model for IntelliCode custom code completions for your solution in Visual Studio, there are no source control requirements. However, if you'd like to share your custom completions with your team, your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
 
-### Enabling autotraining models for Team completions in Visual Studio
+### Enabling autotraining models for custom code completions in Visual Studio
 
-To enable automatic model training for IntelliCode team completions for your code in Visual Studio, follow these steps:
+To enable automatic model training for IntelliCode completions for your code in Visual Studio, follow these steps:
 
 1.  Open the solution or repository folder in Visual Studio.
-1.	Enable autotraining a model for Team Completions via the infobar prompt after a successful build, through the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode** setting "Autotraining team models for IntelliSense completions" or by searching for **"IntelliCode autotrain"** in Visual Studio Search (**Ctrl + Q**).
+1.	Enable autotraining a model for custom code Completions via the infobar prompt after a successful build, through the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode** setting "Autotraining team models for IntelliSense completions" or by searching for **"IntelliCode autotrain"** in Visual Studio Search (**Ctrl + Q**).
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
 
    > [!NOTE]
-   > Be sure that you have installed at least [Visual Studio version 16.7 Preview 3](https://docs.microsoft.com/visualstudio/releases/2020/release-notes) or above. Once the preview has been installed, you can enable automatic training team models for completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
+   > Be sure that you have installed at least [Visual Studio version 16.7 Preview 3](https://docs.microsoft.com/visualstudio/releases/2020/release-notes) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
-Once you are happy with the custom code completions on your solution, you can set up to automatically create, retrain, and share IntelliCode Team completions with your entire dev team as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) or [GitHub Action for Team Completions](https://aka.ms/vsic/github).
+Once you are happy with the custom code completions on your solution, you can set up to automatically create, retrain, and share IntelliCode custom code completions with your entire dev team as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) or [GitHub Action for Team Completions](https://aka.ms/vsic/github).
 
-## What happens when you enable IntelliCode to autotrain models for Team completions?
+## What happens when you enable IntelliCode to autotrain models for custom code completions?
 
-When you enable IntelliCode to kickoff training and/or autotraining your model for team completions:
+When you enable IntelliCode to kickoff training and/or autotraining your model for custom code completions:
 * We analyze your code locally.
 * We extract a summary file with metadata on your types and their usages.
 * We securely upload it to the IntelliCode service and train a completions model tailored to your code.
