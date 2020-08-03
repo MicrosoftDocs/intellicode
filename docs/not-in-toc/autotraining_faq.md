@@ -54,11 +54,3 @@ When you enable IntelliCode to kickoff training and/or autotraining your model f
 You will see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.  
 
 If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy).
-
-## See also
-- [Comprehensive documentation on Team Completions](custom-models.md)
-- [Setting up a build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
-- [Share models](share-models.md)
-- [Overview of IntelliCode](overview.md)
-- [General IntelliCode FAQ](faq.md)
-- [IntelliCode for Visual Studio](intellicode-visual-studio.md)
