@@ -22,8 +22,6 @@ Suggestions show up in the Visual Studio editor as a [Quick Action light bulb](/
 
 When you see a light bulb on a line of code with a suggestion, select it to display a menu from which you can apply the suggested change.
 
-> [!NOTE]
-> In Visual Studio 16.6 and newer, IntelliCode suggestions no longer show in the Visual Studio Error List; instead they are shown in the IntelliCode suggestions tool window.
 
 ## Changes IntelliCode can detect
 IntelliCode is aware of the semantic structure of your code. That structure is used to detect situations where changes can be applied, even if variable names are different:
@@ -33,8 +31,6 @@ IntelliCode is aware of the semantic structure of your code. That structure is u
 If you don’t like a suggested change, select the **Ignore** option on the light bulb. IntelliCode won’t bother you about that pattern again unless you recreate it.
 
 ## Enable suggestions
-Suggestions is turned off by default as it is currently in preview.
+Suggestions is turned on by default for Visual Studio version 16.7 and above. 
 
-If you wish to turn it on, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Enabled**:
-
-After you change this setting, either restart Visual Studio, or close any open files and reopen them to activate IntelliCode suggestions in them.
+If you wish to turn it off, choose **Tools** > **Options**, **IntelliCode General** tab, and then switch **C# suggestions** to **Disabled**:
