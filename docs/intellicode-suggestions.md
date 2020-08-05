@@ -17,12 +17,12 @@ IntelliCode is aware of the semantic structure of your code. That structure is u
 
 Suppose you are replacing a repeated temperature conversion with a helper function. IntelliCode will detect the repeated change you are making, and suggest you make that change in other places.
 
-![Illustration of suggestions showing how repeated edits lead to finding suggestions](media/refactorings-illustrated.png)
+![Illustration of suggestions showing how repeated edits lead to finding suggestions](media/intellicode-suggestions-illustrated.png)
 
 
 Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual Studio editor. IntelliCode suggestions have the Quick Action menu options **Apply suggestion** and **Ignore suggestions like this**. If you want to use the suggested change, select **Apply suggestion**. 
 
-![IntelliCode suggestions lightbulb](media/intellicode-suggestions-lightbulb.png)
+![IntelliCode suggestions lightbulb](media/intellicode-suggestions-apply.png)
 
 
 If you don’t want to use the suggested change, select the **Ignore suggestions like this** action. IntelliCode won’t bother you about that pattern again unless you recreate it.
