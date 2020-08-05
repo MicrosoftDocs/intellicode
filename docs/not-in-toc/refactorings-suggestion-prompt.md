@@ -9,7 +9,7 @@ author: markw-t
 ms.author: mwthomas
 manager: jillfra
 ---
-# IntelliCode Suggestions 
+# IntelliCode refactorings renamed to IntelliCode suggestions 
 IntelliCode suggestions is the new name for IntelliCode refactorings. 
 
 Find out more at [IntelliCode suggestions](../refactorings.md)
