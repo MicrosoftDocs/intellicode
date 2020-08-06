@@ -12,4 +12,4 @@ manager: jillfra
 # IntelliCode refactorings renamed to IntelliCode suggestions 
 IntelliCode suggestions is the new name for IntelliCode refactorings. 
 
-Find out more at [IntelliCode suggestions](../refactorings.md)
+Find out more at [IntelliCode suggestions](../intellicode-suggestions.md)
