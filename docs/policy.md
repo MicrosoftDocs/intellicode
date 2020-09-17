@@ -11,8 +11,8 @@ ms.workload: intellicode
 
 > Applies to Visual Studio 2019 16.8 and newer
 
-Learn how to use group policy to manage your organization's usage of IntelliCode capabilites in Visual Studio. First,
-we'll describe what IntelliCode policy settings are available. Then we'll walk
+Learn how to use group policy to manage your organization's sending personal data to the IntelliCode service from Visual Studio. First,
+we'll describe what IntelliCode collects and sends to the service. Then we'll walk
 through how to opt-out your organization.
 
 ## Prerequisites
@@ -30,7 +30,7 @@ All released IntelliCode capabilities are turned **on** by default, and all Prev
 1. To explicitly opt out, select **Disabled** for the respective capability. To opt in, select **Enabled** for the respective capability.
 
 
-### Registry settings for Global Policy opt-out
+## Registry settings for Global Policy opt-out
 
 Enterprise customers can construct a group policy to opt in or out of IntelliCode Service-backed capabilities by setting a registry-based policy.
 
@@ -55,7 +55,6 @@ Value = (DWORD)
 For more information about the information collected, processed, or transmitted by IntelliCode, see [IntelliCode Data & Privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy).
 
 ## See also
-
+* [IntelliCode Overview](https://aka.ms/intellicode)
 * [IntelliCode Data & Privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy)
-* [IntelliCode](https://aka.ms/intellicode)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
