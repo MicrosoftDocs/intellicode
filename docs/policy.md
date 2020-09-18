@@ -1,10 +1,10 @@
 ---
 title: How to opt-out of sending personal data to IntelliCode services from Visual Studio
 description: Learn how to opt-out of sending personal data to IntelliCode services in Visual Studio.
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.topic: how-to
 author: catycaldwell
-ms.author: cccaldwel
+ms.author: ccaldwel
 ms.workload: intellicode
 ---
 # What personal data is sent to IntelliCode services from Visual Studio
