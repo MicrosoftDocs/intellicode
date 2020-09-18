@@ -36,13 +36,10 @@ Enterprise customers can construct a group policy to opt in or out of IntelliCod
 
 The relevant registry key and settings are as follows:
 
-::: moniker range=">=vs-2019"
-
 - On a 64-bit OS, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\IntelliCode**
 - On a 32-bit OS, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\IntelliCode**
 - When Group Policy is enabled, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\IntelliCode**
 
-::: moniker-end
 
 Entry = **DisableRemoteAnalysis**
 
