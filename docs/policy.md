@@ -22,7 +22,13 @@ The following items are required for applying group policy for IntelliCode capab
 - A Visual Studio Admin role.
 - Visual Studio 2019 version 16.8 or newer
 
-Some [Visual Studio IntelliCode](https://aka.ms/intellicode) capabilities require sending personal data from Visual Studio to the IntelliCode service: {e.g. Team Completions}. IntelliCode [collects information about your types and type usage](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy), machine identifier, and metadata about the Git repository you are working in. This is used to locate any models for Team Completions that you can benefit from. and sends to the IntelliCode service over an HTTPS connection, without interrupting users in their tasks at the computer. The information that's collected allows IntelliCode to securely train and distribute personalized models. This document covers how to opt in or out of using IntelliCode capabilities that send data to IntelliCode services.
+Some [Visual Studio IntelliCode](https://aka.ms/intellicode) capabilities require sending personal data from Visual Studio to the IntelliCode service, such as Team Completions. When using these capabilities, IntelliCode may collect: 
+
+- [information about your types and type usage](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy), collected when you train personalized models
+- machine identifier
+- metadata about the Git repository you are working in, used to locate any models for Team Completions that you can benefit from
+
+This information is sent to the IntelliCode service over an HTTPS connection, The information that's collected allows IntelliCode to securely train and distribute personalized models. This document covers how to opt in or out of using IntelliCode capabilities that send data to IntelliCode services.
 ## User-level Opt in or out in Visual Studio
 All released IntelliCode capabilities are turned **on** by default, and all Preview IntelliCode capabilities are turned **off** by default. Users can turn capabilities off, or back on again, by following these instructions:
 
