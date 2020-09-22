@@ -60,5 +60,6 @@ For more information about the information collected, processed, or transmitted 
 
 ## See also
 * [IntelliCode Overview](https://aka.ms/intellicode)
-* [IntelliCode Data & Privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy)
+* [IntelliCode Data & Privacy](https://aka.ms/vsic/data-and-privacy)
+* [IntelliCode Team Completions](https://aka.ms/vsic-teamcompletions)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
