@@ -19,13 +19,12 @@ through how to opt-out your organization.
 
 The following items are required for applying group policy for IntelliCode capabilities:
 
-- A Visual Studio Admin role.
+- A Visual Studio Admin Role, see [Visual Studio Subscriptions Admin Responsibilites](https://docs.microsoft.com/en-us/visualstudio/subscriptions/admin-responsibilities?view=vs-2019) for more information about the Admin role.
 - Visual Studio 2019 version 16.8 or newer
 
-Some [Visual Studio IntelliCode](https://aka.ms/intellicode) capabilities require sending personal data from Visual Studio to the IntelliCode service, such as Team Completions. When using these capabilities, IntelliCode may collect: 
+Some [Visual Studio IntelliCode](https://aka.ms/intellicode) capabilities require sending personal data from Visual Studio to the IntelliCode service, such as [Team Completions](https://aka.ms/vsic-teamcompletions). When using these capabilities, IntelliCode may collect: 
 
-- [information about your types and type usage](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy), collected when you train personalized models
-- machine identifier
+- [information about your types and type usage](https://aka.ms/vsic/data-and-privacy), collected when you train personalized models
 - metadata about the Git repository you are working in, used to locate any models for Team Completions that you can benefit from
 
 This information is sent to the IntelliCode service over an HTTPS connection, The information that's collected allows IntelliCode to securely train and distribute personalized models. This document covers how to opt in or out of using IntelliCode capabilities that send data to IntelliCode services.
@@ -51,8 +50,8 @@ Entry = **DisableRemoteAnalysis**
 
 Value = (DWORD)
 
-- **0** is opted in (turn on organizational access to IntelliCode services)
-- **1** is opted out (turn off organizational access to IntelliCode services)
+- **0** is opted in (turn on machine-wide access to IntelliCode services)
+- **1** is opted out (turn off machine-wide access to IntelliCode services)
 
 > [!CAUTION]
 > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer. You can also use the **Last Known Good Configuration** startup option if you encounter problems after manual changes have been applied.
