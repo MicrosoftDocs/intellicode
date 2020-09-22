@@ -45,8 +45,8 @@ Entry = **DisableRemoteAnalysis**
 
 Value = (DWORD)
 
-- **0** is opted out (turn on organizational access to IntelliCode services)
-- **1** is opted in (turn off organizational access to IntelliCode services)
+- **0** is opted in (turn on organizational access to IntelliCode services)
+- **1** is opted out (turn off organizational access to IntelliCode services)
 
 > [!CAUTION]
 > Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer. You can also use the **Last Known Good Configuration** startup option if you encounter problems after manual changes have been applied.
