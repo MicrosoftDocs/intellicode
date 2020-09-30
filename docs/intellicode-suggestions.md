@@ -25,8 +25,10 @@ Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-apply.png)
 
 
-If you don’t want to use the suggested change, select the **Ignore suggestions like this** action. IntelliCode won’t bother you about that pattern again unless you recreate it.
-
+If you don’t want to use the suggested change, select the **Ignore suggestions like this** action. IntelliCode won’t bother you about that pattern again unless you recreate it. 
+ > [!NOTE]
+ > IntelliCode suggestions are session-scoped - they will not show up after you close and re-open Visual Studio
+ 
 If you want to see the list of all suggested changes, go to **View** > **Other windows** > **IntelliCode suggestions**. 
 
 ## Preview features
