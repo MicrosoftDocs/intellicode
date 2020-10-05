@@ -15,7 +15,7 @@ IntelliCode suggestions assists you when making similar edits in multiple places
 
 IntelliCode is aware of the semantic structure of your code. That structure is used to detect situations where changes can be applied, even if variable names are different.
 
-Suppose you are replacing a repeated temperature conversion with a helper function. IntelliCode will detect the repeated change you are making, and suggest you make that change in other places.
+Suppose you are replacing a repeated temperature conversion using hardcoded local values with a helper function that abstracts those values away. IntelliCode will detect the repeated change you are making, and suggest you make that change in other places.
 
 ![Illustration of suggestions showing how repeated edits lead to finding suggestions](media/intellicode-suggestions-illustrated.png)
 
@@ -25,8 +25,11 @@ Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-apply.png)
 
 
-If you don’t want to use the suggested change, select the **Ignore suggestions like this** action. IntelliCode won’t bother you about that pattern again unless you recreate it.
-
+Because it learns from your repeated edits in a session, IntelliCode suggestions will sometimes make suggestions that don't fit your intent. If you don’t want to use the suggested change, just select the **Ignore suggestions like this** action. IntelliCode won’t suggest that pattern again unless you recreate it in subsequent edits. 
+ 
+ > [!NOTE]
+ > IntelliCode suggestions are session-scoped - they will not show up after you close and re-open Visual Studio
+ 
 If you want to see the list of all suggested changes, go to **View** > **Other windows** > **IntelliCode suggestions**. 
 
 ## Preview features
