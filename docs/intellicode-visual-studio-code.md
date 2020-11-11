@@ -1,5 +1,7 @@
 ---
 title: VS Code extension
+description: Read an overview of IntelliCode for Visual Studio Code. The IntelliCode extension provides AI-assisted IntelliSense for Python, Java, TypeScript, and JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode

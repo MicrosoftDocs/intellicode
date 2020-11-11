@@ -1,5 +1,7 @@
 ---
 title: Share user-associated models
+description: Share team completions in IntelliCode so that you can share any model you've created. Automatically update users that have access when you retrain the model.
+ms.custom: SEO-VS-2020
 ms.date: 05/21/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode

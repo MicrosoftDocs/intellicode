@@ -1,5 +1,7 @@
 ---
 title: Frequently asked questions
+description: Review a list of frequently asked questions (FAQ) that you may have about the IntelliCode feature of Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode

@@ -1,5 +1,7 @@
 ---
 title: Code style inference
+description: Learn how to generate a prepopulated EditorConfig file using IntelliCode. Apply EditorConfig conventions. Review an inferred code style convention reference.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
