@@ -1,6 +1,8 @@
 ---
 title: Visual Studio IntelliCode team completions - Quickstart
 titleSuffix: Visual Studio IntelliCode
+description: Use IntelliCode team completions to get starred contextual completion suggestions for your own types, or for other types not commonly found in open source.
+ms.custom: SEO-VS-2020
 ms.date: 12/19/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
