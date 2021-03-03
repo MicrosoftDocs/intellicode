@@ -66,6 +66,8 @@ While your solution is open in Visual Studio, simply uncheck the checkbox accept
 
 Simply remove the training task from your pipeline - the associated model will be removed within 30 days if not trained.
 
+## Machine-associated models
+
 ### Create your model
 
 Train a machine-associated model:
@@ -75,7 +77,7 @@ Train a machine-associated model:
 
 ## Retrain your model
 
-Visual Studio will automatically retrain your user-associated team completions models, periodically.
+Visual Studio will automatically retrain your machine-associated team completions models, periodically.
 
 ### Train on a public codebase
 
@@ -118,7 +120,7 @@ If you want to inspect the extracted data for a different codebase before trying
 
 Your models are private to you, and, those who have access to a [repository with an associated model](#sharing-your-repository-associated-models). 
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the authenticated user who submitted the extracted data for training, by someone they authorized by sharing the link to the model, and by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the machine which submitted the extracted data for training, or for repo-associated models by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
 If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
 
