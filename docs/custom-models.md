@@ -39,8 +39,8 @@ Models are tied to the repository and all users who can clone and edit the repos
 
 Repository-associated team models are available to users who train them using either Azure Pipelines or GitHub Actions.
 
-Learn how to configure and automate your CI workflow (i.e. .yml file) to train Team Completions using a GitHub Action [here](https://aka.ms/vsic/xtn/github).
-Learn how to configure your Azure DevOps pipeline to train Team Completions [here](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
+- Learn how to configure and automate your CI workflow (i.e. .yml file) to train Team Completions using a GitHub Action [here](https://aka.ms/vsic/xtn/github).
+- Learn how to configure your Azure DevOps pipeline to train Team Completions [here](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
 
 ### Sharing your repository-associated models
 
@@ -60,11 +60,11 @@ You can remove models from your account so they can no longer be used.
 
 #### Delete a user-associated model created within Visual Studio
 
-1. While your solution is open in Visual Studio, simply uncheck the checkbox accepting model training, on the View > Other Windows > IntelliCode page. The model will be deleted.
+While your solution is open in Visual Studio, simply uncheck the checkbox accepting model training, on the View > Other Windows > IntelliCode page. The model will be deleted.
 
 #### Delete a repository-attached model created using Azure DevOps or a GitHub CI workflow
 
-1.  Simply remove the training task from your pipeline - the associated model will be removed within 30 days if not trained.
+Simply remove the training task from your pipeline - the associated model will be removed within 30 days if not trained.
 
 ### Create your model
 
