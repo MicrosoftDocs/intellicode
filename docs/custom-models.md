@@ -72,7 +72,7 @@ Simply remove the training task from your pipeline - the associated model will b
 
 Train a machine-associated model:
 1.	Open the project or solution in Visual Studio.
-2.	Open the IntelliCode page by choosing View > Other Windows > IntelliCode.
+2.	Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**
 3.	Review and accept the license terms checkbox at the bottom of the page. A machine-associated model will be trained automatically
 
 ## Retrain your model
