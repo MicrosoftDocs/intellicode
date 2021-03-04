@@ -68,14 +68,14 @@ Simply remove the training task from your pipeline - the associated model will b
 
 ## Machine-associated models
 
-### Create your model
+### Create and retrain your model
 
 Train a machine-associated model:
 1.	Open the project or solution in Visual Studio.
 2.	Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**
-3.	Review and accept the license terms checkbox at the bottom of the page. A machine-associated model will be trained automatically
-
-## Retrain your model
+3.	Review and accept the license terms checkbox at the bottom of the page. A machine-associated model will be trained automatically. 
+>[!NOTE] 
+> You must repeate the above steps for each solution you want to train on.
 
 Visual Studio will automatically retrain your machine-associated team completions models, periodically.
 
@@ -118,9 +118,13 @@ If you want to inspect the extracted data for a different codebase before trying
 
 ### How we secure your data
 
-Your models are private to you, and, those who have access to a [repository with an associated model](#sharing-your-repository-associated-models). 
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. 
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. Models can only be retrieved either by the machine which submitted the extracted data for training, or for repo-associated models by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). This means that your model and what is learned about your code stays private to you and your intended collaborators.
+Models can only be retrieved:
+- machine-associated models: by the machine which submitted the extracted data for training
+- repo-associated models: by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). 
+
+This means that your model and what is learned about your code stays private to you and your intended collaborators.
 
 If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
 
