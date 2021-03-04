@@ -10,15 +10,15 @@ manager: jillfra
 ---
 # How to: Share team completions in Visual Studio IntelliCode
 
-IntelliCode has team completions sharing features that let you share repository-associated team models you've created and automatically update users that have access when you retrain the model.
+IntelliCode lets you share repository-associated team models you've created and automatically update users that have access when you retrain the model.
 
 By creating a team completions model, you get IntelliCode completion recommendations for code that's not in the base model. Sharing a team completions model with collaborators extends the enhanced IntelliSense recommendations to everyone; they don't have to create or retrain a team completions model themselves.
 
 ## Share a repository-associated team completions model
 
-Repository-associated models are **automatically shared** with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
+Repository-associated models are **automatically shared** with others working in the same codebase.  Automatic model acquisition is enabled by default in Visual Studio. 
 
-Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
+If you wish to opt out, go to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**  and set to disabled.
 
 When anyone clones and opens the codebase the model was trained on, any completions models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the completions model.
 
