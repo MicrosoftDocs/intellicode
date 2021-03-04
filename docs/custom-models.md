@@ -77,7 +77,7 @@ Train a machine-associated model:
 2.	Open the IntelliCode page by choosing **View** > **Other Windows** > **IntelliCode**
 3.	Review and accept the license terms checkbox at the bottom of the page. A machine-associated model will be trained automatically. 
 >[!NOTE] 
-> You must repeate the above steps for each solution you want to train on.
+> You must repeat the above steps for each solution you want to train on.
 
 Visual Studio will automatically retrain your machine-associated team completions models, periodically.
 
