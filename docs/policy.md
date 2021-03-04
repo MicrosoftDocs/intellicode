@@ -37,7 +37,7 @@ All released IntelliCode capabilities are turned **on** by default, and all Prev
 
 ## Registry settings for Global Policy opt-out
 
-Enterprise customers can construct a group policy to opt in or out of IntelliCode capabilites that send personal data to IntelliCode services {i.e. Team Completions} by setting a registry-based policy.
+Enterprise customers can construct a group policy to opt in or out of IntelliCode capabilities that send personal data to IntelliCode services {i.e. Team Completions} by setting a registry-based policy.
 
 The relevant registry key and settings are as follows:
 
