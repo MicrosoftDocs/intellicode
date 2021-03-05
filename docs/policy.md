@@ -19,7 +19,7 @@ through how to opt-out your organization.
 
 The following items are required for applying group policy for IntelliCode capabilities:
 
-- A Visual Studio 2019 Admin Role, see [Visual Studio Subscriptions Admin Responsibilites](https://docs.microsoft.com/visualstudio/subscriptions/admin-responsibilities?view=vs-2019) for more information about the Admin role.
+- A Visual Studio 2019 Admin Role, see [Visual Studio Subscriptions Admin Responsibilities](https://docs.microsoft.com/visualstudio/subscriptions/admin-responsibilities?view=vs-2019&preserve-view=true) for more information about the Admin role.
 - Visual Studio 2019 version 16.8 or newer
 
 Some [Visual Studio IntelliCode](https://aka.ms/intellicode) capabilities require sending personal data from Visual Studio to the IntelliCode service, such as [Team Completions](https://aka.ms/vsic-teamcompletions). When using these capabilities, IntelliCode may collect: 

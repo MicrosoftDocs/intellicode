@@ -14,6 +14,11 @@
             "source_path": "docs/sharing-custom-models-tips.md",
             "redirect_url": "/visualstudio/intellicode/share-models",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/not-in-toc/refactorings-suggestion-prompt.md",
+            "redirect_url": "/visualstudio/intellicode/intellicode-suggestions",
+            "redirect_document_id": false
         }
     ]
 }
