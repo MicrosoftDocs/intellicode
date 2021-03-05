@@ -6,9 +6,9 @@ ms.date: 04/24/2019
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: catycaldwell
-ms.author: ccaldwel
-manager: jillfra
+author: markw-t
+ms.author: mwthomas
+manager: jmartens
 ---
 # Generate an EditorConfig file
 

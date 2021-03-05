@@ -5,9 +5,9 @@ ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
 description: Turning off IntelliCode deep learning beta feature - note this doc is for turning off the beta feature and is not in TOC
-author: catycaldwell
-ms.author: ccaldwel
-manager: jillfra
+author: markw-t
+ms.author: mwthomas
+manager: jmartens
 ---
 
 # Disabling IntelliCode Python: Deep Learning beta feature

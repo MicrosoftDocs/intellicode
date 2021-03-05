@@ -7,7 +7,7 @@ ms.topic: conceptual
 description: IntelliCode suggestions - note this doc was originally for an AB test and is deliberately not in TOC. This is a redirection for any users of older releases.
 author: markw-t
 ms.author: mwthomas
-manager: jillfra
+manager: jmartens
 ---
 # IntelliCode refactorings renamed to IntelliCode suggestions 
 IntelliCode suggestions is the new name for IntelliCode refactorings. 
