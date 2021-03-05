@@ -47,8 +47,8 @@ To turned starred IntelliSense suggestions off, disable the extension:
 
 The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task is triggered _only_ when you run a build or release caused by one of the following reasons: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline triggering reasons see:
 
-  - `Build.Reason` in [Build variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml#build-variables).
-  - `Release.Reason` in [Release variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&tabs=batch#release-variables)
+  - `Build.Reason` in [Build variables](https://docs.microsoft.com/azure/devops/pipelines/build/variables?view=azure-devops&preserve-view=true&tabs=yaml#build-variables).
+  - `Release.Reason` in [Release variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=azure-devops&preserve-view=true&tabs=batch#release-variables)
 
 In particular, team model for completion training will not work on pull requests. This is by design in order to avoid creating team models for completions that use temporary commits that may get squashed once the pull request is completed, given that users would be unable to consume such models. For more information see [Q. Error consuming or training team model due to unknown commit](#q-error-consuming-or-training-team-model-due-to-unknown-commit).
 

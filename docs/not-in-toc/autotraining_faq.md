@@ -1,6 +1,7 @@
 ---
 title: Autotraining Visual Studio IntelliCode custom models for completions
 titleSuffix: Visual Studio IntelliCode
+description: When you enable autotraining, IntelliCode will train a machine-learning model based on patterns in your code, giving you IntelliCode's starred contextual completion suggestions for your own types, and other types not commonly found in open source.
 ms.date: 08/03/2020
 ms.prod: visual-studio-family
 ms.technology: intellicode
