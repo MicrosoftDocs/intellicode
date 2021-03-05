@@ -8,7 +8,7 @@ ms.technology: intellicode
 ms.topic: conceptual
 author: catycaldwell
 ms.author: ccaldwel
-manager: jillfra
+manager: jmartens
 ---
 # Visual Studio IntelliCode FAQ
 
