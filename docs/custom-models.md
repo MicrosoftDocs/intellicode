@@ -8,7 +8,7 @@ ms.technology: intellicode
 ms.topic: conceptual
 author: markw-t
 ms.author: mwthomas
-manager: jillfra
+manager: jmartens
 ---
 # IntelliCode team completions: AI-assisted IntelliSense based on your code
 

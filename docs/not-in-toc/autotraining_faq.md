@@ -5,9 +5,9 @@ ms.date: 08/03/2020
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: catycaldwell
-ms.author: ccaldwel
-manager: jillfra
+author: markw-t
+ms.author: mwthomas
+manager: jmartens
 ---
 # IntelliCode completions learned from your own code
 

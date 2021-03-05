@@ -8,9 +8,9 @@ metadata:
   description: Learn how to use IntelliCode for Visual Studio.
   ms.topic: landing-page
   ms.date: 03/27/2020
-  author: catycaldwell
-  ms.author: ccaldwel  
-  manager: jillfra
+  author: markw-t
+  ms.author: mwthomas  
+  manager: jmartens
   ms.prod: visual-studio-family
   ms.technology: intellicode  
 

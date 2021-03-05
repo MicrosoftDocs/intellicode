@@ -7,7 +7,7 @@ ms.topic: conceptual
 description: IntelliCode suggestions
 author: markw-t
 ms.author: mwthomas
-manager: jillfra
+manager: jmartens
 ---
 # IntelliCode suggestions 
 IntelliCode suggestions assists you when making similar edits in multiple places in your code. It tracks your edits locally, and detects repetition. It then offers to apply those same edits in other places where they might apply. For example, if you have missed locations where a refactoring could be applied, IntelliCode suggestions helps you find those locations and fix them.

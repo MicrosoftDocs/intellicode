@@ -7,7 +7,7 @@ ms.topic: conceptual
 description: IntelliCode refactorings - non-AB update version for TOC at 16.4 P1 onward
 author: markw-t
 ms.author: mwthomas
-manager: jillfra
+manager: jmartens
 ---
 # Refactorings - Suggestion Level (preview)
 IntelliCode improves your editing experience when you're making similar edits in multiple places in your code. It locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other places where you may want it. For example, if you're making a refactoring and have missed locations where it could be applied, IntelliCode helps you find those locations and fix them.
