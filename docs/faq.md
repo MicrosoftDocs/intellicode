@@ -4,8 +4,8 @@ ms.date: 12/04/2018
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
-author: catycaldwell
-ms.author: ccaldwel
+author: mwthomas
+ms.author: mwthomas
 manager: jillfra
 ---
 # Visual Studio IntelliCode FAQ
