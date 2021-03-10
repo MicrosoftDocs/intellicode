@@ -15,45 +15,32 @@ manager: jmartens
 
 Visual Studio IntelliCode uses machine learning to offer useful, contextually rich code completion suggestion, in-line as you code.
 
+To get IntelliCode's starred contextual completion suggestions for your own types, or other types not commonly found in open source, use team completions. Team completions [trains a model](quickstart-team-completions.md#what-happens-when-you-train-your-model) just for your codebase. You can also share it just with anyone with access to your code and keep it up to date automatically, by including a task in your CI build pipeline.
 
-To get IntelliCode's starred contextual completion suggestions for your own types, or other types not commonly found in open source, use team completions. Team completions [trains a model](quickstart-team-completions.md#what-happens-when-you-train-your-model) just for your codebase, and lets you share it just with anyone with access to your code. You can also keep it up to date automatically by including a task in your CI build pipeline.
-
-   > [!NOTE]
-   > IntelliCode team completions is a preview feature in [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) and above and are disabled by default. It can be enabled through **Tools** > **Options** > **IntelliCode**. They are currently available only for C# and C++ code.
-   
 ## How to obtain team completions
 
-You can train models for team completions to a repository and all users who can clone and edit the repository are granted automatic access to your completions. See [automatic acquisition of team models for more information](share-models.md).  
+Getting team completions on your codebase is quick and easy. 
 
-**NOTE:** Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
-
-## Two steps to team completions
-
-Getting team completions on your codebase is quick and easy, in just two steps:
-
-Step 1: Train team completions for your repository manually and try out the completions on your code  
-Step 2: Automate the training as part of your CI build
+For a local model, simply agree to train a machine-associated model by accepting the prompt or checking the "I accept these terms" checkbox - we'll take care of the rest
+If you want to share models with other users of your repo, you should automate the training as part of your CI build
 
 ### Train models for team completions
 
 To train team completions on your repo, follow these steps:
 
-1.  Clone the repository with the solution you’d like to train on.
-1.  Open the solution or repository folder in Visual Studio.
-1.	Create a model by going to **View** > **Other Windows** > **Train IntelliCode model on this repository** or by searching for **"Train"** in Visual Studio Search (**Ctrl + Q**).
-1.	You’ll be prompted to sign-in with the account you’d like to use. Use the account you normally log in to Visual Studio with.
-1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
+1.  Open the repository with the solution you’d like to train on.
+1.  Visual Studio will prompt you via a "gold bar" to train a model for that repository. You can choose to do so right from the gold bar
+1.	 If you declined the gold bar you can stil create a model by going to **View** > **Other Windows** > **IntelliCode** or by searching for **"IntelliCode"** in Visual Studio Search (**Ctrl + Q**) and selecting "IntelliCode". Once that window is open, check the "I accept these terms and would like to train IntelliCode models on my currently open codebase: <name of your solution>" checkbox.
+
+1.	Upon successful creation of the model, the model will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
 
 Requirements:
-
-- The repository must not already have a repository-associated model already trained on it.
-- The repository must be under Git source control.
-- Enable the following settings in **Tools** > **Option** > **IntelliCode**.
-   - C# or C++ team models for completions
+- Ensure these options are enabled the following settings in **Tools** > **Option** > **IntelliCode**. They are enabled by default in Visual Studio 2019 16.8 and higher.
+   - Team models for completions
    - Acquire team models for completions
  
    > [!NOTE]
-   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.4](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above. Once the preview has been installed, you can enable acquiring team models for completions through **Tools** > **Options** > **IntelliCode**.
+   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.8](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above.
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
@@ -72,7 +59,7 @@ You will see the training progress in your Visual Studio output window's Intelli
 If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy).
 
 ## Automate model retraining
-To keep your completions up-to-date as your code changes, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
+To keep your completions up-to-date as your code changes, and share the model with others who have access to your repo, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
 
 Before you start, make sure that: 
 * You have permission to create and edit pipelines for the project. Or, ask your CI Admin.
