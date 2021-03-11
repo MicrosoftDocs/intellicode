@@ -1,0 +1,17 @@
+
+# See https://github.com/marketplace/actions/simple-issue-labeler
+  
+name: issue-automation
+
+on:
+  schedule:
+    - cron: "* * 1 * *"
+
+jobs:
+  automate-issues-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: andymckay/labeler@master
+        with:
+          add-labels: "product-feedback"
+          ignore-if-labeled: true
