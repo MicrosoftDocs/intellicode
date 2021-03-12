@@ -1,17 +1,20 @@
 
 # See https://github.com/marketplace/actions/simple-issue-labeler
   
-name: issue-automation
+name: label-untriaged-issues
 
 on:
   schedule:
     - cron: "* * 1 * *"
 
 jobs:
-  automate-issues-labels:
+  stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: andymckay/labeler@master
+      - uses: actions/stale@v3
         with:
-          add-labels: "product-feedback"
-          ignore-if-labeled: true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          stale-issue-message: 'Automatically marked uncategorized issue as product feedback'
+          stale-issue-label: 'product-feedback'
+          exempt-issue-labels: 'doc-bug,doc-enhancement,doc-idea,product-issue,product-question'
+          days-before-issue-stale: 30
