@@ -24,6 +24,9 @@ Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual
 
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-apply.png)
 
+In Visual Studio 2019 16.9 and later releases, you will also see suggestions as you type, in the completions list.
+
+![IntelliCode suggestions in completions list](media/intellicode-suggestions-in-completions.png)
 
 Because it learns from your repeated edits in a session, IntelliCode suggestions will sometimes make suggestions that don't fit your intent. If you don’t want to use the suggested change, just select the **Ignore suggestions like this** action. IntelliCode won’t suggest that pattern again unless you recreate it in subsequent edits. 
  
@@ -32,11 +35,9 @@ Because it learns from your repeated edits in a session, IntelliCode suggestions
  
 If you want to see the list of all suggested changes, go to **View** > **Other windows** > **IntelliCode suggestions**. 
 
-## Preview features
+## More suggestions available lightbulb
 
-You may see a lightbulb when IntelliCode detects a repeated edit. The lightbulb has an action which will show you a list of the suggestions found. This opens the IntelliCode suggestions window, so you can locate and act on the suggestions. 
-
-You can configure this lightbulb at **Tools** > **Options** > **IntelliCode General** tab, and enable/disable "Show lightbulb when new suggestion is discovered". 
+When you accept a completions-list suggestion, if there are other locations you could apply the same change you will see a lightbulb with an action which will show you a list of the suggestions found. This opens the IntelliCode suggestions window, so you can locate and act on the suggestions. 
 
 ![IntelliCode suggestions discovery](media/intellicode-suggestions-discovery-and-toolwindow.png)
 
