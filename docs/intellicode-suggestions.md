@@ -26,7 +26,7 @@ Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual
 
 In Visual Studio 2019 16.9 and later releases, you will also see suggestions as you type, in the completions list.
 
-![IntelliCode suggestions in completions list](media/intellicode-suggestions-in-completions.gif)
+![IntelliCode suggestions shown in completions list](media/intellicode-suggestions-in-completions.gif)
 
 Because it learns from your repeated edits in a session, IntelliCode suggestions will sometimes make suggestions that don't fit your intent. If you don’t want to use the suggested change, just select the **Ignore suggestions like this** action. IntelliCode won’t suggest that pattern again unless you recreate it in subsequent edits. 
  
