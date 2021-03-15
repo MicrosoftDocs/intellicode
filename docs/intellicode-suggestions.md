@@ -24,7 +24,7 @@ Suggestions appear as [Quick Actions](/visualstudio/ide/quick-actions) in Visual
 
 ![IntelliCode suggestions lightbulb](media/intellicode-suggestions-apply.png)
 
-In Visual Studio 2019 16.9 and later releases, you will also see suggestions as you type, in the completions list.
+In Visual Studio 2019 16.9 and later releases, you will also see suggestions as you type, in the completions list:
 
 ![IntelliCode suggestions shown in completions list](media/intellicode-suggestions-in-completions.gif)
 
