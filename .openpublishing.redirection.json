@@ -19,6 +19,12 @@
             "source_path": "docs/not-in-toc/refactorings-suggestion-prompt.md",
             "redirect_url": "/visualstudio/intellicode/intellicode-suggestions",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/refactorings.md",
+            "redirect_url": "/visualstudio/intellicode/intellicode-suggestions",
+            "redirect_document_id": false
         }
+        
     ]
 }
