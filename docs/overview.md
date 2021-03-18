@@ -13,7 +13,7 @@ manager: jmartens
 ---
 # Overview of IntelliCode
 
-Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode delivers [context-aware code completions](#context-aware-code-completions) and guides developers to adhere to the [patterns and styles of their team](code-style-inference.md). IntelliCode is available in [Visual Studio](intellicode-visual-studio.md) and as an extension for [Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode delivers [context-aware code completions](#context-aware-code-completions) and guides developers to adhere to the [patterns and styles of their team](code-style-inference.md). IntelliCode is available through the main installer in [Visual Studio](intellicode-visual-studio.md) and as an extension for [Visual Studio Code](intellicode-visual-studio-code.md).
 
 For more information and to sign up for news and updates, see [Visual Studio IntelliCode](https://visualstudio.microsoft.com/services/intellicode/).
 
@@ -22,16 +22,14 @@ For more information and to sign up for news and updates, see [Visual Studio Int
 Before you begin, ensure you have a version of Visual Studio or Visual Studio Code that supports IntelliCode. The minimum requirements are:
 
 - Visual Studio Code October 2018 Release 1.29 or later
-- Visual Studio 2019 (any version and edition)
-- Visual Studio 2017 version 15.8 and later (any edition)
+- Visual Studio 2019 (Release 16.4 or higher, any edition)
 
 The following table contains details about how to obtain IntelliCode for your development environment:
 
 |Development environment|Installation instructions|
 |-|-|
 |![Visual Studio Code logo](https://docs.microsoft.com/visualstudio/intellicode/media/vs-code-logo.svg)|1. Install [Visual Studio Code](https://code.visualstudio.com/) for Windows, MacOS, or Linux.<br />2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) from the marketplace, or install it directly from the **Extensions** view in Visual Studio Code.<br />3. Reload and wait for dependencies to download and install (see status bar).|
-|![Visual Studio 2019 logo](https://docs.microsoft.com/visualstudio/intellicode/media/vs-ide-2019.svg)|1. [Download Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) version 16.1 or later.<br />2. Install a [supported workload](intellicode-visual-studio.md#supported-workloads), such as .NET desktop development.<br />3. Visual Studio IntelliCode is installed by default.<br /><br />Or:<br /><br />1. Download a version of Visual Studio 2019 prior to version 16.1.<br />2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) from Visual Studio Marketplace.|
-|![Visual Studio 2017 logo](https://docs.microsoft.com/visualstudio/intellicode/media/vs-ide-2017.svg)|1. [Download Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) version 15.8 or later.<br />2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) from Visual Studio Marketplace.|
+|![Visual Studio 2019 logo](https://docs.microsoft.com/visualstudio/intellicode/media/vs-ide-2019.svg)|1. [Download Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) version 16.4 or later.<br />2. Install a [supported workload](intellicode-visual-studio.md#supported-workloads), such as .NET desktop development.<br />3. Visual Studio IntelliCode is installed by default.<br />
 
 ## Context-aware code completions
 
@@ -40,6 +38,9 @@ IntelliCode provides AI-assisted IntelliSense in both Visual Studio and Visual S
 ![Starred IntelliSense suggestions using IntelliCode in Visual Studio](media/starred-intellisense-suggestions.png)
 
 The completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context as well as patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
+
+## Visual Studio features
+Check the [overview of IntelliCode for Visual Studio](intellicode-visual-studio.md) for full details of the additional features supported for Visual Studio users, such as [IntelliCode suggestions](intellicode-suggestions.md).
 
 ### Supported languages
 
