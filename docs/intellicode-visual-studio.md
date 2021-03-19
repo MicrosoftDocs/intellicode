@@ -17,7 +17,7 @@ manager: jmartens
 
 - [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages that predicts the most likely correct API for the developer to use instead of just an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
-   For C# users, in addition to providing member suggestions, IntelliCode also provides *argument completion*. This capability, which is currently in preview, stars the most likely argument names that you'll use when you call a method and places those suggestions at the top of the completion list. The completion list appears when you start typing inside the parentheses or press **Ctrl**+**Space**.
+   For C# users, in addition to providing member suggestions, IntelliCode also provides *argument completion*. This capability stars the most likely argument names that you'll use when you call a method and places those suggestions at the top of the completion list. The completion list appears when you start typing inside the parentheses or press **Ctrl**+**Space**.
 
    ![Argument completion in IntelliCode for Visual Studio](media/argument-completion.png)
 
@@ -39,9 +39,9 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 - C#
 - XAML
-- C++ (preview feature)
-- JavaScript and TypeScript (preview feature)
-- Visual Basic (preview feature)
+- C++ 
+- JavaScript and TypeScript 
+- Visual Basic 
 
 ## Prerequisites
 
