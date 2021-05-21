@@ -33,7 +33,7 @@ You don't need to manage which models apply to which solution or codebase becaus
 You are two ways you can obtain team completions models:
 
 1. **Repository-associated**: 
-Models are tied to the repository and all users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
+Models are tied to the repository - all users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote using our [Azure Pipelines Task](https://aka.ms/vsic/xtn/ado) or our [GitHub Action](https://aka.ms/vsic/xtn/github) from your CI build to create a repository-associated model.
 
 2. **Machine-associated**: Models are available only on the machine they are trained upon. 
    
