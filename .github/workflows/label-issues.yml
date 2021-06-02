@@ -8,7 +8,7 @@ name: label-untriaged-issues
 
 on:
   schedule:
-    - cron: "1 1 2 * *"
+    - cron: "1 1 3 * *"
 
 jobs:
   stale:
@@ -23,4 +23,5 @@ jobs:
           remove-stale-when-updated: false
           days-before-close: -1
           days-before-issue-stale: 1
+          days-before-pr-stale: -1
           debug-only: true
