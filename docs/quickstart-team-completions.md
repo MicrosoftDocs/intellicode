@@ -40,7 +40,7 @@ Requirements:
    - Acquire team models for completions
  
    > [!NOTE]
-   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.8](https://docs.microsoft.com/visualstudio/releases/2019/release-notes) or above.
+   > If you don't see the above settings in Visual Studio, be sure that you have installed at least [Visual Studio version 16.8](/visualstudio/releases/2019/release-notes) or above.
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
@@ -56,7 +56,7 @@ When you kickoff training your model for team completions:
 
 You will see the training progress in your Visual Studio output window's IntelliCode section. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.  
 
-If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy).
+If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](/visualstudio/intellicode/custom-models#data-and-privacy).
 
 ## Automate model retraining
 To keep your completions up-to-date as your code changes, and share the model with others who have access to your repo, you can automate training your model in Azure DevOps with the IntelliCode CI build task.
