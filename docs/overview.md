@@ -64,4 +64,4 @@ IntelliCode may periodically ask you to complete an anonymous survey. You can al
 
 ## See also
 
-- [Visual Studio IntelliCode FAQ](faq.md)
+- [Visual Studio IntelliCode FAQ](faq.yml)

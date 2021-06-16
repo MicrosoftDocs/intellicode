@@ -83,5 +83,5 @@ Before you start, make sure that:
 - [Setting up a build task](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
 - [Share models](share-models.md)
 - [Overview of IntelliCode](overview.md)
-- [General IntelliCode FAQ](faq.md)
+- [General IntelliCode FAQ](faq.yml)
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)

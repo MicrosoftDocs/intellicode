@@ -3,7 +3,7 @@
 - name: Overview
   href: overview.md
 - name: FAQ
-  href: faq.md
+  href: faq.yml
 - name: IntelliCode for Visual Studio
   expanded: true
   items:
