@@ -31,9 +31,8 @@ sections:
           
           **NOTE:** For autotraining a model for IntelliCode custom code completions for your solution in Visual Studio, there are no source control requirements. However, if you'd like to share your custom completions with your team, your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
           
-      - question: |
-          Enabling autotraining models for custom code completions in Visual Studio
-        answer: |
+          ### Enabling autotraining models for custom code completions in Visual Studio
+
           To enable automatic model training for IntelliCode completions for your code in Visual Studio, follow these steps:
           
           1.  Open the solution or repository folder in Visual Studio.
