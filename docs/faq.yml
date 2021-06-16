@@ -98,6 +98,6 @@ sections:
           
 additionalContent: |
 
-  ## Next steps
+  ## See also
      - [IntelliCode extension for Visual Studio](intellicode-visual-studio.md)
      - [IntelliCode extension for Visual Studio Code](intellicode-visual-studio-code.md)
