@@ -134,5 +134,5 @@ If Microsoft needs to troubleshoot, authorized Microsoft service personnel may b
 
 - [Share models](share-models.md)
 - [Overview of IntelliCode](overview.md)
-- [General IntelliCode FAQ](faq.md)
+- [General IntelliCode FAQ](faq.yml)
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)

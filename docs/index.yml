@@ -31,7 +31,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: IntelliCode FAQ
-            url: faq.md
+            url: faq.yml
 
   # Card
   - title: Where you can use IntelliCode
