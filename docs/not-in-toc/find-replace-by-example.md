@@ -28,7 +28,7 @@ For example, suppose you wish to replace all instances of methods in a file that
 
 With a signature like this (changing doubles for decimals)
 
-![Find replace by example code after](../media/intellicode-frbe-before-after.png)
+![Find replace by example code after](../media/intellicode-frbe-after-code.png)
 
 There are multiple method names to replace.
 
