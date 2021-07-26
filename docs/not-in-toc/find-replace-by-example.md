@@ -2,7 +2,7 @@
 title: How to find and replace using patterns (“by example”)
 description: Use IntelliCode find-and-replace by example to perform complex find/replaces without needing to author your own regular expressions.
 ms.custom: SEO-VS-2020
-ms.date: 08/26/2021
+ms.date: 07/26/2021
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
