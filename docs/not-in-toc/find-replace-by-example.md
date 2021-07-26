@@ -35,10 +35,13 @@ With a signature like this (changing doubles for decimals)
 There are multiple method names to replace.
 
 All you need to do to accomplish this is simply provide the examples above in the find and replace boxes
+
 ![Find replace by example find box and replace box populated and suggestions found](../media/intellicode-frbe-suggestions-found.png)
 
 On doing so, the lightbulb icon appears next to the replace box and lets you know that Visual Studio has found pattern based find/replace options for your case. 
 1.	Click the lightbulb to reveal the possible patterns Visual Studio has detected for you
 2.	Pick one from the list of possible patterns – you can preview the effect of each pattern by selecting it in the list
+
 ![Find replace by example list of suggestions found](../media/intellicode-frbe-suggestions-list.png)
+
 3.	Select by pressing enter or clicking - your chosen match will now be used in the Regular Expression find/replace and you can navigate/act as usual for find/replace to change instances in your document and beyond.
