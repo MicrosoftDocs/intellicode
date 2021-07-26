@@ -15,7 +15,7 @@ manager: jmartens
 
 Find and replace can be used to do some refactoring operations but except in the simplest cases, these require creating complex regular expressions.  
 
-Find and Replace by example is a new Visual Studio feature that can let you match more complex patterns without having to create a regular expression yourself – it does it for you.
+Find and Replace by example is a new Visual Studio feature that can let you match more complex patterns without having to create a regular expression yourself – it does it for you based solely on examples of the before and after state you desire - no need to understand or author a regular expression yourself.
 
 ## Providing an example of before-and-after
 All you need to do is provide an example of the desired state before and after, right in the find and replace boxes.  Visual Studio will then recommend a set of pattern matches so you can choose the right one and apply it in the usual way.
