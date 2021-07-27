@@ -16,7 +16,7 @@ manager: jmartens
 Find and replace can be used to do some refactoring operations but, except in the simplest cases, these require you to write a complex regular expression.  Fortunately, Find and Replace by example can create those regular expressions for you just using samples of the before and after state you desire. What's more, you don't need to understand regular expressions to use it - Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
 
 ## Providing an example of before-and-after
-All you need to do is provide an example of the desired state before and after, right in the find and replace boxes. You can do this both in Quick Find and Find/Replace in files experiences.
+All you need to do is provide an example of the desired state before and after, right in the find and replace boxes. You can do this both in Quick Find and Find/Replace in files dialogs.
 
 Once a pattern is found, Visual Studio will let you know by showing a lightbulb in the find/replace dialog; clicking on that lightbulb shows the detected set of pattern matches in a list. Hovering or navigating through that list shows a preview of the changes it would make, and you can simply hit enter to commit the suggested regular expression and use it in find/replace as if you had written it yourself.
 
