@@ -46,4 +46,9 @@ Once you do so, the lightbulb icon will appear next to the replace box to let yo
 
 ![Find replace by example list of suggestions found](../media/intellicode-frbe-suggestions-list.png)
 
-3.	Select by pressing enter or clicking - your chosen match will now be used in the Regular Expression find/replace and you can navigate/act as usual for find/replace to change instances in your document and beyond. If the choice turns out not to be what you needed, you can always get back to your original search via the lightbulb - just choose "Original Text" from the popup menu.
+3.	Select a pattern by pressing enter or clicking - your chosen match will now be used in the Regular Expression find/replace (If the choice turns out not to be what you needed, you can always get back to your original search via the lightbulb - just choose "Original Text" from the popup menu)
+
+4. Once you've selected your pattern, the resulting regular expressions for find and replace will be inserted into the find dialog and it will be switched into regular expression search mode. You can now navigate and perform replacements as usual to change instances in your document and beyond. You will see all matches highlighted in the editor so you can navigate between them.
+
+![Find replace by example matches and RegEx shown](docs/media/intellicode-frbe-with-RegEx-and-matches.png)
+
