@@ -18,7 +18,7 @@ Find and replace can be used to do some refactoring operations but, except in th
 ## Providing an example of before-and-after
 All you need to do is provide an example of the desired state before and after, right in the find and replace fields. 
 
-You can do this both in[find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) or [find and replace in files](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
+You can do this in both the [find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) and the [find and replace in files dialog](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
 
 Once a pattern is found, Visual Studio will let you know by showing a lightbulb next to the replace field in the find/replace control; clicking on that lightbulb shows the detected set of pattern matches in a list. Hovering or navigating through that list shows a preview of the changes it would make, and you can simply hit enter to commit the suggested regular expression and use it in find/replace as if you had written it yourself.
 
@@ -26,17 +26,17 @@ Once a pattern is found, Visual Studio will let you know by showing a lightbulb 
 >TRY IT NOW: 
 >You can try out the example below right away, by cloning [this repo](https://github.com/markw-t/NewFtoC) and opening Program.cs
 
-For example, suppose you wish to replace all instances of a hardcoded formula like this:
+In the program.cs file you'll find multiple examples of a hardcoded formula like this:
 
 ![Find replace by example code before](../media/intellicode-frbe-before-code.png)
 
-With a call to a helper function like this on the same variable name:
+Suppose you wanted to replace all of those with a call to a helper function like this on the same variable name:
 
 ![Find replace by example code after](../media/intellicode-frbe-after-code.png)
 
-There are multiple locations to replace with multiple variable names.
+Remembering that there are multiple locations to replace with multiple variable names.
 
-All you need to do to accomplish this is simply provide the examples shown below in the find and replace boxes, whether in the [find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) or  [find and replace in files](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
+All you need to do is simply provide the examples shown below in the find and replace boxes, whether in the [find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) or  [find and replace in files dialog](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files) - the examples below use the control.
 
 ![Find replace by example find box and replace control populated and suggestions found](../media/intellicode-frbe-suggestions-found.png)
 
