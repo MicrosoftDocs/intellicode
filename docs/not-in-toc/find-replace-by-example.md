@@ -13,7 +13,7 @@ manager: jmartens
 
 # How to find and replace by example
 
-Find and replace can be used to do some refactoring operations but, except in the simplest cases, you'll find yourself needing to write a regular expression to achieve the task. You may not be comfortable with writing and debugging that expression.  Fortunately, Find and Replace by example can create the expression for you just using samples of the before and after state you desire. What's more, *you don't need to understand regular expressions to use it* - Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
+Find and replace can be used to do some refactoring operations but, except in the simplest cases, you'll find yourself needing to write a regular expression to achieve the task. You may not be comfortable with writing and debugging that expression.  Fortunately, Find and Replace by example can create the expression for using an example of the change you want to make. What's more, *you don't need to understand regular expressions to use it* ; Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
 
 ## Providing an example of before-and-after
 All you need to do is provide an example of the desired state before and after, right in the find and replace fields. 
@@ -42,7 +42,7 @@ All you need to do is simply provide the examples shown below in the find and re
 
 Once you do so, the lightbulb icon will appear next to the replace box to let you know that Visual Studio has found pattern based find/replace options for your case. 
 1.	Click the lightbulb to reveal the possible patterns Visual Studio has detected for you
-2.	Pick one from the list of possible patterns – you can preview the effect of each pattern by selecting it in the list
+2.	Pick one from the list of possible patterns – you can preview the effect of each pattern by selecting it in the list or simply hovering over the list item with your mouse
 
 ![Find replace by example list of suggestions found](../media/intellicode-frbe-suggestions-list.png)
 
