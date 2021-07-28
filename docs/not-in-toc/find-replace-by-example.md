@@ -13,15 +13,16 @@ manager: jmartens
 
 # How to find and replace by example (PREVIEW)
 
-Find and replace can be used to do some refactoring operations but, except in the simplest cases, you'll find yourself needing to write a regular expression to achieve the task. You may not be comfortable with writing and debugging that expression.  Fortunately, Find and Replace by example can create it for you using an example of the change you want to make. What's more, *you don't need to understand regular expressions to use it* ; Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
+Find and replace can be used to do some refactoring operations but, except in the simplest cases, you'll find yourself needing to write a regular expression to achieve the task. You may not be comfortable with writing and debugging that expression.  Fortunately, Find and replace by example can create it for you using an example of the change you want to make. What's more, *you don't need to understand regular expressions to use it* ; Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
 
-## Providing an example of before-and-after
+## Provide an example of before-and-after
 All you need to do is provide an example of the desired state before and after, right in the find and replace fields. 
 
 You can do this in both the [find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) and the [find and replace in files dialog](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
 
 Once a pattern is found, Visual Studio will let you know by showing a lightbulb next to the replace field in the find/replace control; clicking on that lightbulb shows the detected set of pattern matches in a list. Hovering or navigating through that list shows a preview of the changes it would make, and you can simply hit enter to commit the suggested regular expression and use it in find/replace as if you had written it yourself.
 
+## Walkthrough - try out find and replace by example for yourself
 >[!NOTE] 
 >TRY IT NOW: 
 >You can try out the example below right away, by cloning [this repo](https://github.com/markw-t/NewFtoC) and opening Program.cs
@@ -50,5 +51,4 @@ Once you do so, the lightbulb icon will appear next to the replace box to let yo
 
 4. Once you've selected your pattern, the resulting regular expressions for find and replace will be inserted into the find dialog and it will be switched into regular expression search mode. You can now navigate and perform replacements as usual to change instances in your document and beyond. You will see all matches highlighted in the editor so you can navigate between them.
 
-![Find replace by example matches and RegEx shown](../media/intellicode-frbe-with-RegEx-and-matches.png)
-
+![Find replace by example matches and regular expression shown](../media/intellicode-frbe-with-regex-and-matches.png)
