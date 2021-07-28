@@ -16,32 +16,34 @@ manager: jmartens
 Find and replace can be used to do some refactoring operations but, except in the simplest cases, these require you to write a complex regular expression.  Fortunately, Find and Replace by example can create those regular expressions for you just using samples of the before and after state you desire. What's more, you don't need to understand regular expressions to use it - Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
 
 ## Providing an example of before-and-after
-All you need to do is provide an example of the desired state before and after, right in the find and replace boxes. You can do this both in Quick Find and Find/Replace in files dialogs.
+All you need to do is provide an example of the desired state before and after, right in the find and replace fields. 
 
-Once a pattern is found, Visual Studio will let you know by showing a lightbulb in the find/replace dialog; clicking on that lightbulb shows the detected set of pattern matches in a list. Hovering or navigating through that list shows a preview of the changes it would make, and you can simply hit enter to commit the suggested regular expression and use it in find/replace as if you had written it yourself.
+You can do this both in[find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) or [find and replace in files](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
+
+Once a pattern is found, Visual Studio will let you know by showing a lightbulb next to the replace field in the find/replace control; clicking on that lightbulb shows the detected set of pattern matches in a list. Hovering or navigating through that list shows a preview of the changes it would make, and you can simply hit enter to commit the suggested regular expression and use it in find/replace as if you had written it yourself.
 
 >[!NOTE] 
 >TRY IT NOW: 
 >You can try out the example below right away, by cloning [this repo](https://github.com/markw-t/NewFtoC) and opening Program.cs
 
-For example, suppose you wish to replace all instances of methods in a file that have a signature like this:
+For example, suppose you wish to replace all instances of a hardcoded formula like this:
 
 ![Find replace by example code before](../media/intellicode-frbe-before-code.png)
 
-With a signature like this (changing doubles for decimals)
+With a call to a helper function like this on the same variable name:
 
 ![Find replace by example code after](../media/intellicode-frbe-after-code.png)
 
-There are multiple method names to replace.
+There are multiple locations to replace with multiple variable names.
 
-All you need to do to accomplish this is simply provide the examples above in the find and replace boxes
+All you need to do to accomplish this is simply provide the examples shown below in the find and replace boxes, whether in the [find and replace control](/visualstudio/ide/finding-and-replacing-text?#find-and-replace-control) or  [find and replace in files](/visualstudio/ide/finding-and-replacing-text?#find-in-files-and-replace-in-files).
 
-![Find replace by example find box and replace box populated and suggestions found](../media/intellicode-frbe-suggestions-found.png)
+![Find replace by example find box and replace control populated and suggestions found](../media/intellicode-frbe-suggestions-found.png)
 
-On doing so, the lightbulb icon appears next to the replace box and lets you know that Visual Studio has found pattern based find/replace options for your case. 
+Once you do so, the lightbulb icon will appear next to the replace box to let you know that Visual Studio has found pattern based find/replace options for your case. 
 1.	Click the lightbulb to reveal the possible patterns Visual Studio has detected for you
 2.	Pick one from the list of possible patterns – you can preview the effect of each pattern by selecting it in the list
 
 ![Find replace by example list of suggestions found](../media/intellicode-frbe-suggestions-list.png)
 
-3.	Select by pressing enter or clicking - your chosen match will now be used in the Regular Expression find/replace and you can navigate/act as usual for find/replace to change instances in your document and beyond.
+3.	Select by pressing enter or clicking - your chosen match will now be used in the Regular Expression find/replace and you can navigate/act as usual for find/replace to change instances in your document and beyond. If the choice turns out not to be what you needed, you can always get back to your original search via the lightbulb - just choose "Original Text" from the popup menu.
