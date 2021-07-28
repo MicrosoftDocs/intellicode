@@ -11,7 +11,7 @@ ms.author: mwthomas
 manager: jmartens
 ---
 
-# How to find and replace by example
+# How to find and replace by example (PREVIEW)
 
 Find and replace can be used to do some refactoring operations but, except in the simplest cases, you'll find yourself needing to write a regular expression to achieve the task. You may not be comfortable with writing and debugging that expression.  Fortunately, Find and Replace by example can create the expression for using an example of the change you want to make. What's more, *you don't need to understand regular expressions to use it* ; Visual Studio generates one or more possible expressions and lets you preview the changes that would happen if you applied that expression in a find/replace.
 
