@@ -6,7 +6,7 @@ ms.technology: intellicode
 ms.topic: conceptual
 description: IntelliCode privacy
 author: DavidObando
-ms.author: daoabndo
+ms.author: daobando
 manager: jmartens
 ---
 # IntelliCode privacy
@@ -14,12 +14,12 @@ manager: jmartens
 ## Firewall and proxy settings
 For IntelliCode to gain access to the web services, network managers will need to add `*.intellicode.vsengsaas.visualstudio.com` on https/443 to an allow list. Conversely, adding it to a block list will prevent IntelliCode from working in your network.
 
-Additional information can be found at [Install and use Visual Studio and Azure Services behind a firewall or proxy server](https://docs.microsoft.com/en-us/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server).
+Additional information can be found at [Install and use Visual Studio and Azure Services behind a firewall or proxy server](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server).
 
 ## Team completion models
 Certain IntelliCode features require access to the IntelliCode web services in order to obtain model files, or to submit code metadata to train new team completion models for your own code. The IntelliCode web services doesn't keep a copy of your custom model once it has been delivered to your instance of Visual Studio. If for some reason your instance of Visual Studio never collects a custom model that it sent up for training, we automatically delete it from our services 29 days after the model was produced.
 
-Additional information can be seen in the [Custom Models Data and Privacy](custom-models#data-and-privacy) section.
+Additional information can be seen in the [Custom Models Data and Privacy](custom-models.md#data-and-privacy) section.
 
 ## Corporate controls over Team completion model training
 Team completion model training and team completion model acquisition can be disabled by corporate policy across all the machines that run Visual Studio in your organization, via registry keys.
