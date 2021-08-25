@@ -11,7 +11,10 @@ manager: jmartens
 ---
 # IntelliCode privacy
 
+This article describes privacy settings for IntelliCode for Visual Studio.
+
 ## Firewall and proxy settings
+
 For IntelliCode to gain access to the web services, network managers will need to add `*.intellicode.vsengsaas.visualstudio.com` on https/443 to an allowlist. Conversely, adding it to a blocklist will prevent IntelliCode from working in your network.
 
 Additional information can be found at [Install and use Visual Studio and Azure Services behind a firewall or proxy server](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server).
