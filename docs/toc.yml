@@ -18,6 +18,8 @@
   - name: Share models
     href: share-models.md
   - name: Suggestions
-    href: IntelliCode-suggestions.md
+    href: intellicode-suggestions.md
+  - name: Privacy
+    href: intellicode-privacy.md
 - name: IntelliCode for Visual Studio Code
   href: intellicode-visual-studio-code.md
