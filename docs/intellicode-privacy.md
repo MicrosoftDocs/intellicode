@@ -24,6 +24,9 @@ Certain IntelliCode features require access to web services to obtain model file
 
 Additional information can be seen in the [Custom Models Data and Privacy](custom-models.md#data-and-privacy) section.
 
+### Data residency
+Note that when you submit code metadata to train custom models for your code, the data may leave your geography to be processed by IntelliCode services located in the United States of America.
+
 ## Corporate controls over Team completion model training
 Team completion model training and acquisition can be disabled by corporate policy across all the machines that run Visual Studio in your organization, via registry keys.
 
