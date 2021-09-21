@@ -9,10 +9,11 @@ metadata:
   ms.topic: landing-page
   ms.date: 03/27/2020
   author: markw-t
-  ms.author: mwthomas  
+  ms.author: mwthomas
   manager: jmartens
   ms.prod: visual-studio-family
-  ms.technology: intellicode  
+  ms.technology: intellicode
+  ms.custom: intro-landing-hub
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
