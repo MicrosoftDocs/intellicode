@@ -5,7 +5,7 @@ ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
 description: IntelliCode Visual Studio Inline Completions
-author: Jui Hanamshet
+author: juihanamshet1
 ms.author: juihanamshet
 manager: jmartens
 ---
@@ -54,17 +54,19 @@ To dismiss inline completions, the `Esc` or `Delete` keys can be used.
 
 ## Privacy 
 
-[See Privacy](intellicode-privacy.md/#intellicode-line-completions)
+[See Privacy](intellicode-privacy.md#intellicode-line-completions)
 
-## Turning it On/Off
+## Controlling Inline Completions
 
-In Visual Studio, you will see a small purple bulb at the bottom right of the editor, next to the zoom control for the editor. You can turn this feature on/off using the first setting named `Show completions for lines of code`. 
+You can control the inline completions feature using the small purple lightbulb shown at the bottom right of the editor, next to the zoom control. 
 
 ![Turning IntelliCode Inline Completions On/Off](media/intellicode-vs-wlc-quietmode-small.png)
 
-The second setting, `Wait for pauses in typing before showing line completions` will change when line completions are shown to the user. Instead of always showing line completions, IntelliCode will wait for the user to pause typing before showing line completions. 
+The first setting, `Show completions for lines of code` allows you turn this inline completions on or off. 
 
-The third setting, `Show completions on new lines` can be turned on or off depending on whether the user wants to see line completions when they're in a new line. 
+The second setting, `Wait for pauses in typing before showing line completions`, when enabled, will make inlined completions only show up if the user has paused typing.The user may prefer this if they find the inline completions distracting in the default mode.
+
+The third setting, `Show completions on new lines` can be turned on or off depending on whether the user wants to see line completions when they have entered a new line i.e. by pressing `Return` or `Enter`. 
 
 ## Providing Feedback 
 
