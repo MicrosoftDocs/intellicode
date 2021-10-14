@@ -69,7 +69,6 @@ The second setting, `Wait for pauses in typing before showing line completions`,
 The third setting, `Show completions on new lines` can be turned on or off depending on whether the user wants to see line completions when they have entered a new line i.e. by pressing `Return` or `Enter`. 
 
 ## Providing Feedback 
-
 Click on the Feedback icon on the top right of Visual Studio to file a feedback ticket. Optionally, you can upload your IntelliCode log files to the feedback ticket in order to provide us with additional context. Make sure you review the contents of the log files and address any privacy concerns you may have. This data, when shared with us, will not be used for any purpose other than providing support assistance to you. You can find the logs at `%LOCALAPPDATA%\Temp\VSFeedbackIntelliCodeLogs`
 
 ![Feedback for IntelliCode](media/intellicode-vs-wlc-feedback-small.png)
