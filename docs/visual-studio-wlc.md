@@ -12,7 +12,7 @@ manager: jmartens
 
 # Visual Studio IntelliCode Whole line completions
 
-IntelliCode Whole line completions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code. This feature is available in Visual Studio 2022. 
+IntelliCode whole line completions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code. This feature is available in Visual Studio 2022. 
 
 ![Screenshot of Whole Line Completion by IntelliCode in Visual Studio.](media/intellicode-vs-wlc-small.png)
 
@@ -54,7 +54,7 @@ To dismiss whole line completions, the `Esc` or `Delete` keys can be used.
 
 ## Privacy 
 
-[See Privacy](intellicode-privacy.md#intellicode-line-completions)
+[See Privacy](intellicode-privacy.md#intellicode-whole-line-completions)
 
 ## Controlling Whole line completions
 
