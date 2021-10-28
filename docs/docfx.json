@@ -2,10 +2,7 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
+        "files": ["**/*.md", "**/*.yml"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -20,12 +17,7 @@
     ],
     "resource": [
       {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.svg"
-        ],
+        "files": ["**/*.png", "**/*.jpg", "**/*.gif", "**/*.svg"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -53,6 +45,13 @@
     "fileMetadata": {},
     "template": [],
     "dest": "intellicode",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "redirections": [
+      {
+        "source_path": "visual-studio-inline-completions.md",
+        "redirect_url": "visual-studio-whole-line-completions.md",
+        "redirect_document_id": true
+      }
+    ]
   }
 }

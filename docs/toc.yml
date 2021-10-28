@@ -10,7 +10,7 @@
   - name: Overview
     href: intellicode-visual-studio.md
   - name: Code Completions
-    href: visual-studio-wlc.md
+    href: visual-studio-whole-line-completions.md
   - name: Suggestions
     href: intellicode-suggestions.md
   - name: Team completions quickstart
