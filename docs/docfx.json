@@ -45,13 +45,6 @@
     "fileMetadata": {},
     "template": [],
     "dest": "intellicode",
-    "markdownEngineName": "markdig",
-    "redirections": [
-      {
-        "source_path": "visual-studio-inline-completions.md",
-        "redirect_url": "visual-studio-whole-line-completions.md",
-        "redirect_document_id": true
-      }
-    ]
+    "markdownEngineName": "markdig"
   }
 }
