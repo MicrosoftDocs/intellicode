@@ -24,8 +24,8 @@ Certain IntelliCode features require access to web services to obtain model file
 
 Additional information can be seen in the [Custom Models Data and Privacy](custom-models.md#data-and-privacy) section.
 
-## IntelliCode Line Completions
-IntelliCode line completions runs entirely on the local machine and does not send any code to Microsoft in order to make its predictions.
+## IntelliCode Whole Line Completions
+IntelliCode whole line completions runs entirely on the local machine and does not send any code to Microsoft in order to make its predictions.
 
 ### Data residency
 Note that when you submit code metadata to train custom models for your code, the data may leave your geography to be processed by IntelliCode services located in the United States of America.
