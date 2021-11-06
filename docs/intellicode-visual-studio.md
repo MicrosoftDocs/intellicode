@@ -21,6 +21,10 @@ manager: jmartens
 
    ![Argument completion in IntelliCode for Visual Studio](media/argument-completion.png)
 
+   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and presents it as an inline prediction. 
+
+   ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
+
 - AI-assisted [IntelliSense recommendations based on your own code](custom-models.md) (C# only).
 
 - [Inference of code style and formatting conventions](code-style-inference.md) to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only).
