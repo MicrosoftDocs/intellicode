@@ -21,7 +21,7 @@ manager: jmartens
 
    ![Argument completion in IntelliCode for Visual Studio](media/argument-completion.png)
 
-   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and presents it as an inline prediction. 
+   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
 
    ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
 
