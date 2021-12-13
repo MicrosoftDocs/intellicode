@@ -1,5 +1,5 @@
 ---
-title: Visual Studio IntelliCode
+title: IntelliCode for Visual Studio and Visual Studio Code
 titleSuffix: ""
 description: Read a high-level overview of IntelliCode, which offers context-aware code completions (suggestions) and guides developers to adhere to team patterns and styles.
 ms.custom: SEO-VS-2020
