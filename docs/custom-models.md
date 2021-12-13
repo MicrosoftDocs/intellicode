@@ -113,7 +113,7 @@ To enable automatic model training for IntelliCode completions for your code in 
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
 
 > [!NOTE]
-> Be sure that you have installed at least [Visual Studio version 16.7 Preview 3](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-v16.0) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
+> Be sure that you have installed at least [Visual Studio version 16.7 Preview 3](/visualstudio/releases/2019/release-notes-v16.0) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
@@ -133,8 +133,6 @@ When you enable IntelliCode to kickoff training and/or autotraining your model f
 - You can refresh your learned patterns directly in the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**.
 
 You will see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.  
-
-If you want more information about what data is used and transferred in this process see [IntelliCode data and  privacy](https://docs.microsoft.com/visualstudio/intellicode/custom-models#data-and-privacy).
 
 ### View extracted data
 
