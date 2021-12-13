@@ -32,7 +32,7 @@
         },
         {
             "source_path": "docs/not-in-toc/autotraining_faq.yml",
-            "redirect_url": "/visualstudio/intellicode/custom-models.md",
+            "redirect_url": "/visualstudio/intellicode/custom-models",
             "redirect_document_id": false  
         }       
     ]
