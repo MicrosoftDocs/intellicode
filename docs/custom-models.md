@@ -83,7 +83,7 @@ Visual Studio will automatically retrain your machine-associated team completion
 
 ### Train on a public codebase
 
-Before you train on your own code, you might want to create a completions model on a public codebase. You can see how the completions model affects IntelliSense, or if you're concerned about the kind of data that IntelliSense collects, you can inspect the extracted data. Some interesting samples to train on are:
+Before you train on your own code, you might want to create a completions model on a public codebase. You can see how the completions model affects IntelliSense, or if you're concerned about the kind of data that IntelliSense collects, you can inspect the [extracted data](#view-extracted-data). Some interesting samples to train on are:
 
 - [Azure ConferenceBuddy](https://github.com/Azure/ConferenceBuddy)
 
@@ -122,6 +122,8 @@ Once you are happy with the custom code completions on your solution, you can se
 ## Data and privacy
 
 To build your team model, we extract a summary file with metadata on your types and their usages. For example, the summary file contains the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
+
+The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
 When you enable IntelliCode to kickoff training and/or autotraining your model for custom code completions:
 
