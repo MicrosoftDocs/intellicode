@@ -25,10 +25,15 @@
             "redirect_url": "/visualstudio/intellicode/intellicode-suggestions",
             "redirect_document_id": false
         },
-            {
+        {
               "source_path": "docs/visual-studio-inline-completions.md",
               "redirect_url": "/visualstudio/intellicode/visual-studio-whole-line-completions",
               "redirect_document_id": true
-            }       
+        },
+        {
+            "source_path": "docs/not-in-toc/autotraining_faq.yml",
+            "redirect_url": "/visualstudio/intellicode/custom-models#autotraining-models-for-your-codebase",
+            "redirect_document_id": false  
+        }       
     ]
 }

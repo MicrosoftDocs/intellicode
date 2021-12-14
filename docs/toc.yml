@@ -7,7 +7,7 @@
 - name: IntelliCode for Visual Studio
   expanded: true
   items:
-  - name: Overview
+  - name: "Overview: IntelliCode for Visual Studio"
     href: intellicode-visual-studio.md
   - name: Whole line completions
     href: visual-studio-whole-line-completions.md
@@ -21,8 +21,6 @@
     href: share-models.md
   - name: Code style inference
     href: code-style-inference.md
-
-
   - name: Privacy
     href: intellicode-privacy.md
 - name: IntelliCode for Visual Studio Code
