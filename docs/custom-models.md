@@ -12,9 +12,9 @@ manager: jmartens
 ---
 # IntelliCode team completions: AI-assisted IntelliSense based on your code
 
-Use IntelliCode team models for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ codebases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open source code. This is because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. When working with code that isn’t in that set of repos, those recommendations aren't as useful to you. C# and C++ users in Visual Studio can now use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code.
+Use IntelliCode team models for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ code bases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open-source code. This is because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. When working with code that isn’t in the set of repos, those recommendations aren't as useful to you. C# and C++ users in Visual Studio can now use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code.
 
-An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on an analysis of code. IntelliCode creates team models using the same learning process as for the IntelliCode base models, except they are trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable your team model will be at offering useful recommendations.
+An IntelliCode model is an encapsulation of a set of rules that allow prediction of some useful information (for example, recommendations in the IntelliSense list) based on an analysis of code. IntelliCode creates team models using the same learning process as for the IntelliCode base models, except they're trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable your team model will be at offering useful recommendations.
 
 To build your team model, we extract a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
 
@@ -24,7 +24,7 @@ IntelliCode generates its recommendations from multiple models by merging togeth
 
 - The base model for the language you're using (which is trained on thousands of public GitHub repos)
 - Any team models you've trained
-- Any team models which are associated with the Git repository you’re working in
+- Any team models that are associated with the Git repository you’re working in
 
 You don't need to manage which models apply to which solution or codebase because IntelliCode takes care of this for you.
 
@@ -33,9 +33,9 @@ You don't need to manage which models apply to which solution or codebase becaus
 There are two ways you can obtain team completions models:
 
 1. **Repository-associated**: 
-Models are tied to the repository - all users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote using our [Azure Pipelines Task](https://aka.ms/vsic/xtn/ado) or our [GitHub Action](https://aka.ms/vsic/xtn/github) from your CI build to create a repository-associated model.
+Models are tied to the repository. All users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote using our [Azure Pipelines Task](https://aka.ms/vsic/xtn/ado) or our [GitHub Action](https://aka.ms/vsic/xtn/github) from your CI build to create a repository-associated model.
 
-2. **Machine-associated**: Models are available only on the machine they are trained upon. 
+2. **Machine-associated**: Models are available only on the machine they're trained upon. 
    
 ## Repository-associated team models
 
@@ -46,12 +46,12 @@ Repository-associated team models are available to users who train them using ei
 
 ### Sharing your repository-associated models
 
-Repository-associated models are automatically shared with others working in the same codebase as long as users have enabled automatic acquisition of team models in Visual Studio. 
+Repository-associated models are automatically shared with others working in the same codebase, as long as users have enabled automatic acquisition of team models in Visual Studio. 
 Enable automatic acquisition by going to **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
 
-When anyone clones and opens the codebase the model was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you are working on a fork of the codebase, simply add the upstream codebase as a remote repository to get the model.
+When you clone and open codebase model which was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you're working on a fork of the codebase, add the upstream codebase as a remote repository to get the model.
 
-Access to the repository is access to the model. When training, we collect some information about the checked-out commit. Anyone who requests that model must have the same commit in their repository and be able to produce the same information that was collected during training in order to receive the team model.
+Access to the repository is access to the model. When training, we collect some information about the checked-out commit. If you request the model, then you must have the same commit in the repository and should produce the same information that was collected during training to receive the team model.
 
 >[!NOTE] 
 >The ability to share your user-associated team completions models via a sharing link, available in some preview releases of Team completions, is now deprecated
@@ -62,11 +62,11 @@ You can remove models from your account so they can no longer be used.
 
 #### Delete a user-associated model created within Visual Studio
 
-While your solution is open in Visual Studio, simply uncheck the checkbox accepting model training, on the View > Other Windows > IntelliCode page. The model will be deleted.
+While your solution is open in Visual Studio, uncheck the checkbox accepting model training, on the **View** > **Other Windows** > **IntelliCode page**. The model will be deleted.
 
 #### Delete a repository-attached model created using Azure DevOps or a GitHub CI workflow
 
-Simply remove the training task from your pipeline - the associated model will be removed within 30 days if not trained.
+Remove the training task from your pipeline, the associated model will be removed within 30 days if not trained.
 
 ## Machine-associated models
 
@@ -113,28 +113,28 @@ To enable automatic model training for IntelliCode completions for your code in 
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
 
 > [!NOTE]
-> Be sure that you have installed at least [Visual Studio version 16.7 Preview 3](/visualstudio/releases/2019/release-notes-v16.0) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
+> Be sure that you've installed at least [Visual Studio version 16.7 Preview 3](/visualstudio/releases/2019/release-notes-v16.0) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
-Once you are happy with the custom code completions on your solution, you can set up to automatically create, retrain, and share IntelliCode custom code completions with your entire dev team as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) or [GitHub Action for Team Completions](https://aka.ms/vsic/github).
+Once you're done with the custom code completions on your solution, you can automatically create, retrain, and share IntelliCode custom code completions with your entire dev team as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) or [GitHub Action for Team Completions](https://aka.ms/vsic/github).
 
 ## Data and privacy
 
 To build your team model, we extract a summary file with metadata on your types and their usages. For example, the summary file contains the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
 
-The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
+The extracted data is transmitted, over HTTPS, to the IntelliCode service. The service then uses machine-learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
-When you enable IntelliCode to kickoff training and/or autotraining your model for custom code completions:
+When you enable IntelliCode for kickoff training and/or autotraining your model for custom code completions:
 
 - We analyze your code locally.
 - We extract a summary file with metadata on your types and their usages.
 - We securely upload it to the IntelliCode service and train a completions model tailored to your code.
-- Your completions model is never shared with those who have access to your repo (if a cloned git repository). 
-- We allow you to delete your model at any time and/or cancel the model training directly in the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Simply uncheck the box in the UI to delete the model for the custom code completions immediately.
+- Your completions model is never shared with the users who have access to your repo (if a cloned git repository). 
+- We allow you to delete your model at any time and/or cancel the model training directly in the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Uncheck the box in the UI to delete the model for the custom code completions.
 - You can refresh your learned patterns directly in the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**.
 
-You will see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you will be able to see your summary and the new model tailored to your code. You can then try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.  
+You'll see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI found at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you can see your summary and the new model tailored to your code. Then try writing some code using the classes/types that are particular to your repo. You should see starred suggestions for the most common cases.  
 
 ### View extracted data
 
@@ -149,7 +149,7 @@ To inspect the contents of the extracted data:
    > [!TIP]
    > There's one folder per training session in the *%TEMP%\Visual Studio IntelliCode* directory, each with a randomized name.
 
-The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The *UsageOutput* subfolder contains a JSON file that has the information IntelliCode extracts from your code to train the model. The *UsageOutput_ErrorStats* file contains any errors found when trying to build the extracted file and can help if Microsoft needs to debug issues.
+The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The *UsageOutput* subfolder contains a JSON file that has the information IntelliCode, extracted from your code to train the model. The *UsageOutput_ErrorStats* file contains any errors found when trying to build the extracted file and can help if Microsoft needs to debug issues.
 
 ![IntelliCode model-training directory ](media/model-training-directory.png)
 
@@ -157,13 +157,13 @@ If you want to inspect the extracted data for a different codebase before trying
 
 ### How we secure your data
 
-All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) in order to communicate with the service. 
+All data you send to and receive from the IntelliCode service is transmitted over HTTPS. You must [sign in to Visual Studio](/visualstudio/ide/signing-in-to-visual-studio) to communicate with the service. 
 
-Models can only be retrieved:
-- machine-associated models: by the machine which submitted the extracted data for training
-- repo-associated models: by users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). 
+Models can be retrieved by:
+- Machine-associated models: the machine, which submitted the extracted data for training
+- Repo-associated models: users who can prove they have access to the repository for [repository-associated models](#sharing-your-repository-associated-models). 
 
-This means that your model and what is learned about your code stays private to you and your intended collaborators.
+Your model and what's learned about your code stays private to you and your intended collaborators.
 
 If Microsoft needs to troubleshoot, authorized Microsoft service personnel may be granted access to your models and extracted data for diagnostic purposes only.
 
