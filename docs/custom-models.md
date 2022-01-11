@@ -1,6 +1,7 @@
 ---
 title: IntelliSense based on your code
 description: Use IntelliCode team models for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ code bases.
+
 ms.custom: SEO-VS-2020, devdivchpfy22
 ms.date: 12/30/2021
 ms.prod: visual-studio-family
