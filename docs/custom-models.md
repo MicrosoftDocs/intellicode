@@ -13,11 +13,11 @@ manager: jmartens
 ---
 # IntelliCode team completions: AI-assisted IntelliSense based on your code
 
-IntelliCode team models are used for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ code bases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open-source code, because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. If you're working on the code that isn’t in the set of repos, recommendations aren't much useful to you. If you're writing C# and C++ code in Visual Studio, use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code.
+IntelliCode team models are used for completions to get AI-assisted IntelliSense recommendations based on your C# and C++ code bases. Team completions are useful when working with your own types or domain-specific libraries that aren’t commonly used in open-source code, because IntelliCode’s base model recommendations are based solely on patterns learned from open-source GitHub repos. If you're working on the code that isn’t in that set of open-source repos, the base recommendations will not be useful to you. If you're writing C# and C++ code in Visual Studio, use IntelliCode to learn patterns from their code to make recommendations tailored to _your_ code.
 
 IntelliCode model is an encapsulation of a set of rules that lets you predict some useful information (for example, recommendations in the IntelliSense list) based on an analysis of code. IntelliCode creates team models using the same learning process as for the IntelliCode base models, except they're trained on your own code. The more code you provide to illustrate your patterns of usage, the more capable your team model will be at offering useful recommendations.
 
-To build your team model, we pull a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
+To build your team model, we extract a summary file with metadata on your types and their usages and [securely upload](#data-and-privacy) it to our service.
 
 ## How models get applied
 
@@ -42,13 +42,13 @@ Models are tied to the repository. All users who can clone and edit the reposito
 
 Repository-associated team models are available to users who train them using either Azure Pipelines or GitHub Actions.
 
-- To configure and automate your CI workflow (that is, .yml file) to train Team Completions using a GitHub Action, refer [Intellicode Team Completions](https://aka.ms/vsic/xtn/github).
-- To configure your Azure DevOps pipeline to train Team Completions, refer [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
+- To configure and automate your CI workflow (that is, .yml file) to train Team Completions using a GitHub Action, refer to [Intellicode Team Completions](https://aka.ms/vsic/xtn/github).
+- To configure your Azure DevOps pipeline to train Team Completions, refer to [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining)
 
 ### Sharing your repository-associated models
 
 Repository-associated models are automatically shared with other users working in the same codebase and have enabled automatic acquisition of team models in Visual Studio. 
-To enable automatic acquisition in Visual Studio, select **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
+Enable automatic acquisition by selecting **Tools** > **Options** > **IntelliCode** > **Acquire team models for completion**.
 
 When you clone and open codebase model, which was trained on, any models associated with the configured Git remote repositories will be downloaded and activated. If you're working on a fork of the codebase, add the upstream codebase as a remote repository to get the model.
 
@@ -98,7 +98,7 @@ Before you train on your own code, you might want to create a completions model 
 
 After successfully building a solution, you may be prompted to enable IntelliCode to autotrain a model for IntelliCode completions for that solution.
 
-By enabling autotraining models for IntelliCode completions, will train a machine-learning model for completions for the active solution and only the user who has access to the solution on the machine where the autotraining was enabled will have access to the respective model. If you'd like to share your custom code completions with anyone who can access your repository, you should [set up automatic training Team completions as part of your CI workflow](https://aka.ms/vsic-teamcompletions-quickstart).
+By enabling autotraining models for IntelliCode completions, Intellicode will train a machine-learning model for completions for the active solution and only the user who has access to the solution on the machine where the autotraining was enabled will have access to the respective model. If you'd like to share your custom code completions with anyone who can access your repository, you should [set up automatic training Team completions as part of your CI workflow](https://aka.ms/vsic-teamcompletions-quickstart).
 
 > [!NOTE]
 > For autotraining a model for IntelliCode custom code completions for your solution in Visual Studio, there are no source control requirements. However, if you'd like to share your custom completions with your team, your codebase must be under Git source control and pushed to a remote to create a repository-associated model.
@@ -109,7 +109,7 @@ To enable automatic model training for IntelliCode completions for your code in 
 
 1. Open the solution or repository folder in Visual Studio.
 
-1.	To enable autotraining a model for custom code Completions via the infobar prompt after a successful build, through the IntelliCode UI, select **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode** setting "Autotraining team models for IntelliSense completions" or by searching for **"IntelliCode autotrain"** in Visual Studio Search (**Ctrl + Q**).
+1.	Enable autotraining a model for custom code Completions via the infobar prompt after a successful build, through the IntelliCode UI, by selecting **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode** setting "Autotraining team models for IntelliSense completions" or by searching for **"IntelliCode autotrain"** in Visual Studio Search (**Ctrl + Q**).
 
 1.	Upon successful creation of the model, it will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
 
@@ -122,9 +122,9 @@ Once you're done with the custom code completions on your solution, you can auto
 
 ## Data and privacy
 
-To build your team model, we pull a summary file with metadata on your types and their usages. For example, the summary file contains the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or pull whole expressions, statements, or literal values (such as strings) from your code.
+To build your team model, we extract a summary file with metadata on your types and their usages. For example, the summary file contains the names of classes and methods and how often they're called in different circumstances. IntelliCode doesn't track your keystrokes or extract whole expressions, statements, or literal values (such as strings) from your code.
 
-The data, which is pulled is transmitted over HTTPS to the IntelliCode service. The service then uses machine-learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
+The extrtacted data is transmitted over HTTPS to the IntelliCode service. The service then uses machine-learning algorithms to train a model for your code. It returns the model to your computer where it's merged with the base model.
 
 When you enable IntelliCode for kickoff training and autotraining your model for custom code completions:
 
