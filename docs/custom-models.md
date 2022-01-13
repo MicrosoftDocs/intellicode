@@ -110,7 +110,7 @@ To enable automatic model training for IntelliCode completions for your code in 
 
 1.	By enabling autotraining a model for custom code Completions via the infobar prompt after a successful build, through the IntelliCode UI, by selecting **View** > **Other windows** > **IntelliCode**, or through **Tools** > **Options** > **IntelliCode** setting "Autotraining team models for IntelliSense completions" or by searching for **"IntelliCode autotrain"** in Visual Studio Search (**Ctrl + Q**).
 
-1.	On successful creation of the model, it is automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
+1.	Upon successful creation of the model, the model is automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown OR in **View** > **Other windows** > **IntelliCode**. 
 
 > [!NOTE]
 > Be sure that you've installed [Visual Studio version 16.7 Preview 3](/visualstudio/releases/2019/release-notes-v16.0) or above. Once the preview has been installed, you can enable automatic models for custom code completions through the infobar after a successful solution build OR via **Tools** > **Options** > **IntelliCode**.
@@ -131,10 +131,10 @@ When you enable IntelliCode to kickoff training and autotraining your model for 
 - We extract a summary file with metadata on your types and their usages.
 - We securely upload it to the IntelliCode service and train a completions model tailored to your code.
 - Your completions model is never shared with the users who have access to your repo (if a cloned git repository). 
-- We allow you to delete your model at any time and cancel the model training directly in the IntelliCode UI at **View** > **Other windows** > **IntelliCode**. Uncheck the box in the UI to delete the model for the custom code completions.
+- You can delete your model at any time and cancel the model training directly in the IntelliCode UI at **View** > **Other windows** > **IntelliCode**. Uncheck the box in the UI to delete the model for the custom code completions.
 - You can refresh your learned patterns directly in the IntelliCode UI found at **View** > **Other windows** > **IntelliCode**.
 
-You'll see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you can see your summary and the new model tailored to your code. Then try writing some code using the classes/types that are particular to your repo. You should see starred suggestions for the most common cases.  
+You'll see the training progress in your Visual Studio output window's IntelliCode section or IntelliCode UI at **View** > **Other windows** > **IntelliCode**. Once the training is complete, you can see your summary and the new model tailored to your code. Then, try writing some code using the classes/types that are particular to your repo. You should see starred suggestions for the most common cases.  
 
 ### View extracted data
 
@@ -149,7 +149,7 @@ To inspect the contents of the extracted data:
    > [!TIP]
    > There's one folder per training session in the *%TEMP%\Visual Studio IntelliCode* directory, each with a randomized name.
 
-The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The *UsageOutput* subfolder contains a JSON file that has the information which IntelliCode extracted from your code to train the model. The *UsageOutput_ErrorStats* file contains any errors found when trying to build the extracted file and can help if Microsoft needs to debug issues.
+The folder contains the entire set of files that are sent to Microsoft when extraction is complete. The *UsageOutput* subfolder contains a JSON file that has the information, which IntelliCode extracted from your code to train the model. The *UsageOutput_ErrorStats* file contains any errors found when trying to build the extracted file and can help if Microsoft needs to debug issues.
 
 ![IntelliCode model-training directory ](media/model-training-directory.png)
 
