@@ -13,7 +13,7 @@ manager: jmartens
 ---
 # IntelliCode for Visual Studio overview
 
-[IntelliCode for Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) provides the following functionality:
+IntelliCode for Visual Studio provides the following functionality:
 
 - [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages that predicts the most likely correct API for the developer to use instead of just an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 
@@ -47,7 +47,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 - JavaScript and TypeScript 
 - Visual Basic 
 
-## Prerequisites
+## How do I set up IntelliCode?
 
 Starting in Visual Studio 2019 version 16.4, IntelliCode is available as a built-in feature if you install a [supported workload](#supported-workloads). 
 
