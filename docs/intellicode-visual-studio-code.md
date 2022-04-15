@@ -16,8 +16,6 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
-## Supported languages
-
 The supported languages for AI-assisted IntelliSense completions are:
 
 - Java
@@ -25,11 +23,26 @@ The supported languages for AI-assisted IntelliSense completions are:
 - Python
 - SQL
 
-## Prerequisites
+## Whole-line autocompletion preview
 
-To install the extension, you need Visual Studio Code October 2018 Release 1.29 or later.
+The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) is an experimental extension which predicts up to a whole line of code based on your current context. Predictions appear as grey-text to the right of your cursor. This extension supports Python, with additional experimental support for JavaScript and TypeScript.
 
-To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
+![IntelliCode Completions for Python in Visual Studio Code](../images/wlc.gif)
+
+Completions will appear after your cursor as you type, with a faded color. At any time, you can accept the suggestion by pressing the tab key. Additionally, you can dismiss any shown suggestion by pressing the ESC key.
+
+![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](../images/intellisenseSelection.gif)
+
+To enable experimental support for JavaScript and TypeScript, search for intellicodeCompletions.language in the Settings menu.
+
+
+### Prerequisites
+
+The extension is supported by Visual Studio Code October 2018 Release 1.29 or later.
+
+AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
+
+# IntelliCode 
 
 ## Troubleshoot
 
@@ -67,7 +80,7 @@ If you see IntelliSense completion lists, but none of the completion items are s
    As a first step, try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
    If turning on network proxy support doesn't work for you, check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
-
+- If you're a Java user experiencing the  error message **java.security.InvalidKeyException: Illegal key size**, check to make sure you're using Java 8 Update 151 or later.
 - Is there an actionable message that helps?
 
 If you're still facing a problem, look through the [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
