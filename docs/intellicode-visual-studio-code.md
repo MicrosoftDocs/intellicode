@@ -23,7 +23,13 @@ The supported languages for AI-assisted IntelliSense completions are:
 - Python
 - SQL
 
-## Whole-line autocompletion preview
+
+### Prerequisites
+
+The extension is supported by Visual Studio Code October 2018 Release 1.29 or later.
+
+AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
+## Whole-line autocomplete preview
 
 The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) is an experimental extension which predicts up to a whole line of code based on your current context. Predictions appear as grey-text to the right of your cursor. This extension supports Python, with additional experimental support for JavaScript and TypeScript.
 
@@ -36,13 +42,7 @@ Completions will appear after your cursor as you type, with a faded color. At an
 To enable experimental support for JavaScript and TypeScript, search for intellicodeCompletions.language in the Settings menu.
 
 
-### Prerequisites
 
-The extension is supported by Visual Studio Code October 2018 Release 1.29 or later.
-
-AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
-
-# IntelliCode 
 
 ## Troubleshoot
 
@@ -88,7 +88,6 @@ If you're still facing a problem, look through the [existing issues](https://git
 ## Provide feedback
 
 If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, TypeScript, or SQL with the bug.
-
 ## See also
 
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
