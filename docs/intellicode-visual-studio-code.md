@@ -41,12 +41,18 @@ Completions will appear after your cursor as you type, with a faded color. At an
 
 To enable experimental support for JavaScript and TypeScript, search for intellicodeCompletions.language in the Settings menu.
 
+### Installation
 
+We recommend using the [IntelliCode Completions extension for VS Code]() together with the [main IntelliCode extension for VS Code]().
 
+During the preview period, users have two ways to acquire this extension.
+
+1. Install the [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions).
+2. Install the [IntelliCode Insiders extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-insiders). This will also install the IntelliCode completions extension automatically.
 
 ## Troubleshoot
 
-This section provides some troubleshooting tips for common problems.
+This section provides some troubleshooting tips for common problems with IntelliCode. Note, this does not apply to the IntelliCode completions extension.
 
 ### No completion lists
 
