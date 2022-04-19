@@ -21,7 +21,7 @@ For more information and to sign up for news and updates, see [Visual Studio Int
 
 Before you begin, ensure you have a version of Visual Studio or Visual Studio Code that supports IntelliCode. The minimum requirements are:
 
-- Visual Studio Code October 2018 Release 1.29 or later
+- Visual Studio Code June 2021 Release 1.58 or later
 - Visual Studio 2019 (Release 16.4 or higher, any edition)
 
 The following table contains details about how to obtain IntelliCode for your development environment:
