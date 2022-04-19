@@ -21,11 +21,11 @@ This extension may contain unstable, experimental code. The IntelliCode team is 
 
 ### How to use
 
-Completions will appear after your cursor as you type, with a faded color. At any time you can accept the suggestion by pressing the tab key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC
-
 ![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](../images/intellisenseSelection.gif)
 
-When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
+Completions will appear after your cursor as you type, with a faded color. When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
+
+At any time you can accept the suggestion by pressing the tab key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC
 
 To enable experimental support for JavaScript and TypeScript, search for `intellicodeCompletions.language` in the Settings menu.
 
