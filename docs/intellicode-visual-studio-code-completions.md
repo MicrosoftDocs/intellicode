@@ -19,17 +19,27 @@ The [IntelliCode Completions extension for Visual Studio Code](https://marketpla
 
 This extension may contain unstable, experimental code. The IntelliCode team is focused on iterating rapidly and new functionality will be added.
 
-### How to use
-
+## How to use
 ![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](../images/intellisenseSelection.gif)
 
 Completions will appear after your cursor as you type, with a faded color. When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
 
 At any time you can accept the suggestion by pressing the tab key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC
 
+### Snippet Completion
+
+![Accepting a grey text completion with empty string automatically moves the cursor to the empty string](media/vsc-wlc-snippetcompletion.gif)
+
+If the whole-line autocompletion includes strings for which the model does not have a prediction for:
+
+1. The cursor will automatically move to the first empty string upon accepting the prediction with the TAB key.
+2. If further empty strings exist within the prediction, the TAB key will automatically move the cursor to the next empty string.
+
+### Enabling JavaScript/TypeScript Support
+
 To enable experimental support for JavaScript and TypeScript, search for `intellicodeCompletions.language` in the Settings menu.
 
-### Installation
+## Installation
 
 The extension can be aquired at the following link: [IntelliCode Completions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions)
 
