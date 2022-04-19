@@ -24,16 +24,16 @@ This extension may contain unstable, experimental code. The IntelliCode team is 
 
 Completions will appear after your cursor as you type, with a faded color. When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
 
-At any time you can accept the suggestion by pressing the tab key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC
+At any time you can accept the suggestion by pressing the tab key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC.
 
 ### Snippet Completion
 
 ![Accepting a grey text completion with empty string automatically moves the cursor to the empty string](media/vsc-wlc-snippetcompletion.gif)
 
-If the whole-line autocompletion includes strings for which the model does not have a prediction for:
+If the whole-line autocompletion includes empty strings:
 
 1. The cursor will automatically move to the first empty string upon accepting the prediction with the TAB key.
-2. If further empty strings exist within the prediction, the TAB key will automatically move the cursor to the next empty string.
+2. If further empty strings exist within the prediction, pressing the TAB key again will automatically move the cursor to the next empty string.
 
 ### Enabling JavaScript/TypeScript Support
 
