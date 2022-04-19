@@ -16,7 +16,7 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
-The supported languages for AI-assisted IntelliSense completions are:
+IntelliCode provides AI-assisted IntelliSense completions for the following languages:
 
 - Java
 - JavaScript and TypeScript
@@ -26,7 +26,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ### Prerequisites
 
-The extension is supported by Visual Studio Code October 2018 Release 1.29 or later.
+The extension is supported by Visual Studio Code June 2021 Release 1.58 or later.
 
 AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
 ## Whole-line autocomplete preview
