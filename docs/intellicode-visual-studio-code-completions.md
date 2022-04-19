@@ -31,9 +31,9 @@ To enable experimental support for JavaScript and TypeScript, search for `intell
 
 ### Installation
 
-The extension is supported by Visual Studio Code November 2021 Release 1.63 or later.
+The extension can be aquired at the following link: [IntelliCode Completions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions)
 
-We recommend using the [IntelliCode Completions extension for VS Code]() together with the [main IntelliCode extension for VS Code]().
+The extension is supported by Visual Studio Code November 2021 Release 1.63 or later.
 
 ## Provide feedback
 

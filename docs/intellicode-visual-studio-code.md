@@ -29,30 +29,11 @@ IntelliCode provides AI-assisted IntelliSense completions for the following lang
 The extension is supported by Visual Studio Code June 2021 Release 1.58 or later.
 
 AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
-## Whole-line autocomplete preview
 
-The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) is an experimental extension which predicts up to a whole line of code based on your current context. Predictions appear as grey-text to the right of your cursor. This extension supports Python, with additional experimental support for JavaScript and TypeScript.
-
-![IntelliCode Completions for Python in Visual Studio Code](../images/wlc.gif)
-
-Completions will appear after your cursor as you type, with a faded color. At any time, you can accept the suggestion by pressing the tab key. Additionally, you can dismiss any shown suggestion by pressing the ESC key.
-
-![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](../images/intellisenseSelection.gif)
-
-To enable experimental support for JavaScript and TypeScript, search for intellicodeCompletions.language in the Settings menu.
-
-### Installation
-
-We recommend using the [IntelliCode Completions extension for VS Code]() together with the [main IntelliCode extension for VS Code]().
-
-During the preview period, users have two ways to acquire this extension.
-
-1. Install the [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions).
-2. Install the [IntelliCode Insiders extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-insiders). This will also install the IntelliCode completions extension automatically.
 
 ## Troubleshoot
 
-This section provides some troubleshooting tips for common problems with IntelliCode. Note, this does not apply to the IntelliCode completions extension.
+This section provides some troubleshooting tips for common problems with IntelliCode.
 
 ### No completion lists
 
