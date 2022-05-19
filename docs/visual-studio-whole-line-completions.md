@@ -10,9 +10,11 @@ ms.author: juihanamshet
 manager: jmartens
 ---
 
-# Visual Studio IntelliCode Whole line completions
+# Visual Studio IntelliCode Whole-line autocompletions
 
-IntelliCode whole line completions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code. This feature is available in Visual Studio 2022. 
+IntelliCode whole-line autocompletions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code.
+
+This feature supports C# in Visual Studio 2022. [A preview of this feature is also available for Python, TypeScript, and JavaScript in Visual Studio Code](intellicode-visual-studio-code-completions.md). 
 
 ![Screenshot of Whole Line Completion by IntelliCode in Visual Studio.](media/intellicode-vs-wlc-small.png)
 
@@ -24,7 +26,7 @@ IntelliCode uses a large scale transformer model, trained on around half a milli
 - Functions in nearby code
 - The IntelliSense list
 
-The model runs on your local machine. This allows the feature to be available in offline and air gapped environments. The feature supports many programming languages including Python, JavaScript, TypeScript, C#, and Visual Basic.  
+The model runs on your local machine. This allows the feature to be available in offline and air gapped environments. The feature supports C# .  
 
 ## Two Modes
 
