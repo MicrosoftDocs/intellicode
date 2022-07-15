@@ -27,4 +27,4 @@ This preview feature is currently available as a [Visual Studio Code extension](
 1. A results view will appear displaying code examples grouped by how common the API usage is. The API usage will be highlighted in blue.
 
 ## How does it work ?
-IntelliCode API Usage examples uses a web service to look up real-world examples of functions from public GitHub repositories. You can read more about the privacy characteristics of the feature [here](intellicode-privacy)
+IntelliCode API Usage examples uses a web service to look up real-world examples of functions from public GitHub repositories. You can read more about the privacy characteristics of the feature [here](intellicode-privacy#intellicode-api-usage-examples)
