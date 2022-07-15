@@ -16,7 +16,7 @@ IntelliCode API Usage Examples allows developers to look up real-world example u
 
 This preview feature is currently available as a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples), and currently supports Python, JavaScript and Typescript (including JSX and TSX files). 
 
-![Screenshot of IntelliCode API Usage Examples in Visual Studio Code.](media/IntelliCodeAPIUsageExamplesV2.gif)
+![Screenshot of IntelliCode API Usage Examples in Visual Studio Code.](media/IntelliCodeUsageExamplesV2.gif)
 
 ## How to use API Usage Examples
 
