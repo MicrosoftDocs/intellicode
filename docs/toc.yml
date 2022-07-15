@@ -23,7 +23,7 @@
     href: code-style-inference.md
   - name: Privacy
     href: intellicode-privacy.md
+  - name: IntelliCode API usage examples
+    href: intellicode-api-usage-examples.md
 - name: IntelliCode for Visual Studio Code
   href: intellicode-visual-studio-code.md
-- name: IntelliCode API usage examples
-  href: intellicode-api-usage-examples.md
