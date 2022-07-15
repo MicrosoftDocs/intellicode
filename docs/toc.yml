@@ -23,7 +23,8 @@
     href: code-style-inference.md
   - name: Privacy
     href: intellicode-privacy.md
-- name: IntelliCode for Visual Studio Code
+    
+ - name: IntelliCode for Visual Studio Code
   expanded:true
   items:
   -name:"Overview: IntelliCode for Visual Studio Code"
