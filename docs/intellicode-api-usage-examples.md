@@ -1,6 +1,6 @@
 ---
 title: IntelliCode API Usage Examples (preview)
-ms.date: 15/07/2022
+ms.date: 07/15/2022
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
@@ -27,4 +27,4 @@ This preview feature is currently available as a [Visual Studio Code extension](
 1. You can optionally click on the GitHub-labelled hyperlink within the results view to see the code in the context of the originating GitHub repository.
 
 ## How does it work ?
-API usage examples scans public GitHub repositories and creates a mapping from function names to code snippets. These code snippets represent real world usages of those functions. The mapping is used to provide the examples you see when using the feature, via a web service. When you hover a function, the feature only ever sends the names of functions found in public open source repos to the service. It will never send your own custom function names. You can read more about the privacy characteristics of the feature [here](intellicode-privacy#intellicode-api-usage-examples)
+API usage examples scans public GitHub repositories and creates a mapping from function names to code snippets. These code snippets represent real world usages of those functions. The mapping is used to provide the examples you see when using the feature, via a web service. When you hover a function, the feature only ever sends the names of functions found in public open source repos to the service. It will never send your own custom function names. You can read more about the privacy characteristics of the feature [here](intellicode-privacy.md#intellicode-api-usage-examples)
