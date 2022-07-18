@@ -28,5 +28,5 @@
   items:
   - name: "Overview: IntelliCode for Visual Studio Code"
     href: intellicode-visual-studio-code.md
-  - name: API usage examples
+  - name: API usage examples (Preview)
     href: intellicode-api-usage-examples.md
