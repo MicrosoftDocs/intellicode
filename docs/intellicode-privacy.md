@@ -5,7 +5,7 @@ ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
 description: IntelliCode privacy
-author: MarkWilsonThomas
+author: markw-t
 ms.author: mwthomas
 manager: jmartens
 ---
