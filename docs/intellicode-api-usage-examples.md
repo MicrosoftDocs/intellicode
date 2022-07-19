@@ -12,7 +12,7 @@ manager: jmartens
 
 # IntelliCode API Usage Examples (Preview)
 
-IntelliCode API Usage Examples is a preview feature that lets you look up real-world example usages of a given function from public open source repositories on GitHub, without leaving your code editor.
+IntelliCode API Usage Examples is a preview feature that lets you see real-world examples of how other developers have used a given function. Examples shown are from public open source repositories on GitHub.
 
 This preview feature is currently available as a [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples), and currently supports Python, JavaScript and TypeScript (including JSX and TSX files). 
 
