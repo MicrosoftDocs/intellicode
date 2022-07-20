@@ -21,7 +21,7 @@ For more information and to sign up for news and updates, see [Visual Studio Int
 
 Before you begin, ensure you have a version of Visual Studio or Visual Studio Code that supports IntelliCode. The minimum requirements are:
 
-- Visual Studio Code October 2018 Release 1.29 or later
+- Visual Studio Code June 2021 Release 1.58 or later
 - Visual Studio 2019 (Release 16.4 or higher, any edition)
 
 The following table contains details about how to obtain IntelliCode for your development environment:
@@ -40,7 +40,9 @@ IntelliCode provides AI-assisted IntelliSense in both Visual Studio and Visual S
 The completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context as well as patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
 ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
-C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+C# developers in Visual Studio 2022 and higher also benefit from [whole-line autocompletions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+
+Python, JavaScript, and TypeScript developers using Visual Studio Code Release 1.63 or higher can also benefit from whole-line autocompletions through a [new preview extension for Visual Studio Code](intellicode-visual-studio-code-completions.md).
 
 ## Visual Studio features
 Check the [overview of IntelliCode for Visual Studio](intellicode-visual-studio.md) for full details of the additional features supported for Visual Studio users, such as [IntelliCode suggestions](intellicode-suggestions.md).

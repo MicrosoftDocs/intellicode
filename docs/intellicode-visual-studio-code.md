@@ -16,24 +16,24 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
-## Supported languages
-
-The supported languages for AI-assisted IntelliSense completions are:
+IntelliCode provides AI-assisted IntelliSense completions for the following languages:
 
 - Java
 - JavaScript and TypeScript
 - Python
 - SQL
 
-## Prerequisites
 
-To install the extension, you need Visual Studio Code October 2018 Release 1.29 or later.
+### Prerequisites
 
-To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
+The extension is supported by Visual Studio Code June 2021 Release 1.58 or later.
+
+AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
+
 
 ## Troubleshoot
 
-This section provides some troubleshooting tips for common problems.
+This section provides some troubleshooting tips for common problems with IntelliCode.
 
 ### No completion lists
 
@@ -67,7 +67,7 @@ If you see IntelliSense completion lists, but none of the completion items are s
    As a first step, try updating to Visual Studio Code 1.30 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
    If turning on network proxy support doesn't work for you, check the corresponding [github issue](https://github.com/MicrosoftDocs/intellicode/issues/4) and let us know more.
-
+- If you're a Java user experiencing the  error message **java.security.InvalidKeyException: Illegal key size**, check to make sure you're using Java 8 Update 151 or later.
 - Is there an actionable message that helps?
 
 If you're still facing a problem, look through the [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
@@ -75,7 +75,6 @@ If you're still facing a problem, look through the [existing issues](https://git
 ## Provide feedback
 
 If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, TypeScript, or SQL with the bug.
-
 ## See also
 
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
