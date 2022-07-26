@@ -1,7 +1,7 @@
 ---
 title: IntelliCode for Visual Studio and Visual Studio Code
 titleSuffix: ""
-description: Read a high-level overview of IntelliCode, which offers context-aware code completions (suggestions) and guides developers to adhere to team patterns and styles.
+description: Read a high-level overview of IntelliCode, which offers context-aware code completions (suggestions).
 ms.custom: SEO-VS-2020
 ms.date: 05/21/2019
 ms.prod: visual-studio-family
@@ -13,7 +13,7 @@ manager: jmartens
 ---
 # Overview of IntelliCode
 
-Visual Studio IntelliCode enhances software development using artificial intelligence. IntelliCode delivers [context-aware code completions](#context-aware-code-completions) and guides developers to adhere to the [patterns and styles of their team](code-style-inference.md). IntelliCode is available through the main installer in [Visual Studio](intellicode-visual-studio.md) and as an extension for [Visual Studio Code](intellicode-visual-studio-code.md).
+Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions). IntelliCode is available through the main installer in [Visual Studio](intellicode-visual-studio.md) and as an extension for [Visual Studio Code](intellicode-visual-studio-code.md).
 
 For more information and to sign up for news and updates, see [Visual Studio IntelliCode](https://visualstudio.microsoft.com/services/intellicode/).
 
