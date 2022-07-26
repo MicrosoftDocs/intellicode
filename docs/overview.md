@@ -37,13 +37,13 @@ IntelliCode provides AI-assisted IntelliSense in both Visual Studio and Visual S
 
 ![Starred IntelliSense suggestions using IntelliCode in Visual Studio](media/starred-intellisense-suggestions.png)
 
-The completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context as well as patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
+The completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context and patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
 ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
-C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md), which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
 
 ## Visual Studio features
-Check the [overview of IntelliCode for Visual Studio](intellicode-visual-studio.md) for full details of the additional features supported for Visual Studio users, such as [IntelliCode suggestions](intellicode-suggestions.md).
+Check the [overview of IntelliCode for Visual Studio](intellicode-visual-studio.md) for full details of other features supported for Visual Studio users, such as [IntelliCode suggestions](intellicode-suggestions.md).
 
 ### Supported languages
 
@@ -57,13 +57,13 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 We capture some anonymized usage and error-reporting data to help improve IntelliCode. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results.
 
-For base model suggestions, which are open source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion. Microsoft uses the data to monitor the quality of the base model. For custom models, we capture whether you selected an IntelliCode suggestion but *do not* log the names of your user-defined types or methods.
+For base model suggestions, which are open source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion. Microsoft uses the data to monitor the quality of the base model. For custom models, we capture whether you selected an IntelliCode suggestion but *don't* log the names of your user-defined types or methods.
 
 In Visual Studio, you can opt out of the [Visual Studio Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program), which turns off data collection for IntelliCode too. From the menu bar, select **Help** > **Send Feedback** > **Settings**. In the **Visual Studio Experience Improvement Program** dialog, select **No, I would not like to participate** and then select **OK**.
 
 In Visual Studio Code, you can disable telemetry reporting by following [these instructions](https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting).
 
-IntelliCode may periodically ask you to complete an anonymous survey. You can also sign up for news and updates but are not required to do so.
+IntelliCode may periodically ask you to complete an anonymous survey. You can also sign up for news and updates but you aren't required to do so.
 
 ## See also
 
