@@ -19,8 +19,6 @@
     href: custom-models.md
   - name: Share models
     href: share-models.md
-  - name: Code style inference
-    href: code-style-inference.md
   - name: Privacy
     href: intellicode-privacy.md
 - name: IntelliCode for Visual Studio Code
