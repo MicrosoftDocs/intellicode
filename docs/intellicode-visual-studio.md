@@ -27,8 +27,6 @@ IntelliCode for Visual Studio provides the following functionality:
 
 - AI-assisted [IntelliSense recommendations based on your own code](custom-models.md) (C# only).
 
-- [Inference of code style and formatting conventions](code-style-inference.md) to dynamically create an [.editorconfig file](/visualstudio/ide/create-portable-custom-editor-options) from your codebase (C# only).
-
 - [Suggestions](intellicode-suggestions.md): IntelliCode locally tracks your edits, detects when you're performing a repetitive action, and offers to apply that same action in other, similar places (C# only).
 
    ![Suggestions for C# in Visual Studio](media/refactorings-illustrated.png)
