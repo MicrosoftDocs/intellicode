@@ -21,7 +21,7 @@ IntelliCode for Visual Studio provides the following functionality:
 
    ![Argument completion in IntelliCode for Visual Studio](media/argument-completion.png)
 
-   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md). This feature predicts the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md). Based on your current code, this feature predicts the next chunk of your code and presents it as an inline prediction. 
 
    ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
 
@@ -47,7 +47,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ## How do I set up IntelliCode?
 
-Starting in Visual Studio 2019 version 16.4, IntelliCode is available as part of the Visual Studio installation when you install a [supported workload](#supported-workloads). 
+IntelliCode is available as part of the Visual Studio 16.4 or higher installation, when you install a [supported workload](#supported-workloads). 
 
 To see AI-assisted IntelliSense for certain languages, you may need a more recent version:
 
