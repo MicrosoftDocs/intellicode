@@ -15,13 +15,13 @@ manager: jmartens
 
 IntelliCode for Visual Studio provides the following functionality:
 
-- [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages that predicts the most likely correct API for the developer to use instead of just an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
+- [AI-assisted IntelliSense](overview.md#context-aware-code-completions) for multiple languages. This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
 
    For C# users, in addition to providing member suggestions, IntelliCode also provides *argument completion*. This capability stars the most likely argument names that you'll use when you call a method and places those suggestions at the top of the completion list. The completion list appears when you start typing inside the parentheses or press **Ctrl**+**Space**.
 
    ![Argument completion in IntelliCode for Visual Studio](media/argument-completion.png)
 
-   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md) which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+   C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md). This feature predicts the next chunk of your code based on your current code so far, and present it as an inline prediction. 
 
    ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
 
@@ -33,7 +33,7 @@ IntelliCode for Visual Studio provides the following functionality:
 
 ## Preview features
 
-Some of IntelliCode's features are still in preview, meaning there is no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
+Some of IntelliCode's features are still in preview, meaning there's no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
 
 ## Supported languages
 
@@ -47,7 +47,7 @@ The supported languages for AI-assisted IntelliSense completions are:
 
 ## How do I set up IntelliCode?
 
-Starting in Visual Studio 2019 version 16.4, IntelliCode is available as a built-in feature if you install a [supported workload](#supported-workloads). 
+Starting in Visual Studio 2019 version 16.4, IntelliCode is available as part of the Visual Studio installation when you install a [supported workload](#supported-workloads). 
 
 To see AI-assisted IntelliSense for certain languages, you may need a more recent version:
 
@@ -73,7 +73,7 @@ IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the
 
 ## Troubleshoot
 
-If you don't see any IntelliCode suggestions, you may have extensions installed that are overriding the IntelliSense UI. This can prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if extensions are causing this behavior by turning them off and then trying IntelliSense again. Or, if the extension supports it, turn off its auto-completion features.
+If you don't see any IntelliCode suggestions, you may have extensions installed that are overriding the IntelliSense UI. Such extensions can prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if an extension is causing this behavior by turning them off, and then trying IntelliSense again. Or, if the extension supports it, turn off its auto-completion features.
 
 If this doesn't solve the problem for you, report it by using the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) feature and mention IntelliCode in your report.
 
@@ -81,7 +81,7 @@ If this doesn't solve the problem for you, report it by using the Visual Studio 
 
 IntelliCode captures some anonymized usage and error-reporting data to help improve the product. No user-defined code is sent to Microsoft, but we do collect information about your use of the IntelliCode results.
 
-For base model suggestions, which are open source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion. Microsoft uses the data to monitor the quality of the base model. For custom models, we capture whether you selected an IntelliCode suggestion but *do not* log the names of your user-defined types or methods.
+For base model suggestions, which are open source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion. Microsoft uses the data to monitor the quality of the base model. For custom models, we capture whether you selected an IntelliCode suggestion but *don't* log the names of your user-defined types or methods.
 
 To turn off data collection for IntelliCode, opt out of the [Visual Studio Experience Improvement Program](/visualstudio/ide/visual-studio-experience-improvement-program). From the menu bar, select **Help** > **Send Feedback** > **Settings**. In the **Visual Studio Experience Improvement Program** dialog, select **No, I would not like to participate** and then select **OK**.
 
