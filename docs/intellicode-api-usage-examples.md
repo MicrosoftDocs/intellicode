@@ -22,7 +22,7 @@ This preview feature is currently available as a [Visual Studio Code extension](
 
 1. Install the [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.intellicode-api-usage-examples)
 1. Open any supported file (PY,JS,JSX and TSX), and hover your mouse over any function call (the call must have open and close parentheses). 
-1. You'll see an info window appear, below where you're hovering. If the function you hovered is supported by the feature, a link to "See Real World Examples From GitHub" will appear in that window. Note: you may need to scroll the informational window to see the link.
+1. An info window will appear, below where you're hovering. If the function you hovered is supported by the feature, a link to "See Real World Examples From GitHub" will appear in that window. Note: you may need to scroll the informational window to see the link.
 1. Click on the "See Real World Examples From GitHub" link - a results view will appear displaying code examples grouped by how common the API usage is. The API usage will be highlighted in blue.
 1. You can optionally click on the GitHub-labelled hyperlink within the results view to see the example in the context of the originating GitHub repository.
 
