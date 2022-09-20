@@ -12,7 +12,7 @@ In short:
 
 - **Known issues:** See [bugs](https://github.com/MicrosoftDocs/intellicode/issues) and upvote using a "thumbs up" (👍) reaction.
 - **VS Code bugs:** [Log a new issue](https://github.com/MicrosoftDocs/intellicode/issues/new) - Include any OUTPUT window log entries from VS-IntelliCode and Python, Java or TypeScript (depending on the language you are using) with the bug.
-- **Visual Studio bugs:** [Help > Send Feedback > Report a Problem](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) - Repro the problem before sending and logs are automatically attached to the report.
+- **Visual Studio bugs:** [Help > Send Feedback > Report a Problem](https://learn.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) - Repro the problem before sending and logs are automatically attached to the report.
 
 More details below.
 
