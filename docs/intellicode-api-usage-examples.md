@@ -1,5 +1,5 @@
 ---
-title: IntelliCode API Usage Examples (preview)
+title: IntelliCode API Usage Examples
 ms.date: 07/15/2022
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -10,7 +10,7 @@ ms.author: mwthomas
 manager: jmartens
 ---
 
-# IntelliCode API Usage Examples (Preview)
+# IntelliCode API Usage Examples
 
 IntelliCode API Usage Examples is a preview feature that lets you see real-world examples of how other developers have used a given function. Examples shown are from public open source repositories on GitHub.
 
