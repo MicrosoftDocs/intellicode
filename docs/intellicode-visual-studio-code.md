@@ -79,4 +79,3 @@ If you encounter a problem, you can browse [existing issues](https://github.com/
 ## See also
 
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
-- [IntelliCode general FAQ](faq.yml)
