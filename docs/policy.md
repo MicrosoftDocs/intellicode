@@ -59,7 +59,6 @@ Value = (DWORD)
 For more information about the information collected, processed, or transmitted by IntelliCode, see [IntelliCode Data & Privacy](/visualstudio/intellicode/custom-models#data-and-privacy).
 
 ## See also
-* [IntelliCode Overview](https://aka.ms/intellicode)
 * [IntelliCode Data & Privacy](https://aka.ms/vsic/data-and-privacy)
 * [IntelliCode Team Completions](https://aka.ms/vsic-teamcompletions)
 * [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
