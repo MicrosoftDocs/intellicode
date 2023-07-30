@@ -1,4 +1,4 @@
-- name: IntelliCode docs
+- name: IntelliCode Documentation
   href: index.yml
 - name: IntelliCode for Visual Studio
   expanded: true
