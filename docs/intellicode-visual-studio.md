@@ -80,7 +80,7 @@ If you don't see any IntelliCode suggestions, you may have extensions installed 
 If disabling extensions that override IntelliSense UI doesn't solve the problem for you, report it by using the Visual Studio [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) feature, and mention IntelliCode in your report.
 
 ### **Exception IntelliCode cannot locate git.exe for acquiring model for Team Completions**
-   The [IntelliCode Team Completions GitHub Action and Azure DevOps Build Task](https://aka.ms/vsic-teamcompletions-ci) have a dependency on Git source control to get and use repo-attached models for Team Completions. Head to https://git-scm.com/downloads to install Git if you'd wish to use repo-attached models for Team Completions. 
+   The IntelliCode Team Completions GitHub Action and Azure DevOps Build Task have a dependency on Git source control to get and use repo-attached models for Team Completions. Head to https://git-scm.com/downloads to install Git if you'd wish to use repo-attached models for Team Completions. 
           
 ###  **Error training model for Team Completions in Azure DevOps task**
    The [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining) Azure DevOps Task is triggered _only_ when you run a build or release caused by one of the following reasons: `Manual`, `IndividualCI`, `BatchedCI`, `Schedule`, `Scheduled`, and `ContinuousIntegration`. For more information on build and release pipeline triggering reasons see:        
