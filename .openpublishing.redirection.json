@@ -1,7 +1,7 @@
 {
     "redirections": [
         {
-            "source_path": "docs/not-in-toc/faq.yml",
+            "source_path": "docs/faq.yml",
             "redirect_url": "/visualstudio/intellicode/intellicode-visual-studio",
             "redirect_document_id": false
         },
