@@ -35,29 +35,28 @@ The completion list suggests the most likely correct API for a developer to use 
 ![C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
 C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md), which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
 
-## Preview features
-
-Some of IntelliCode's features are still in preview, meaning there's no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
+> [!Note]
+> Some of IntelliCode's features are still in preview, meaning there's no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
 
 ## Install IntelliCode for Visual Studio
 
 1. [Download Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) version 16.4 or later.
-2. Install a [supported workload](intellicode-visual-studio.md#supported-workloads), such as .NET desktop development. 
+2. Install a [supported workload](#supported-languages--workloads), such as .NET desktop development. 
    Visual Studio IntelliCode is installed by default.
 
 To turned starred IntelliSense recommendations off, disable the extension by choosing **Extensions** > **Manage Extensions** from the menu, find and select the IntelliCode extension, and then click **Disable**.
 
 
-## Supported languages & workloads:
+## Supported languages & workloads
 
-The supported languages for AI-assisted IntelliSense completions are:
+The **supported languages** for AI-assisted IntelliSense completions are:
 - C#
 - XAML
 - C++
 - JavaScript and TypeScript, which require TypeScript 3.4.2 or later
 - Visual Basic
 
-IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the following workloads:
+IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the **following workloads**:
 
 - Azure development
 - .NET desktop development
