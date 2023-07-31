@@ -23,7 +23,7 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) from the marketplace, or install it directly from the **Extensions** view in Visual Studio Code.
 3. Reload and wait for dependencies to download and install (see status bar).
 
-To turned starred IntelliSense recommendations off, disable the extension by clicking **Extensions**. Then, find and select the IntelliCode extension, and then click **Disable**.
+To turn starred IntelliSense recommendations off, disable the extension by clicking **Extensions**. Then, find and select the IntelliCode extension, and then click **Disable**.
 
 ## Supported languages & workloads
 
