@@ -1,5 +1,5 @@
 ---
-title: VS Code extension
+title: IntelliCode for VS Code
 description: Read an overview of IntelliCode for Visual Studio Code. The IntelliCode extension provides AI-assisted IntelliSense for Python, Java, TypeScript, and JavaScript.
 ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
@@ -16,20 +16,22 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
-## Supported languages
+
+## Install IntelliCode
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) October 2018 Release 1.29 or later for Windows, macOS, or Linux.
+2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) from the marketplace, or install it directly from the **Extensions** view in Visual Studio Code.
+3. Reload and wait for dependencies to download and install (see status bar).
+
+To turn starred IntelliSense recommendations off, disable the extension by clicking **Extensions**. Then, find and select the IntelliCode extension, and then click **Disable**.
+
+## Supported languages & workloads
 
 The supported languages for AI-assisted IntelliSense completions are:
-
-- Java
+- Java. To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
 - JavaScript and TypeScript
 - Python
 - SQL
-
-## Prerequisites
-
-To install the extension, you need Visual Studio Code October 2018 Release 1.29 or later.
-
-To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
 
 ## Troubleshoot
 
@@ -72,11 +74,12 @@ If you see IntelliSense completion lists, but none of the completion items are s
 
 If you're still facing a problem, look through the [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) or open a new one.
 
-## Provide feedback
+## Telemetry
 
-If you encounter a problem, you can browse [existing issues](https://github.com/MicrosoftDocs/intellicode/issues) and upvote them using a 👍 "thumbs up" reaction. If you don't see your particular problem, click the **Send feedback about** > **This product** button at the bottom of this page to create a new issue. Include any **Output** window log entries from Visual Studio IntelliCode, Python, Java, JavaScript, TypeScript, or SQL with the bug.
+We capture some anonymized usage and error-reporting data to help improve IntelliCode. No user-defined code is sent to Microsoft, but we collect information about your use of the IntelliCode results.  For base model suggestions, which are open source or .NET types and members, we capture whether you selected an IntelliCode suggestion and log the name of the suggestion. Microsoft uses the data to monitor the quality of the base model. For custom models, we capture whether you selected an IntelliCode suggestion but *don't* log the names of your user-defined types or methods.
+
+You can disable telemetry reporting by following [these instructions](https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting).
 
 ## See also
 
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
-- [IntelliCode general FAQ](faq.yml)

@@ -33,16 +33,13 @@ You don't need to manage which models apply to which solution or codebase becaus
 There are two ways you can obtain team completions models:
 
 1. **Repository-associated**: 
-Models are tied to the repository. All users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote using [Azure Pipelines Task](https://aka.ms/vsic/xtn/ado) or [GitHub Action](https://aka.ms/vsic/xtn/github) from CI build to create a repository-associated model.
+Models are tied to the repository. All users who can clone and edit the repository are granted automatic access to the model. Your codebase must be under Git source control and pushed to a remote using Azure Pipelines Task  or GitHub Action  from CI build to create a repository-associated model.
 
 2. **Machine-associated**: Models are available only on the machine they're trained upon. 
    
 ## Repository-associated team models
 
 Repository-associated team models are available to users who train them using either Azure Pipelines or GitHub Actions.
-
-- To configure and automate your CI workflow (that is, .yml file) to train Team Completions using a GitHub Action, see [Intellicode Team Completions](https://aka.ms/vsic/xtn/github).
-- To configure your Azure DevOps pipeline to train Team Completions, see [Visual Studio IntelliCode Team Model Training](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCodeTeamModelTraining).
 
 ### Sharing your repository-associated models
 
@@ -117,7 +114,7 @@ To enable automatic model training for IntelliCode completions for your code in 
 
 Once the training is complete, try writing some code using the classes/types that are particular to your repo - you should see starred suggestions for the most common cases.
 
-Once you're done with the custom code completions on your solution, you can automatically create, retrain, and share IntelliCode custom code completions with your entire dev team as part of your continuous integration pipeline in [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) or [GitHub Action for Team Completions](https://aka.ms/vsic/github).
+Once you're done with the custom code completions on your solution, you can automatically create, retrain, and share IntelliCode custom code completions with your entire dev team as part of your continuous integration pipeline.
 
 ## Data and privacy
 
@@ -170,6 +167,4 @@ If Microsoft needs to troubleshoot, authorized Microsoft service personnel might
 ## See also
 
 - [Share models](share-models.md)
-- [Overview of IntelliCode](overview.md)
-- [General IntelliCode FAQ](faq.yml)
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
