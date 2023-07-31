@@ -29,7 +29,7 @@ If you want to share models with other users of your repo, you should automate t
 To train team completions on your repo, follow these steps:
 
 1.  Open the repository with the solution you’d like to train on.
-1.  Visual Studio will prompt you via a "gold bar" notification, which lets you to consent to train a model for that repository. You can choose to do so right from the gold bar
+1.  Visual Studio will prompt you via a "gold bar" notification, which lets you consent to train a model for that repository. You can choose to do so right from the gold bar
 1.	 If you declined the gold bar you can still create a model by opening the IntelliCode window for your solution at **View** > **Other Windows** > **IntelliCode** or by searching for **"IntelliCode"** in Visual Studio Search (**Ctrl + Q**) and selecting "IntelliCode". Once that window is open, check the "I accept these terms and would like to train IntelliCode models on my currently open codebase: \<name of your solution\>" checkbox.
 
 1.	Upon successful creation of the model, the model will be automatically downloaded to Visual Studio. You can track the model’s progress by opening the Output Window and switching to IntelliCode in the dropdown. 
