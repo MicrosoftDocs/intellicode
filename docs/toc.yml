@@ -1,9 +1,5 @@
-- name: IntelliCode docs
+- name: IntelliCode Documentation
   href: index.yml
-- name: Overview
-  href: overview.md
-- name: FAQ
-  href: faq.yml
 - name: IntelliCode for Visual Studio
   expanded: true
   items:

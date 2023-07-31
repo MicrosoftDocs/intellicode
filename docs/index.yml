@@ -19,22 +19,6 @@ metadata:
 
 landingContent: 
   # Card
-  - title: Learn about IntelliCode
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: IntelliCode overview
-            url: overview.md
-
-  # Card
-  - title: Get answers to IntelliCode questions
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: IntelliCode FAQ
-            url: faq.yml
-
-  # Card
   - title: Where you can use IntelliCode
     linkLists:
       - linkListType: concept
