@@ -1,9 +1,5 @@
-- name: IntelliCode docs
+- name: IntelliCode Documentation
   href: index.yml
-- name: Overview
-  href: overview.md
-- name: FAQ
-  href: faq.yml
 - name: IntelliCode for Visual Studio
   expanded: true
   items:
@@ -19,9 +15,12 @@
     href: custom-models.md
   - name: Share models
     href: share-models.md
-  - name: Code style inference
-    href: code-style-inference.md
   - name: Privacy
     href: intellicode-privacy.md
 - name: IntelliCode for Visual Studio Code
-  href: intellicode-visual-studio-code.md
+  expanded: true
+  items:
+  - name: "Overview: IntelliCode for Visual Studio Code"
+    href: intellicode-visual-studio-code.md
+  - name: API usage examples
+    href: intellicode-api-usage-examples.md
