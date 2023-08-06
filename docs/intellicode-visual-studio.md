@@ -2,7 +2,6 @@
 title: IntelliCode for Visual Studio
 titleSuffix: ""
 description: Read an overview of IntelliCode for Visual Studio. Understand preview features, supported languages, prerequisites, troubleshooting issues, and telemetry.
-ms.custom: SEO-VS-2020
 ms.date: 05/21/2023
 ms.prod: visual-studio-family
 ms.technology: intellicode
