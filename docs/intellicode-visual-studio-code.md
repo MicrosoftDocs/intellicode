@@ -10,7 +10,7 @@ author: markw-t
 ms.author: mwthomas
 manager: jmartens
 ---
-# IntelliCode for Visual Studio Code overview
+# AI-assisted code development for Visual Studio Code (IntelliCode)
 
 The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) provides artificial intelligence-assisted IntelliSense for Python, Java, TypeScript, and JavaScript. AI-assisted IntelliSense predicts the most likely correct API for the developer to use rather than just presenting an alphabetical list of members. It uses the developer's current code context and patterns to provide this dynamic list.
 

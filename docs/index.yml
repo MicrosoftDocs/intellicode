@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: Visual Studio IntelliCode 
+title: AI-assisted code development
 summary: Visual Studio IntelliCode enhances software development by using artificial intelligence. IntelliCode is available for Visual Studio and Visual Studio Code.
 
 metadata:
@@ -23,7 +23,7 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: IntelliCode for Visual Studio
+          - text: AI-assisted code development for Visual Studio
             url: intellicode-visual-studio.md
-          - text: IntelliCode for Visual Studio Code
+          - text: AI-assisted code development for Visual Studio Code
             url: intellicode-visual-studio-code.md

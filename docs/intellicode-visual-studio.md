@@ -10,7 +10,7 @@ author: markw-t
 ms.author: mwthomas
 manager: jmartens
 ---
-# What is IntelliCode for Visual Studio?
+# AI-assisted code development in Visual Studio (IntelliCode)
 
 Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions). IntelliCode is available through the main Visual Studio installer.  This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
 
@@ -71,6 +71,10 @@ IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the
 - Mobile development with C++
 - Linux development with C++
   
+
+## Team completions
+
+Previous versions of IntelliCode provided a way to train a model and store the training data locally, or in the cloud. Using such a model, sorted method completions could be provided to users for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a cloud-based deep learning model that is freely available for C# and Python users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). C++ users can access the free trail of [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development, including custom model training.
 
 ## Troubleshoot Intellicode errors in Visual Studio 
 
