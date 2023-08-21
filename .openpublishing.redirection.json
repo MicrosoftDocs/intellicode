@@ -15,6 +15,12 @@
             "redirect_url": "/visualstudio/intellicode/intellicode-visual-studio.md#team-completions",
             "redirect_document_id": false
         },
+        
+        {
+            "source_path": "docs/policy.md",
+            "redirect_url": "/visualstudio/intellicode/intellicode-visual-studio.md#team-completions",
+            "redirect_document_id": false
+        },
         {
             "source_path": "docs/faq.yml",
             "redirect_url": "/visualstudio/intellicode/intellicode-visual-studio",
