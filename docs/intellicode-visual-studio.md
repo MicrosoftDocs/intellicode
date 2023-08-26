@@ -73,7 +73,9 @@ IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the
   
 ## Team completions
 
-Previous versions of IntelliCode provided a way to train a model and store the training data locally, or in the cloud. Using such a model, sorted method completions could be provided to users for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a cloud-based deep learning model that is freely available for C# and Python users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). C++ users can access [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development. GitHub CoPilot doesn't train custom models, but is is capable of generating ranked lists of members based on your own code. While IntelliCode is free for all Visual Studio or VS Code users, GitHub CoPilot requires a subscription, but you can evaluate it with a free trial.
+Previous versions of IntelliCode provided a way to train a model and store the training data locally, or in the cloud. Using such a model, sorted method completions could be provided to users for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a cloud-based deep learning model that is freely available for C# and Python users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). IntelliCode is free for all Visual Studio or VS Code users.
+
+C++ users can access [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development. GitHub CoPilot doesn't train custom models, but is is capable of generating ranked lists of members based on your own code. GitHub CoPilot requires a subscription, but you can evaluate it with a free trial.
 
 ## Troubleshoot Intellicode errors in Visual Studio 
 
