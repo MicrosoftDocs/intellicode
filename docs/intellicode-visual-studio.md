@@ -77,7 +77,7 @@ Previous versions of IntelliCode provided a way to train a model and store the t
 
 C++ users can access [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development. GitHub CoPilot doesn't train custom models, but is is capable of generating ranked lists of members based on your own code. GitHub CoPilot requires a subscription, but you can evaluate it with a free trial.
 
-## Troubleshoot Intellicode errors in Visual Studio 
+## Troubleshoot IntelliCode errors in Visual Studio 
 
 If you don't see any IntelliCode suggestions, you may have extensions installed that are overriding the IntelliSense UI. Such extensions can prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if an extension is causing this behavior by turning them off, and then trying IntelliSense again. Or, if the extension supports it, turn off its auto-completion features.
 
