@@ -12,7 +12,7 @@ manager: jmartens
 ---
 # AI-assisted code development in Visual Studio (IntelliCode)
 
-Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions). IntelliCode is available through the main Visual Studio installer.  This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
+Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions). Intellisense is included by default in most Visual Studio workloads and is available through the Visual Studio installer.  This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
 
 For C# developers, IntelliCode can learn patterns from your code. 
 - This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-models.md).
@@ -71,10 +71,9 @@ IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the
 - Mobile development with C++
 - Linux development with C++
   
-
 ## Team completions
 
-Previous versions of IntelliCode provided a way to train a model and store the training data locally, or in the cloud. Using such a model, sorted method completions could be provided to users for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a cloud-based deep learning model that is freely available for C# and Python users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). C++ users can access the free trail of [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development, including offering the same functionality that training custom models provided, that is, generating ranked lists of members based on your own code.
+Previous versions of IntelliCode provided a way to train a model and store the training data locally, or in the cloud. Using such a model, sorted method completions could be provided to users for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a cloud-based deep learning model that is freely available for C# and Python users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). C++ users can access [GitHub CoPilot](https://github.com/features/copilot) for AI-assisted code development. GitHub CoPilot doesn't train custom models, but is is capable of generating ranked lists of members based on your own code. IntelliSense is free for all Visual Studio or VS Code users; GitHub CoPilot requires a subscription, you can evaluate it with a free trial.
 
 ## Troubleshoot Intellicode errors in Visual Studio 
 
