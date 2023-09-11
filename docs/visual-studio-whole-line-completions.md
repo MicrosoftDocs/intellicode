@@ -10,7 +10,7 @@ ms.author: juihanamshet
 manager: jmartens
 ---
 
-# Visual Studio IntelliCode Whole line completions
+# AI assistance when you write code
 
 IntelliCode whole line completions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code. This feature is available in Visual Studio 2022. 
 
