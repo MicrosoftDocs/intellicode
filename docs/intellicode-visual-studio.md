@@ -10,9 +10,9 @@ author: markw-t
 ms.author: mwthomas
 manager: jmartens
 ---
-# What is IntelliCode for Visual Studio?
+# AI-assisted code development in Visual Studio (IntelliCode)
 
-Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions). IntelliCode is available through the main Visual Studio installer.  This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
+Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code completions](#context-aware-code-completions), including whole-line completions in gray text. IntelliCode is included by default in most Visual Studio workloads and is available through the Visual Studio installer. This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
 
 For C# developers, IntelliCode can learn patterns from your code. 
 - This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-models.md).
@@ -71,8 +71,13 @@ IntelliCode is included in Visual Studio 2019 version 16.4 as part of any of the
 - Mobile development with C++
 - Linux development with C++
   
+## Team completions
 
-## Troubleshoot Intellicode errors in Visual Studio 
+Previous versions of IntelliCode provided a way to train a model on your code, providing sorted method completions for team-specific API frameworks, libraries, and other user projects. This functionality has been replaced with a deep learning model that runs on your machine and is freely available for C# users. See [Upgrading from IntelliCode custom team completions models to deep learning](https://devblogs.microsoft.com/visualstudio/upgrading-from-intellicode-custom-team-completions-models-to-deep-learning/). IntelliCode is free for all Visual Studio users.
+
+If you're a C++ user, you can subscribe to [GitHub Copilot](https://github.com/features/copilot) for AI-assisted code development. GitHub Copilot and Visual Studio IntelliSense work together to improve code completions; see [Visual Studio’s IntelliSense list can now steer GitHub Copilot code completions](https://devblogs.microsoft.com/visualstudio/github-copilot-visual-studio-intellisense/). GitHub Copilot requires a subscription, but you can evaluate it with a free trial.
+
+## Troubleshoot IntelliCode errors in Visual Studio 
 
 If you don't see any IntelliCode suggestions, you may have extensions installed that are overriding the IntelliSense UI. Such extensions can prevent the IntelliCode "starred" suggestions from appearing at the top of the list. You can verify if an extension is causing this behavior by turning them off, and then trying IntelliSense again. Or, if the extension supports it, turn off its auto-completion features.
 

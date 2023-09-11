@@ -9,12 +9,6 @@
     href: visual-studio-whole-line-completions.md
   - name: Suggestions
     href: intellicode-suggestions.md
-  - name: Team completions quickstart
-    href: quickstart-team-completions.md
-  - name: Team completions
-    href: custom-models.md
-  - name: Share models
-    href: share-models.md
   - name: Privacy
     href: intellicode-privacy.md
 - name: IntelliCode for Visual Studio Code
