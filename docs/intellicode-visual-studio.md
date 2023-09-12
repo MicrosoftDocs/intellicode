@@ -23,7 +23,7 @@ For C# developers, IntelliCode can learn patterns from your code.
 - IntelliCode locally tracks your edits, detects when you're performing a repetitive action, and offers [suggestions](intellicode-suggestions.md) to apply that same action in other, similar places (C# only).
   ![Screenshot of suggestions for C# in Visual Studio](media/refactorings-illustrated.png)
 
-## Context-aware code completions
+## Context-aware code autocompletions
 
 IntelliCode provides AI-assisted IntelliSense for multiple languages. IntelliCode suggestions appear at the top of the completion list with a star icon next to them:
 
@@ -31,8 +31,8 @@ IntelliCode provides AI-assisted IntelliSense for multiple languages. IntelliCod
 
 The completion list suggests the most likely correct API for a developer to use rather than presenting a simple alphabetical list of members. To provide this dynamic list, IntelliCode uses the developer's current code context and patterns based on thousands of highly rated, open-source projects on GitHub. The results form a model that predicts the most likely and most relevant API calls.
 
-![Screenshot of C# Whole line completions in Visual Studio](media/intellicode-vs-wlc-small.png)
-C# developers in Visual Studio 2022 and higher also benefit from [Whole line completions](visual-studio-whole-line-completions.md), which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
+![Screenshot of C# whole-line autocompletions in Visual Studio](media/intellicode-vs-wlc-small.png)
+C# developers in Visual Studio 2022 and higher also benefit from [whole-line autocompletions](visual-studio-whole-line-completions.md), which predict the next chunk of your code based on your current code so far, and present it as an inline prediction. 
 
 > [!Note]
 > Some of IntelliCode's features are still in preview, meaning there's no guarantee of future support. Preview features are disabled by default. To enable or disable IntelliCode preview features, choose **Tools** > **Options** > **IntelliCode**. Under **Preview Features**, choose **Enable**, **Disable**, or **Default** to configure each feature.
@@ -44,7 +44,6 @@ C# developers in Visual Studio 2022 and higher also benefit from [Whole line com
    Visual Studio IntelliCode is installed by default.
 
 To turn starred IntelliSense recommendations off, disable the extension by choosing **Extensions** > **Manage Extensions** from the menu, find and select the IntelliCode extension, and then click **Disable**.
-
 
 ## Supported languages & workloads
 
