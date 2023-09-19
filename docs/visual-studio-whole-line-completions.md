@@ -1,5 +1,5 @@
 ---
-title: IntelliCode Visual Studio Code Completions
+title: IntelliCode Whole-line autocompletions 
 ms.date: 10/10/2021
 ms.prod: visual-studio-family
 ms.technology: intellicode
@@ -14,9 +14,14 @@ manager: jmartens
 
 IntelliCode whole-line autocompletions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code.
 
-This feature supports C# in Visual Studio 2022. [A preview of this feature is also available for Python, TypeScript, and JavaScript in Visual Studio Code](intellicode-visual-studio-code-completions.md). 
+This feature supports C# in Visual Studio 2022.
 
 ![Screenshot of Whole Line Completion by IntelliCode in Visual Studio.](media/intellicode-vs-wlc-small.png)
+
+For Visual Studio Code, several options are available:
+
+* [An extension available in Visual Studio Code provides similar capabilities for Python, TypeScript, and JavaScript](intellicode-visual-studio-code-completions.md).
+* Users of [C# Dev Kit in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), may install [IntelliCode for C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscodeintellicode-csharp) for whole-line autocompletions in C#.
 
 ## How it works
 

@@ -17,6 +17,8 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 ![IntelliCode for Python in Visual Studio Code](media/python-intellicode.gif)
 
 
+
+
 ## Install IntelliCode
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) October 2018 Release 1.29 or later for Windows, macOS, or Linux.

@@ -11,7 +11,7 @@ ms.author: aayim
 manager: andster
 ---
 
-# IntelliCode Completions Preview for Visual Studio Code
+# IntelliCode Completions for Visual Studio Code
 
 The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) predicts up to a whole line of code based on your current context. Predictions appear as grey-text to the right of your cursor. This extension supports Python, JavaScript, and TypeScript.
 
@@ -34,10 +34,6 @@ If the whole-line autocompletion includes empty strings:
 
 1. The cursor will automatically move to the first empty string upon accepting the prediction with the `TAB` key.
 2. If further empty strings exist within the prediction, pressing the `TAB` key again will automatically move the cursor to the next empty string.
-
-### Enabling JavaScript/TypeScript Support
-
-To enable experimental support for JavaScript and TypeScript, search for `intellicodeCompletions.language` in the Settings menu.
 
 ## Installation
 
