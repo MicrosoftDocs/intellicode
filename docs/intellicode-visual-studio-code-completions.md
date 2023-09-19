@@ -1,5 +1,5 @@
 ---
-title: VS Code Completions Preview
+title: VS Code Completions
 description: Read an overview of IntelliCode for Visual Studio Code. The IntelliCode extension provides AI-assisted IntelliSense for Python, Java, TypeScript, and JavaScript.
 ms.custom: SEO-VS-2020
 ms.date: 04/19/2022
@@ -13,11 +13,9 @@ manager: andster
 
 # IntelliCode Completions Preview for Visual Studio Code
 
-The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) is an experimental extension which predicts up to a whole line of code based on your current code context.
+The [IntelliCode Completions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions) predicts up to a whole line of code based on your current context. Predictions appear as grey-text to the right of your cursor. This extension supports Python, JavaScript, and TypeScript.
 
 ![IntelliCode Completions for Python in Visual Studio Code](media/wlc.gif)
-
-This extension may contain unstable, experimental code. The IntelliCode team is focused on iterating rapidly and new functionality will be added.
 
 ## How to use
 ![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](media/intellisenseSelection.gif)
