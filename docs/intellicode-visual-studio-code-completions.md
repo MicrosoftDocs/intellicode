@@ -17,6 +17,8 @@ The [IntelliCode Completions extension for Visual Studio Code](https://marketpla
 
 ![IntelliCode Completions for Python in Visual Studio Code](media/wlc.gif)
 
+For users of [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit), IntelliCode completions are available for C# in VS Code through a separate extension: [IntelliCode for C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscodeintellicode-csharp)
+
 ## How to use
 ![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](media/intellisenseSelection.gif)
 
