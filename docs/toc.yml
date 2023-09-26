@@ -16,7 +16,7 @@
   items:
   - name: "Overview: IntelliCode for Visual Studio Code"
     href: intellicode-visual-studio-code.md
-  - name: Code autocompletions
+  - name: IntelliCode completions
     href: intellicode-visual-studio-code-completions.md
   - name: API usage examples
     href: intellicode-api-usage-examples.md
