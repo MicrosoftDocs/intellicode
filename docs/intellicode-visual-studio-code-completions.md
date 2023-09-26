@@ -1,5 +1,5 @@
 ---
-title: VS Code Completions
+title: VS Code completions
 description: Learn about IntelliCode code autocompletions in Visual Studio Code.
 ms.custom: SEO-VS-2020
 ms.date: 09/26/2023

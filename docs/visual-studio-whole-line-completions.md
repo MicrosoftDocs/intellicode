@@ -1,5 +1,5 @@
 ---
-title: IntelliCode Whole-line autocompletions 
+title: IntelliCode whole-line autocompletions 
 ms.date: 10/10/2021
 ms.prod: visual-studio-family
 ms.technology: intellicode
