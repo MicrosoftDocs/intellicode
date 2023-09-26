@@ -22,9 +22,9 @@ For users of [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms
 ## How to use
 ![IntelliCode Completions interpreting IntelliSense completion list selection in Visual Studio Code](media/intellisenseSelection.gif)
 
-Completions will appear after your cursor as you type, with a faded color. When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
+Completions appear after your cursor as you type, with a faded color. When the IntelliSense list is open, its selection is used to inform the whole-line autocompletion.
 
-At any time you can accept the suggestion by pressing the `TAB` key (you will need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing or press ESC.
+At any time, you can accept the suggestion by pressing the `TAB` key (you need to press it twice if the IntelliSense list is visible). If you don't want to accept the suggestion, you can just keep on typing, or press `ESC`.
 
 ### Snippet Completion
 
@@ -32,12 +32,12 @@ At any time you can accept the suggestion by pressing the `TAB` key (you will ne
 
 If the whole-line autocompletion includes empty strings:
 
-1. The cursor will automatically move to the first empty string upon accepting the prediction with the `TAB` key.
-2. If further empty strings exist within the prediction, pressing the `TAB` key again will automatically move the cursor to the next empty string.
+1. The cursor automatically moves to the first empty string upon accepting the prediction with the `TAB` key.
+2. If further empty strings exist within the prediction, pressing the `TAB` key again automatically moves the cursor to the next empty string.
 
 ## Installation
 
-The extension can be aquired at the following link: [IntelliCode Completions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions)
+You can download the extension at the following link: [IntelliCode Completions extension for VS Code](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions)
 
 The extension is supported by Visual Studio Code November 2021 Release 1.63 or later.
 
@@ -49,6 +49,3 @@ If you encounter a problem, you can browse [existing issues](https://github.com/
 
 - [IntelliCode for Visual Studio](intellicode-visual-studio.md)
 - [IntelliCode general FAQ](faq.yml)
-
-
-
