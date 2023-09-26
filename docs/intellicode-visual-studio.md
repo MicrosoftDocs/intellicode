@@ -12,7 +12,7 @@ manager: jmartens
 ---
 # AI-assisted code development in Visual Studio (IntelliCode)
 
-Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware autocompletions](#context-aware-autocompletions), including whole-line completions in gray text. IntelliCode is included by default in most Visual Studio workloads and is available through the Visual Studio installer. This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
+Visual Studio IntelliCode enhances software development using artificial intelligence, for instance by delivering [context-aware code autocompletions](#context-aware-code-autocompletions), including whole-line completions in gray text. IntelliCode is included by default in most Visual Studio workloads and is available through the Visual Studio installer. This feature predicts the most likely correct method or property for the developer to use instead of just an alphabetical list. It uses the developer's current code context and patterns to provide this dynamic list.
 
 For C# developers, IntelliCode can learn patterns from your code. 
 - This means IntelliCode can make recommendations on code that isn’t in the open-source domain, for example, methods in your own utility classes or domain-specific library calls. For more information, see [IntelliCode models based on your code FAQ](custom-models.md).
