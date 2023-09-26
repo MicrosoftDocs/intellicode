@@ -5,7 +5,7 @@
   items:
   - name: Overview
     href: intellicode-visual-studio.md
-  - name: Whole line completions
+  - name: Whole-line autocompletions
     href: visual-studio-whole-line-completions.md
   - name: Suggestions
     href: intellicode-suggestions.md
@@ -16,7 +16,7 @@
   items:
   - name: Overview
     href: intellicode-visual-studio-code.md
-  - name: IntelliCode completions
+  - name: Whole-line autocompletions
     href: intellicode-visual-studio-code-completions.md
   - name: API usage examples
     href: intellicode-api-usage-examples.md
