@@ -25,23 +25,17 @@ The [IntelliCode extension for Visual Studio Code](https://marketplace.visualstu
 2. [Download the Visual Studio IntelliCode extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) from the marketplace, or install it directly from the **Extensions** view in Visual Studio Code.
 3. Reload and wait for dependencies to download and install (see status bar).
 
-To turn starred IntelliSense recommendations off, disable the extension by clicking **Extensions**. Then, find and select the IntelliCode extension, and then click **Disable**.
+To turn off starred IntelliSense recommendations, disable the extension by clicking **Extensions**. Then, find and select the IntelliCode extension, and then click **Disable**.
 
-## Supported languages & workloads
+## Prerequisites
 
 The supported languages for AI-assisted IntelliSense completions are:
-- Java. To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
+- Java. To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
 - JavaScript and TypeScript
 - Python
 - SQL
 
-## Prerequisites
-
 The extension is supported by Visual Studio Code June 2021 Release 1.58 or later.
-
-AI-assisted IntelliSense for Java requires Java 8 Update 151 or higher. 
-
-To get AI-assisted IntelliSense for Java, you need Java 8 Update 151 or higher. (If you have a previous Java 8 version, you'll see the error **java.security.InvalidKeyException: Illegal key size**, and IntelliCode AI-assisted IntelliSense recommendations won't work.)
 
 ## Troubleshoot
 
@@ -74,7 +68,7 @@ If you see IntelliSense completion lists, but none of the completion items are s
 
   - Are you behind a proxy or restrictive firewall?
 
-   When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Please check your network connectivity or firewall settings.", or see similar messages in the IntelliCode output window pane in Visual Studio Code. You might also see no IntelliCode starred suggestions. If you connect to the internet through a proxy or restrictive firewall, that may cause these issues.
+   When using IntelliCode, you may see the error message "Couldn't download IntelliCode model. Check your network connectivity or firewall settings.", or see similar messages in the IntelliCode output window pane in Visual Studio Code. You might also see no IntelliCode starred suggestions. If you connect to the internet through a proxy or restrictive firewall, that may cause these issues.
 
    As a first step, try updating to Visual Studio Code 1.58 or later, and [turning on network proxy support](https://code.visualstudio.com/updates/v1_30#_network-proxy-support-for-extensions) .
 
