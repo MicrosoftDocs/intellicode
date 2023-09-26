@@ -12,7 +12,7 @@ manager: jmartens
 
 # AI assistance when you write code
 
-IntelliCode whole-line autocompletions predicts the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code.
+IntelliCode whole-line autocompletions predict the next chunk of your code based on your current code so far, and presents it as a gray text inline prediction. Think gray text autocompletion that you see when typing emails but for code.
 
 This feature supports C# in Visual Studio 2022.
 
@@ -31,19 +31,19 @@ IntelliCode uses a large scale transformer model, trained on around half a milli
 - Functions in nearby code
 - The IntelliSense list
 
-The model runs on your local machine. This allows the feature to be available in offline and air gapped environments. The feature supports C# .  
+The model runs on your local machine, which allows the feature to be available in offline and air-gapped environments. The feature supports C# .  
 
 ## Two Modes
 
 IntelliCode provides completions in two ways - one, when the user is typing and two, when the user has an item selected in the IntelliSense list. 
 
 ### Mode 1: Whole-line autocompletions when typing
-When the user is typing, we show whole-line autocompletions which can be accepted by "Tab to accept". To dismiss the prediction, you can use the `Esc` or `Delete` keys. 
+When the user is typing, we show whole-line autocompletions, which you can accept by "Tab to accept." To dismiss the prediction, you can use the `Esc` or `Delete` keys.
 
 ![Screenshot displaying Tab to accept whole-line autocompletion.](media/intellicode-vs-wlc-small.png)
 
 ### Mode 2: Whole-line autocompletions when IntelliSense item is selected
-When the user has an item from the IntelliSense list selected, IntelliCode uses what the user has typed + what the user has selected as the context for providing predictions. In this case, you will see "Tab Tab to accept" prediction. The first Tab accepts the selected item from the IntelliSense list and the second Tab accepts the whole line completion. To dismiss the prediction, you can use the `Esc` or `Delete` keys. 
+When the user has an item from the IntelliSense list selected, IntelliCode uses what the user has typed + what the user has selected as the context for providing predictions. In this case, you see "Tab Tab to accept" prediction. The first Tab accepts the selected item from the IntelliSense list and the second Tab accepts the whole-line completion. To dismiss the prediction, you can use the `Esc` or `Delete` keys. 
 
 ![Screenshot displaying Tab Tab to accept selected completion item and whole line completion.](media/intellicode-vs-wlc-tabtab-small.png)
 
@@ -65,15 +65,15 @@ To dismiss whole-line autocompletions, the `ESC` or `Delete` keys can be used.
 
 ## Controlling Whole-line autocompletions
 
-You can control the whole-line autocompletions feature using the small purple lightbulb shown at the bottom right of the editor, next to the zoom control. 
+You can control the whole-line autocompletions feature using the small purple light bulb shown at the bottom right of the editor, next to the zoom control. 
 
 ![Screenshot of Setting for Turning IntelliCode Whole-Line Autocompletions On/Off.](media/intellicode-vs-wlc-quietmode-small.png)
 
-The first setting, `Show completions for lines of code` allows you turn whole-line autocompletions on or off. 
+The first setting, `Show completions for lines of code` allows you to turn whole-line autocompletions on or off. 
 
-The second setting, `Wait for pauses in typing before showing line completions`, when enabled, will make whole-line autocompletions only show up if the user has paused typing. The user may prefer this if they find the whole-line autocompletions distracting in the default mode.
+The second setting, `Wait for pauses in typing before showing line completions`, when enabled, makes whole-line autocompletions only show up if the user has paused typing. You might prefer this option if you find the whole-line autocompletions distracting in the default mode.
 
-The third setting, `Show completions on new lines` can be turned on or off depending on whether the user wants to see whole-line autocompletions when they have entered a new line i.e. by pressing `Return` or `Enter`. 
+The third setting, `Show completions on new lines` can be turned on or off depending on whether you want to see whole-line autocompletions when you enter a new line, that is, by pressing `Return` or `Enter`. 
 
 ## Providing Feedback 
 Click on the Feedback icon on the top right of Visual Studio to file a feedback ticket. Optionally, you can upload your IntelliCode log files to the feedback ticket in order to provide us with additional context. Make sure you review the contents of the log files and address any privacy concerns you may have. This data, when shared with us, will not be used for any purpose other than providing support assistance to you. You can find the logs at `%LOCALAPPDATA%\Temp\VSFeedbackIntelliCodeLogs`
