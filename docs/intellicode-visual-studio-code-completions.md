@@ -1,8 +1,8 @@
 ---
 title: VS Code Completions
-description: Read an overview of IntelliCode for Visual Studio Code. The IntelliCode extension provides AI-assisted IntelliSense for Python, Java, TypeScript, and JavaScript.
+description: Learn about IntelliCode code autocompletions in Visual Studio Code.
 ms.custom: SEO-VS-2020
-ms.date: 04/19/2022
+ms.date: 09/26/2023
 ms.prod: visual-studio-family
 ms.technology: intellicode
 ms.topic: conceptual
