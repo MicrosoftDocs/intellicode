@@ -24,6 +24,6 @@ landingContent:
       - linkListType: concept
         links:
           - text: AI-assisted code development for Visual Studio
-            url: intellicode-visual-studio.md
+            url: /visualstudio/ide/intellicode-visual-studio
           - text: AI-assisted code development for Visual Studio Code
             url: intellicode-visual-studio-code.md
