@@ -1,6 +1,26 @@
 {
     "redirections": [
         {
+            "source_path": "docs/intellicode-visual-studio-code.md",
+            "redirect_url": "https://code.visualstudio.com/docs/csharp/intellicode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/intellicode-visual-studio-code-completions.md",
+            "redirect_url": "https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode-completions",
+            "redirect_document_id": "false"
+        },
+        {
+            "source_path": "docs/intellicode-api-usage-examples.md",
+            "redirect_url": "https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode#intellicode-api-usage-examples",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/index.md",
+            "redirect_url": "/visualstudio/ide/intellicode-visual-studio",
+            "redirect_document_id": false
+        },
+        {
            "source_path": "docs/intellicode-visual-studio.md",
            "redirect_url": "/visualstudio/ide/intellicode-visual-studio",
            "redirect_document_id": false
