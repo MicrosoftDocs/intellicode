@@ -1,6 +1,17 @@
 {
     "redirections": [
         {
+            "source_path": "docs/not-in-toc/disable-features.md",
+            "redirect_url": "https://code.visualstudio.com/docs/csharp/intellicode",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "docs/not-in-toc/find-replace-by-example.md",
+            "redirect_url": "https://code.visualstudio.com/docs/csharp/intellicode",
+            "redirect_document_id": false
+         
+        },
+        {
             "source_path": "docs/intellicode-visual-studio-code.md",
             "redirect_url": "https://code.visualstudio.com/docs/csharp/intellicode",
             "redirect_document_id": false
